@@ -1,223 +1,214 @@
 ---
-title:  "Terminal cheatsheet"
+title: "Terminal Cheatsheet"
 description: "Learn some important UNIX commands"
 author: CS193 Team
-date:   2021-03-14 12:00:00 -0400
+date: 2021-03-14 12:00:00 -0400
 categories: technical
 ---
 
-# Basic UNIX Terminal Guide
+## Basic UNIX Terminal Guide
 
-## pwd (Print Working Directory)
+### pwd (Print Working Directory)
 
-#### Description
+**Description**
+Prints path of current directory. (Think: what is the address of the folder I'm viewing?)
 
-Prints path of current directory. (Think: what is the address of the folder I’m viewing?)
+**Example**
+```bash
+pwd
+```
 
-#### Example
+### ls (List)
 
-`pwd`
-
-
-## ls (List)
-
-#### Description
-
+**Description**
 Prints contents of current directory. (What stuff is in the current folder?)
 
-#### Tags
-
+**Tags**
 - `-a` = all files (include hidden files)
-
 - `-l` = detailed list
 
-#### Arguments
-
+**Arguments**
 Path to the folder you want to see the contents of (Leave blank to see current folder contents)
 
-#### Example
+**Example**
+```bash
+ls -al
+```
 
-`ls -al`
+### cd (Change Directory)
 
-## cd (Change Directory)
-
-#### Description
-
+**Description**
 Move to the specified path. (I want to go somewhere, and I need to tell the terminal where.
 
-#### Arguments
-
+**Arguments**
 Exact path of the folder you want to move to, or just a subdirectory
 
-#### Syntax
+**Syntax**
+```bash
+cd Directory
+```
 
-`cd Directory`
+**Example**
+```bash
+cd ~/Documents
+```
 
-#### Example
+### rm (Remove)
 
-`cd ~/Documents`
-
-
-## rm (Remove)
-
-#### Description
-
+**Description**
 Permanently deletes a file or folder (No trash/recycling bin!)
 
-#### Tags
-
+**Tags**
 - `-r` - Delete a folder and its contents
-
 - `-f` - Stop confirmation prompt for write-protected files
 
-#### Arguments
-
+**Arguments**
 Path to the folder/file you want to delete
 
-#### Syntax
+**Syntax**
+```bash
+rm [TAGS] Path
+```
 
-`rm [TAGS] Path`
+**Example**
+```bash
+rm -rf ~/Documents/Junk
+```
 
-#### Example
+### mv (Move)
 
-`rm -rf ~/Documents/Junk`
+**Description**
+Move an existing file somewhere else. It can also be used to rename files.
 
-## mv (Move)
+**Arguments**
+- The file you want to move
+- The destination
 
-#### Description
+**Example**
+```bash
+mv ~/Documents/source/file.txt ~/Documents/destination/file.txt
+mv ~/old_name.txt ~/new_name.txt
+```
 
-Move an existing file somewhere else.  It can also be used to rename files.
+### cp (Copy)
 
-#### Arguments
-
-1. The file you want to move
-
-2. The destination
-
-#### Example
-
-`mv ~/Documents/source/file.txt ~/Documents/destination/file.txt`
-
-`mv ~/old_name.txt ~/new_name.txt`
-
-## cp (Copy)
-
-#### Description
-
+**Description**
 Copy files or folders to a new location
 
-#### Syntax
+**Syntax**
+```bash
+cp Source Destination
+cp File-1 File-2 File-3 ... Destination
+```
 
-`cp Source Destination`
+**Example**
+```bash
+cp ~/Documents/source/file.txt ~/Documents/destination/file.txt
+cp ~/Desktop/Name.java ~/Desktop/Age.java ~/CS180/Homework_1
+```
 
-`cp File-1 File-2 File-3 ... Destination`
+### clear
 
-#### Example
-
-`cp ~/Documents/source/file.txt ~/Documents/destination/file.txt`
-
-`cp ~/Desktop/Name.java ~/Desktop/Age.java ~/CS180/Homework_1`
-
-## clear
-
-#### Description
-
+**Description**
 Clear the Terminal Screen
 
-#### Example
+**Example**
+```bash
+$ clear
+```
 
-`$ clear`
+### top
 
-
-## top
-
-#### Description
-
+**Description**
 See what programs are currently running
 
-#### Example
+**Example**
+```bash
+top
+```
 
-`top`
+### killall
 
-## killall
-
-#### Description
-
+**Description**
 Kill all programs with the specified program_name
 
-#### Syntax
+**Syntax**
+```bash
+killall Program_Name
+```
 
-`killall Program_Name`
+**Example**
+```bash
+killall firefox
+```
 
-#### Example
+### touch
 
-`killall firefox`
-
-## touch
-
-#### Description
-
+**Description**
 Creates a new file in the location specified in the argument
 
-#### Arguments
-
+**Arguments**
 The files that are to be created
 
-#### Syntax
+**Syntax**
+```bash
+touch File-1 File-2 File-3 ...
+```
 
-`touch File-1 File-2 File-3 ...`
-
-#### Example
-
-`touch ~/Documents/file1.txt ~/CS193/HW2/file2.txt`
+**Example**
+```bash
+touch ~/Documents/file1.txt ~/CS193/HW2/file2.txt
+```
 
 ## Other Contents
 
 ### Files and Folders with Spaces
 
-If a path includes files or folders with spaces, either use quotations marks (" ") or a backslash (\\) before the space.  For example:
+If a path includes files or folders with spaces, either use quotations marks (" ") or a backslash (\) before the space. For example:
 
-`~/"My Files"/test.txt` 
+```bash
+~/"My Files"/test.txt
+```
 
 or
 
-`~/My\ Files/test.text`
-
-
+```bash
+~/My\ Files/test.text
+```
 
 ### Shortcuts
 
 - `~` - Home Directory
-
 - `.` - Current Directory
-
 - `..` - Parent Directory
 
 ### Aliases
 
-1. Aliases are set in `~/.bashrc`
+Aliases are set in `~/.bashrc`
 
-2. Add a line to `~/.bashrc` that looks like: `alias <shortcut>=“<command>”`
+Add a line to `~/.bashrc` that looks like: `alias <shortcut>="<command>"`
 
-3. Save file, tell bash to reload: `$ source ~/.bashrc`
+Save file, tell bash to reload: `$ source ~/.bashrc`
 
 ### Wildcards
 
-#### Description
-
-Used to include a group of files with smiliar characteristics.  
+**Description**
+Used to include a group of files with smiliar characteristics.
 
 They can be used with nearly any UNIX command.
 
-#### Example
+**Example**
+```bash
+cp ~/Desktop/*.java ~/Documents/Project
+```
 
-* `cp ~/Desktop/*.java ~/Documents/Project` 
-  
-  * This command will copy all `.java` files found in the Desktop directory into the `Documents/Project` folder.  
+This command will copy all .java files found in the Desktop directory into the Documents/Project folder.
 
-* `mv ~/Desktop/file* ~/Documents`
-  
-  * This command will copy all files that begin with "file" in the name into the `Documents` directory.
+```bash
+mv ~/Desktop/file* ~/Documents
+```
+
+This command will copy all files that begin with "file" in the name into the Documents directory.
 
 ### Vim and Nano Customization
 
@@ -227,13 +218,10 @@ Your `~/.vimrc` (Vim Run Control) file controls what commands will run every tim
 
 You can disable this at any time within a file by typing `:set nonumber` within Vim, or by deleting it from your `~/.vimrc` and then re-opening Vim again.
 
-As you can imagine, there are thousands of commands you can leverage in your `~/.vimrc` file. For a great resource on customization, read [this article](https://dougblack.io/words/a-good-vimrc.html). 
+As you can imagine, there are thousands of commands you can leverage in your `~/.vimrc` file. For a great resource on customization, read [this article](https://dougblack.io/words/a-good-vimrc.html).
 
 A favorite quote from that article that you should definitely adhere to is:
 
->"Don't put any lines in your vimrc that you don't understand."
+> "Don't put any lines in your vimrc that you don't understand."
 
 For those who are using nano, here is an article about [nano customization](https://www.nano-editor.org/dist/v2.1/nanorc.5.html). Similar to Vim, you add your commands in your `~/.nanorc` file.
-
-
-

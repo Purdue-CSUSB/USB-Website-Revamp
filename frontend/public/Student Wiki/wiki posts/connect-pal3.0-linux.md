@@ -16,7 +16,7 @@ This tutorial will show you how to connect to PAL3.0 on desktop Linux. Note: Scr
 
 Open Wi-Fi settings, and select `PAL3.0` in the list of available wireless networks.
 
-![Wi-Fi Settings](/assets/images/wiki/connect-pal3.0-linux/step1.png)
+![Wi-Fi Settings](./images/connect-pal3.0-linux/step1.png)
 
 #### Step 2
 
@@ -27,13 +27,13 @@ Change the following settings:
 
 After changing these settings, your options page should look like this:
 
-![PAL3.0 Settings](/assets/images/wiki/connect-pal3.0-linux/step2.png)
+![PAL3.0 Settings](./images/connect-pal3.0-linux/step2.png)
 
 #### Step 3
 
 Enter your Purdue username (without "@purdue.edu") and password (regular password, NOT BoilerKey), then click "Connect."
 
-![PAL3.0 Completed settings](/assets/images/wiki/connect-pal3.0-linux/step3.png)
+![PAL3.0 Completed settings](./images/connect-pal3.0-linux/step3.png)
 
 #### Step 4
 

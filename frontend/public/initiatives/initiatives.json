@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Blog",
+    "description": "Our written blog posts, spotlights, and video series help in providing a comprehensive understanding of our collective identity and accomplishments.",
+    "link": "/initiatives/blog"
+  },
+  {
+    "title": "Career Resources",
+    "description": "Provides career guidance and resources for all students, with programming tailored to international students. Includes student panels led by upperclassmen/alumni and a recruiter networking night (round‑robin groups plus optional 1‑on‑1 time)."
+  },
+  {
+    "title": "Club Hub",
+    "description": "Club Hub aims to connect the different computing related clubs and organizations within Purdue's CS department and at Purdue as a whole. At the beginning of each semester, this initiative facilitates a CS Club Fair for students to find out about these different organizations and how to get involved.",
+    "link": "/initiatives/club-hub"
+  },
+  {
+    "title": "CS193",
+    "description": "In this course organized and taught by our members, we teach essential software engineering tools and more to students beginning their CS/DS/AI journey at Purdue University. Topics include Linux, GitHub, Shell, and more."
+  },
+  {
+    "title": "Help Room",
+    "description": "Our Help Room provides additional tutoring for CS 180, CS 182, and CS 240. This initiative does not intend to and cannot replace regular office hours for these courses, but students in need of extra support may find it here."
+  },
+  {
+    "title": "International Student Resources",
+    "description": "The goal of this initiative is to provide international students with resources and guidance as they navigate their time at Purdue. The initiative specifically targets career resources, as international students face unique challenges with attaining employment (internships and full-time)."
+  },
+  {
+    "title": "Mentorship",
+    "description": "This initiative helps incoming freshmen navigate Purdue CS/DS/AI. We pair sophomores—who most recently experienced the first-year journey—with small groups (5–6) of mentees to provide timely, low-commitment, high-impact guidance."
+  },
+  {
+    "title": "Purdue Technical Projects",
+    "description": "USB provides a space for students to collaborate on and promote their Purdue-related technical projects. This initiative connects students with meaningful projects, highlights creativity, and promotes the versatile, interdisciplinary nature of coding."
+  },
+  {
+    "title": "Panels",
+    "description": "Plans and hosts year‑round informational panels (e.g., CS tracks, alumni advice, and more) to offer practical guidance."
+  },
+  {
+    "title": "Research Resources",
+    "description": "Although there are many research opportunities available to students at Purdue, getting started can be difficult or intimidating. This initiative makes the process easier—from reaching out to professors to presenting your work—and provides a consolidated list of projects seeking CS/DS/AI students.",
+    "link": "https://purdue-csusb.github.io/Purdue-USB-Research-Resources-Website/"
+  },
+  {
+    "title": "Social Wellness",
+    "description": "Focuses on enjoyable, stress‑relieving events that build community and motivation—more “touch‑grass” fun, less direct CS advice."
+  },
+  {
+    "title": "Student Forum/Town Hall",
+    "description": "We bridge communications between the undergraduate student body and the CS/DS/AI faculty by hosting a Student Forum twice a semester to gather student feedback and concerns for the CS department. We also moderate the department town hall once a semester and implement improvements that benefit students."
+  }
+]
+

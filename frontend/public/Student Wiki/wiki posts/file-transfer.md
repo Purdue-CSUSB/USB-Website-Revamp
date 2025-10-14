@@ -18,7 +18,7 @@ Sometimes there comes a need where you need to transfer a files between your per
 
 On Windows open “Windows PowerShell.” On Mac or Linux, open your respective Terminal.
 
-![Windows Powershell](/assets/images/wiki/file-transfer/image1.png)
+![Windows Powershell](./images/file-transfer/image1.png)
 
 #### Step 2
 
@@ -29,16 +29,16 @@ In order to transfer your files, we are going to use SCP. SCP works the same reg
 For our purposes of transferring homework from data, we are going to use the following command:
 
 ```bash
-scp <purdue_username>@data.cs.purdue.edu:<homework_directory> <personal_machine_directory>
+scp <purdue_username>@initiatives.cs.purdue.edu:<homework_directory> <personal_machine_directory>
 ```
 
 For example, if I wanted to transfer my hw2.c file to my current directory on my PC, I would run:
 
 ```bash
-scp nalderto@data.cs.purdue.edu:~/cs240/hw2/hw2.c .
+scp nalderto@initiatives.cs.purdue.edu:~/cs240/hw2/hw2.c .
 ```
 
-![Windows Powershell](/assets/images/wiki/file-transfer/image2.png)
+![Windows Powershell](./images/file-transfer/image2.png)
 
 #### Step 3
 
@@ -47,7 +47,7 @@ If everything ran properly, you should be able to access your homework on your p
 For example, if I wanted to transfer my hw2.c file from my personal machine to data, I would run:
 
 ```bash
-scp hw2.c nalderto@data.cs.purdue.edu:~/cs240/hw2/
+scp hw2.c nalderto@initiatives.cs.purdue.edu:~/cs240/hw2/
 ```
 
 ### Solution 2: FileZilla
@@ -75,4 +75,4 @@ Once the appropriate information is entered, click “Quickconnect”. A dialog 
 
 You should now be connected to data! Your data filesystem is on the right part of the screen, while your personal computer’s files are on the left. You can drag and drop the files between the machines as you wish!
 
-![Filezilla example](/assets/images/wiki/file-transfer/image3.png)
+![Filezilla example](./images/file-transfer/image3.png)

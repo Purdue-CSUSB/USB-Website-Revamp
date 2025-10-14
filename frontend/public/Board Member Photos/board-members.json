@@ -1,0 +1,751 @@
+{
+  "members": [
+    {
+      "name": "Maria Molina",
+      "title": "President",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Maria-Molina.webp"
+    },
+    {
+      "name": "Shruti Sharma",
+      "title": "Vice President",
+      "class": "Senior",
+      "site": "https://www.linkedin.com/in/shruti-sharma-08741223b/",
+      "photo": "webp/Shruti-Sharma.webp"
+    },
+    {
+      "name": "Tristan Sze",
+      "title": "Treasurer",
+      "class": "Senior",
+      "site": "",
+      "photo": "webp/Tristan-Sze.webp"
+    },
+    {
+      "name": "Chris McLoughlin",
+      "title": "Secretary",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Chris-McLoughlin.webp"
+    },
+    {
+      "name": "Theo Park",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Theo-Park.webp"
+    },
+    {
+      "name": "Arman Kumar",
+      "title": "",
+      "class": "Senior",
+      "site": "https://www.linkedin.com/in/arman-kumar",
+      "photo": "webp/Arman-Kumar.webp"
+    },
+    {
+      "name": "Ishita Shukla",
+      "title": "",
+      "class": "Senior",
+      "site": "",
+      "photo": "webp/Ishita-Shukla.webp"
+    },
+    {
+      "name": "Jagannath Prabhakaran",
+      "title": "",
+      "class": "Senior",
+      "site": "https://www.linkedin.com/in/jag-prabhakaran/",
+      "photo": "webp/Jagannath-Prabhakaran.webp"
+    },
+    {
+      "name": "Pranav Konda",
+      "title": "",
+      "class": "Senior",
+      "site": "",
+      "photo": "webp/Pranav-Konda.webp"
+    },
+    {
+      "name": "Sravya Nagalakunta",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Sravya-Nagalakunta.webp"
+    },
+    {
+      "name": "Daniel Tian",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Daniel-Tian.webp"
+    },
+    {
+      "name": "Justin Kam",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Justin-Kam.webp"
+    },
+    {
+      "name": "Netra Joshi",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Netra-Joshi.webp"
+    },
+    {
+      "name": "Paula Perez",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Paula-Perez.webp"
+    },
+    {
+      "name": "Philip Liu",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Philip-Liu.webp"
+    },
+    {
+      "name": "Pranavi Chaganti",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Pranavi-Chaganti.webp"
+    },
+    {
+      "name": "Anokhi Matta",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Anokhi-Matta.webp"
+    },
+    {
+      "name": "Madhav Valiaparambil",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Madhav-Valiaparambil.webp"
+    },
+    {
+      "name": "Hanako Keney",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Hanako-Keney.webp"
+    },
+    {
+      "name": "Charlotte Liu",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Charlotte-Liu.webp"
+    },
+    {
+      "name": "Kevin Qu",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Kevin-Qu.webp"
+    },
+    {
+      "name": "Anika Thapar",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Anika-Thapar.webp"
+    },
+    {
+      "name": "Ryan Sierra",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Ryan-Sierra.webp"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Emily Hao",
+      "title": "Former President",
+      "class": "2025",
+      "site": "",
+      "photo": "webp/Emily-Hao.webp"
+    },
+    {
+      "name": "Brayden Brackett",
+      "title": "Former Treasurer",
+      "class": "2025",
+      "site": "",
+      "photo": "webp/Brayden-Brackett.webp"
+    },
+    {
+      "name": "Lakshmi Talapaneni",
+      "title": "Former Vice President",
+      "class": "2025",
+      "site": "https://www.linkedin.com/in/lakshmitalapaneni/",
+      "photo": "webp/Lakshmi-Talapaneni.webp"
+    },
+    {
+      "name": "Tiffany Kuang",
+      "title": "",
+      "class": "2025",
+      "site": "https://www.linkedin.com/in/tiffanykuang/",
+      "photo": "webp/Tiffany-Kuang.webp"
+    },
+    {
+      "name": "Richard Silvester",
+      "title": "",
+      "class": "2025",
+      "site": "",
+      "photo": "webp/Richard-Silvester.webp"
+    },
+    {
+      "name": "Jillian Urgello",
+      "title": "",
+      "class": "2025",
+      "site": "https://www.linkedin.com/in/jillian-mae-urgello/",
+      "photo": "webp/Jillian-Urgello.webp"
+    },
+    {
+      "name": "Khoa Raisr",
+      "title": "",
+      "class": "2025",
+      "site": "",
+      "photo": "webp/Khoa-Raisr.webp"
+    },
+    {
+      "name": "Christina Joslin",
+      "title": "",
+      "class": "2025",
+      "site": "",
+      "photo": "webp/Christina-Joslin.webp"
+    },
+    {
+      "name": "Amritraj Binuraj",
+      "title": "",
+      "class": "2024",
+      "site": "https://www.linkedin.com/in/amritraj-binuraj/",
+      "photo": "webp/Amritraj-Binuraj.webp"
+    },
+    {
+      "name": "Sarah Pushparaj",
+      "title": "",
+      "class": "2024",
+      "site": "https://www.linkedin.com/in/sarah-pushparaj/",
+      "photo": "webp/Sarah-Pushparaj.webp"
+    },
+    {
+      "name": "Arielle Dong",
+      "title": "",
+      "class": "2026",
+      "site": "https://www.linkedin.com/in/arielle-dong/",
+      "photo": "webp/Arielle-Dong.webp"
+    },
+    {
+      "name": "Anushka Sharma",
+      "title": "Former President",
+      "class": "2024",
+      "site": "",
+      "photo": "webp/Anushka-Sharma.webp"
+    },
+    {
+      "name": "Grace Keeton",
+      "title": "Former Vice President",
+      "class": "2024",
+      "site": "https://www.linkedin.com/in/grace-butler-cs/",
+      "photo": "webp/Grace-Keeton.webp"
+    },
+    {
+      "name": "Rohan Purandare",
+      "title": "",
+      "class": "2024",
+      "site": "https://www.linkedin.com/in/rohanpurandare",
+      "photo": "webp/Rohan-Purandare.webp"
+    },
+    {
+      "name": "Weiyi Tan",
+      "title": "",
+      "class": "2024",
+      "site": "",
+      "photo": "webp/Weiyi-Tan.webp"
+    },
+    {
+      "name": "Riya Verma",
+      "title": "",
+      "class": "2024",
+      "site": "https://www.linkedin.com/in/riyaverma11/",
+      "photo": "webp/Riya-Verma.webp"
+    },
+    {
+      "name": "Eddie Kim",
+      "title": "",
+      "class": "2024",
+      "site": "",
+      "photo": "webp/Eddie-Kim.webp"
+    },
+    {
+      "name": "Vindhya Banda",
+      "title": "Former President",
+      "class": "2023",
+      "site": "https://www.linkedin.com/in/vindhya-banda/",
+      "photo": "webp/Vindhya-Banda.webp"
+    },
+    {
+      "name": "Simran Kadadi",
+      "title": "Former GSB Chair",
+      "class": "2023",
+      "site": "",
+      "photo": "webp/Simran-Kadadi.webp"
+    },
+    {
+      "name": "Mason Adams",
+      "title": "",
+      "class": "2023",
+      "site": "https://www.linkedin.com/in/mason-adams-184a71220/",
+      "photo": "webp/Mason-Adams.webp"
+    },
+    {
+      "name": "Ishika Kamchetty",
+      "title": "",
+      "class": "2023",
+      "site": "",
+      "photo": "webp/Ishika-Kamchetty.webp"
+    },
+    {
+      "name": "Blisha Molin",
+      "title": "",
+      "class": "2023",
+      "site": "",
+      "photo": "webp/Blisha-Molin-Mohan-Das.webp"
+    },
+    {
+      "name": "Sweta Saravanan",
+      "title": "",
+      "class": "2023",
+      "site": "https://www.linkedin.com/in/sweta-saravanan-aa3937191/",
+      "photo": "webp/Sweta-Saravanan.webp"
+    },
+    {
+      "name": "Arianna Smith",
+      "title": "Former President",
+      "class": "2022",
+      "site": "https://www.linkedin.com/in/arianna-smith-32229816a/",
+      "photo": "webp/Arianna-Smith.webp"
+    },
+    {
+      "name": "Cindy Ding",
+      "title": "Former Treasurer",
+      "class": "2022",
+      "site": "https://www.linkedin.com/in/cindydhy/",
+      "photo": "webp/Cindy-Ding.webp"
+    },
+    {
+      "name": "Christopher Lehman",
+      "title": "Former Secretary",
+      "class": "2022",
+      "site": "https://www.linkedin.com/in/christopher-lehman/",
+      "photo": "webp/Christopher-Lehman.webp"
+    },
+    {
+      "name": "Riley McKeever",
+      "title": "",
+      "class": "2022",
+      "site": "",
+      "photo": "webp/Riley-McKeever.webp"
+    },
+    {
+      "name": "Sarah Thomas",
+      "title": "",
+      "class": "2022",
+      "site": "",
+      "photo": "webp/Sarah-Thomas.webp"
+    },
+    {
+      "name": "Pallav Agarwal",
+      "title": "",
+      "class": "2021",
+      "site": "https://www.linkedin.com/in/pallav-agarwal/",
+      "photo": "webp/Pallav-Agarwal.webp"
+    },
+    {
+      "name": "Sean Flannery",
+      "title": "Former GSB Honorary Member",
+      "class": "2021",
+      "site": "https://www.linkedin.com/in/sflanner/",
+      "photo": "webp/Sean-Flannery.webp"
+    },
+    {
+      "name": "Noah Alderton",
+      "title": "",
+      "class": "2021",
+      "site": "https://www.linkedin.com/in/noahalderton/",
+      "photo": "webp/Noah-Alderton.webp"
+    },
+    {
+      "name": "Lauren Lum",
+      "title": "Former President",
+      "class": "2021",
+      "site": "https://www.linkedin.com/in/lumlauren/",
+      "photo": "webp/Lauren-Lum.webp"
+    },
+    {
+      "name": "Albert Zhong",
+      "title": "",
+      "class": "2021",
+      "site": "https://www.linkedin.com/in/albert-zhong-695961149/",
+      "photo": "webp/Albert-Zhong.webp"
+    },
+    {
+      "name": "Sagar Nattuvetty",
+      "title": "",
+      "class": "2021",
+      "site": "",
+      "photo": "webp/Sagar-Nattuvetty.webp"
+    },
+    {
+      "name": "Sera Savaş",
+      "title": "",
+      "class": "2021",
+      "site": "https://www.linkedin.com/in/sera-savas-179968148/",
+      "photo": "webp/Sera-Savaş.webp"
+    },
+    {
+      "name": "CJ Enright",
+      "title": "",
+      "class": "2020",
+      "site": "https://www.linkedin.com/in/cjenright/",
+      "photo": "webp/CJ-Enright.webp"
+    },
+    {
+      "name": "Zach Bryant",
+      "title": "Former President",
+      "class": "2020",
+      "site": "https://www.linkedin.com/in/zachdbryant/",
+      "photo": "webp/Zach-Bryant.webp"
+    },
+    {
+      "name": "Nirali Rai",
+      "title": "Former Treasurer",
+      "class": "2020",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Megan Walsh",
+      "title": "",
+      "class": "2020",
+      "site": "",
+      "photo": "webp/Megan-Walsh.webp"
+    },
+    {
+      "name": "Kameron Lutes",
+      "title": "Former President",
+      "class": "2019",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Ian Zanger",
+      "title": "Former Vice President",
+      "class": "2019",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Rohan Gupta",
+      "title": "",
+      "class": "2019",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Puja Mittal",
+      "title": "",
+      "class": "2019",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Ian Renfro",
+      "title": "",
+      "class": "2019",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Jay Hankins",
+      "title": "Former President",
+      "class": "2018",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Matthew Ess",
+      "title": "",
+      "class": "2018",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Ahad Sagheer",
+      "title": "",
+      "class": "2018",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Adam Loeb",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Bryan Duffy",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Evan Walsh",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Mason Everett",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Rhys Howell",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Shane DeWael",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Spencer Brown",
+      "title": "",
+      "class": "2017",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Emma Wynne",
+      "title": "",
+      "class": "2016",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Ivan Zhang",
+      "title": "",
+      "class": "2016",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Kirby Kohlmorgen",
+      "title": "",
+      "class": "2016",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Scott Opell",
+      "title": "",
+      "class": "2016",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Richard Wei",
+      "title": "",
+      "class": "2015",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Brittany Vacchiano",
+      "title": "",
+      "class": "2014",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Tyler Hoffman",
+      "title": "",
+      "class": "2014",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Tyler Wear",
+      "title": "",
+      "class": "2012",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Marty Kausas",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Caitlin Kennedy",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Zach Johnson",
+      "title": "",
+      "class": "2018",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Andrew Shildmyer",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Ben Alderfer",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Christopher Sargent",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Clyde S. Byrd III",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Conlin Durbin",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Craig Hanna",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Curtis Knapp",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "David Koenig",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Emmy Zhang",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Jason Akers",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Joe Martella",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Joe Rattazzi",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Kenneth Brown",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Levi Starrett",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Lillian Liu",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Robyn Bognar",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    },
+    {
+      "name": "Stephanie Kate Ragozzino (Scherer)",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    }
+  ],
+  "other": [
+    {
+      "name": "Purdue Pete",
+      "title": "",
+      "class": "",
+      "site": "",
+      "photo": "webp/None.webp"
+    }
+  ]
+}
+

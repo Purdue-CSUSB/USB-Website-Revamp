@@ -1,6 +1,6 @@
 ---
 title:  "SSH Shortcut for Purdue Servers"
-description: "Tired of typing data.cs.purdue.edu?"
+description: "Tired of typing initiatives.cs.purdue.edu?"
 author: Jay Hankins
 date:   2020-05-10 00:00:00 -0400
 categories: technical
@@ -23,7 +23,7 @@ Make sure to replace any information in between the `<` and `>` symbols. For exa
 
 ```bash 
 hankinsj () {
-    ssh hankinsj@${1:-data}.cs.purdue.edu
+    ssh hankinsj@${1:-initiatives}.cs.purdue.edu
 }
 ```
 My username is `hankinsj` and my default machine is `data` in this example.
