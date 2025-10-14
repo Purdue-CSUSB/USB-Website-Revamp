@@ -1,0 +1,211 @@
+{
+  "studentWikiPosts": [
+    {
+      "title": "How Do I Become an Undergraduate Teaching Assistant?",
+      "subtitle": "Get paid to help students during labs",
+      "author": "Noah Alderton",
+      "authorImage": "../board member photos/webp/Noah-Alderton.webp",
+      "date": "March 4, 2020",
+      "category": "campus",
+      "markdownFile": "wiki posts/become-uta.md"
+    },
+    {
+      "title": "How Can I Rent Equipment?",
+      "subtitle": "Borrow equipment to tinker with for free",
+      "author": "Noah Alderton",
+      "authorImage": "../board member photos/webp/Noah-Alderton.webp",
+      "date": "March 4, 2020",
+      "category": "campus",
+      "markdownFile": "wiki posts/rent-equipment.md"
+    },
+    {
+      "title": "Transferring Files via SCP and FileZilla",
+      "subtitle": "Copy files to and from Purdue's servers",
+      "author": "Noah Alderton",
+      "authorImage": "../board member photos/webp/Noah-Alderton.webp",
+      "date": "April 1, 2020",
+      "category": "technical",
+      "markdownFile": "wiki posts/file-transfer.md"
+    },
+    {
+      "title": "Getting a Lawson Key Fob",
+      "subtitle": "Access Lawson after hours",
+      "author": "Jay Hankins",
+      "authorImage": "../board member photos/webp/Jay-Hankins.webp",
+      "date": "May 9, 2020",
+      "category": "campus",
+      "markdownFile": "wiki posts/lawson-fob.md"
+    },
+    {
+      "title": "SSH Shortcut for Purdue Servers",
+      "subtitle": "Tired of typing data.cs.purdue.edu?",
+      "author": "Jay Hankins",
+      "authorImage": "../board member photos/webp/Jay-Hankins.webp",
+      "date": "May 10, 2020",
+      "category": "technical",
+      "markdownFile": "wiki posts/ssh-shortcut.md"
+    },
+    {
+      "title": "Connecting to Purdue's VPN",
+      "subtitle": "Access campus-only resources from anywhere!",
+      "author": "Cindy Ding",
+      "authorImage": "../board member photos/webp/Cindy-Ding.webp",
+      "date": "May 26, 2020",
+      "category": "technical",
+      "markdownFile": "wiki posts/connect-vpn.md"
+    },
+    {
+      "title": "Subscribing to the Purdue CS Calendar",
+      "subtitle": "Get notified of CS Department events on your calendar",
+      "author": "Tyler Hoffman",
+      "authorImage": "../board member photos/webp/Tyler-Hoffman.webp",
+      "date": "June 28, 2020",
+      "category": "calendar, events",
+      "markdownFile": "wiki posts/cs-calendars.md"
+    },
+    {
+      "title": "Optimize Your Search on Our Wiki",
+      "subtitle": "Save yourself some time!",
+      "author": "Zach Bryant",
+      "authorImage": "../board member photos/webp/Zach-Bryant.webp",
+      "date": "June 29, 2020",
+      "category": "meta",
+      "markdownFile": "wiki posts/searching-our-wiki.md"
+    },
+    {
+      "title": "What is USB?",
+      "subtitle": "Established in 1999, The Computer Science Undergraduate Student Board is dedicated to improving the student experience within Computer and Data Sciences at Purdue",
+      "author": "USB Board",
+      "authorImage": "../board member photos/webp/None.webp",
+      "date": "2020",
+      "category": "clubs",
+      "markdownFile": "wiki posts/joining-usb.md"
+    },
+    {
+      "title": "Contribute to the Wiki",
+      "subtitle": "Add or edit an article on the Student Wiki",
+      "author": "Noah Alderton",
+      "authorImage": "../board member photos/webp/Noah-Alderton.webp",
+      "date": "October 28, 2020",
+      "category": "campus",
+      "markdownFile": "wiki posts/make-article.md"
+    },
+    {
+      "title": "Fun/Interesting Classes at Purdue",
+      "subtitle": "Take a break from your required classes!",
+      "author": "Lauren Lum",
+      "authorImage": "../board member photos/webp/Lauren-Lum.webp",
+      "date": "November 3, 2020",
+      "category": "curriculum",
+      "markdownFile": "wiki posts/fun-courses.md"
+    },
+    {
+      "title": "Connecting to PAL3.0 on Linux",
+      "subtitle": "Access campus-only resources from anywhere!",
+      "author": "Chris Xiao",
+      "authorImage": "../board member photos/webp/Chris-Xiao.webp",
+      "date": "November 21, 2020",
+      "category": "campus, technical",
+      "markdownFile": "wiki posts/connect-pal3.0-linux.md"
+    },
+    {
+      "title": "Github Pages Guide",
+      "subtitle": "Create a personal website hosted and deployed by Github!",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "February 28, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/gh-pages.md"
+    },
+    {
+      "title": "Terminal Cheatsheet",
+      "subtitle": "Learn some important UNIX commands",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "March 14, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/terminal-cheatsheet.md"
+    },
+    {
+      "title": "Using Terminal",
+      "subtitle": "Learn how to efficiently use terminal",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "March 14, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/terminal.md"
+    },
+    {
+      "title": "Cloning a Github Repository With Intellij",
+      "subtitle": "Learn how to use IntelliJ to clone a git repository and track your changes",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "March 26, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/git-and-intellij.md"
+    },
+    {
+      "title": "Git Guide",
+      "subtitle": "Get good with the git guide",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "March 26, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/git-intro.md"
+    },
+    {
+      "title": "LaTeX Guide",
+      "subtitle": "Learn important LaTeX commands",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "March 26, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/latex-guide.md"
+    },
+    {
+      "title": "Getting Started with LaTeX",
+      "subtitle": "Learn how to get started with LaTeX and Overleaf",
+      "author": "CS193 Team",
+      "authorImage": "../board member photos/webp/CS193-Team.webp",
+      "date": "March 26, 2021",
+      "category": "technical",
+      "markdownFile": "wiki posts/latex-start.md"
+    },
+    {
+      "title": "It's Spring Semester – What Do I Do With My Summer?",
+      "subtitle": "Looking last minute for a summer opportunity?",
+      "author": "Sarah Thomas/USB",
+      "authorImage": "../board member photos/webp/Sarah-Thomas.webp",
+      "date": "April 27, 2022",
+      "category": "research, internship",
+      "markdownFile": "wiki posts/summer-plans.md"
+    },
+    {
+      "title": "USB's Current Constitution",
+      "subtitle": "USB's Constitution",
+      "author": "Cindy Ding",
+      "authorImage": "../board member photos/webp/Cindy-Ding.webp",
+      "date": "May 25, 2022",
+      "category": "campus",
+      "markdownFile": "wiki posts/usb-constitution.md"
+    },
+    {
+      "title": "CS Course Reflections",
+      "subtitle": "Past students' feedback on CS courses at Purdue",
+      "author": "Caleb Ahn",
+      "authorImage": "../board member photos/webp/Caleb-Ahn.webp",
+      "date": "June 1, 2022",
+      "category": "campus",
+      "markdownFile": "wiki posts/cs-course-reflections.md"
+    },
+    {
+      "title": "Help Room Information",
+      "subtitle": "Extra help for CS 180, CS 182, CS 240",
+      "author": "Philip Liu",
+      "authorImage": "../board member photos/webp/Philip-Liu.webp",
+      "date": "September 9, 2025",
+      "category": "tutor",
+      "markdownFile": "wiki posts/help-room.md"
+    }
+  ]
+}

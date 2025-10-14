@@ -1,0 +1,94 @@
+{
+  "blogPosts": [
+    {
+      "title": "Considering Graduate School at Purdue?",
+      "subtitle": "If you are considering graduate school at Purdue, here are some incentives to apply.",
+      "author": "Pinaki Mohanty",
+      "authorImage": "/Board Member Photos/png/Pinaki-Mohanty.png",
+      "date": "May 27, 2022",
+      "category": "belonging",
+      "markdownFile": "blog posts/2022-05-27-gradschool.md"
+    },
+    {
+      "title": "Purdue Technical Projects",
+      "subtitle": "Struggling to start personal projects, we can help.",
+      "author": "Sarah Pushparaj",
+      "authorImage": "../board member photos/webp/Sarah-Pushparaj.webp",
+      "date": "May 24, 2022",
+      "category": "TechnicalProjects",
+      "markdownFile": "blog posts/2022-05-24-technicalprojects.md"
+    },
+    {
+      "title": "Balancing CS and Exercise",
+      "subtitle": "Health and Fitness @ Purdue",
+      "author": "Weiyi Tan",
+      "authorImage": "../board member photos/webp/Weiyi-Tan.webp",
+      "date": "April 18, 2022",
+      "category": "exercise",
+      "markdownFile": "blog posts/2022-04-18-csexercise.md"
+    },
+    {
+      "title": "Interested in Degree+?",
+      "subtitle": "Taking languages classes unlocked a different perspective",
+      "author": "Emily Hao",
+      "authorImage": "../board member photos/webp/Emily-Hao.webp",
+      "date": "April 16, 2022",
+      "category": "Degree+",
+      "markdownFile": "blog posts/2022-04-16-degreeplus.md"
+    },
+    {
+      "title": "Keys for Success in CS180",
+      "subtitle": "CS180 is a Purdue CS rite of passage, but with these tips, you can get through!",
+      "author": "Christopher Lehman",
+      "authorImage": "../board member photos/webp/Christopher-Lehman.webp",
+      "date": "April 16, 2022",
+      "category": "FreshmanYear, CS180",
+      "markdownFile": "blog posts/2022-04-16-CS180.md"
+    },
+    {
+      "title": "One Thing I Learned From My Freshman Year",
+      "subtitle": "Freshman year taught me to how to find balance between school and my social life",
+      "author": "Jillian Urgello",
+      "authorImage": "../board member photos/webp/Jillian-Urgello.webp",
+      "date": "April 15, 2022",
+      "category": "FreshmanYear",
+      "markdownFile": "blog posts/2022-04-15-freshmanyear.md"
+    },
+    {
+      "title": "Navigating My Freshman Year",
+      "subtitle": "Navigating my Freshman Year comes with its own set of challenges, but with the help of clubs and friends, I was able to find a home at Purdue",
+      "author": "Sweta Saravanan",
+      "authorImage": "../board member photos/webp/Sweta-Saravanan.webp",
+      "date": "April 6, 2022",
+      "category": "FreshmanYear",
+      "markdownFile": "blog posts/2022-04-06-freshmanyear.md"
+    },
+    {
+      "title": "My Experience as a First-Generation and Low-Income Student at Purdue",
+      "subtitle": "The financial aid process isn't the easiest to navigate, but here are some tips for students with a similar background as me.",
+      "author": "Arianna Smith",
+      "authorImage": "../board member photos/webp/Arianna-Smith.webp",
+      "date": "April 6, 2022",
+      "category": "FirstGen, belonging",
+      "markdownFile": "blog posts/2022-04-06-firstgen.md"
+    },
+    {
+      "title": "Getting Started in Computer Science Research as an Undergraduate",
+      "subtitle": "Research in the CS department isn't the easiest to get involved in, but here we answer some common questions.",
+      "author": "Simran Kadadi",
+      "authorImage": "../board member photos/webp/Simran-Kadadi.webp",
+      "date": "March 23, 2022",
+      "category": "Research",
+      "markdownFile": "blog posts/2022-03-23-research.md"
+    },
+    {
+      "title": "Do I Belong?",
+      "subtitle": "Self doubt: it plagues us all",
+      "author": "Vindhya Banda",
+      "authorImage": "../board member photos/webp/Vindhya-Banda.webp",
+      "date": "March 8, 2022",
+      "category": "belonging",
+      "markdownFile": "blog posts/2022-03-08-youbelong.md"
+    }
+  ]
+}
