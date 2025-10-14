@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 // Get the base path for GitHub Pages
 const getBasePath = () => {
-  return '';
+  return '/USB-Website-Revamp';
 };
 
 export default function Homepage() {
