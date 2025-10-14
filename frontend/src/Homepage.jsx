@@ -4,6 +4,14 @@ import { BookOpen, Compass, ChevronLeft, ChevronRight, Send, ChevronDown, Chevro
 import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+// Get the base path for GitHub Pages
+const getBasePath = () => {
+  if (process.env.NODE_ENV === 'production') {
+    return '/USB-Website-Revamp';
+  }
+  return '';
+};
+
 export default function Homepage() {
   const [instagramPosts, setInstagramPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,7 +34,7 @@ export default function Homepage() {
         }
       } catch {}
       try {
-        const apiRes = await fetch('/Instagram Posts/insta_posts.json', { cache: 'no-store' });
+        const apiRes = await fetch(`${getBasePath()}/Instagram Posts/insta_posts.json`, { cache: 'no-store' });
         if (!apiRes.ok) throw new Error(`HTTP ${apiRes.status}`);
         const posts = await apiRes.json();
         const firstSixImages = Array.isArray(posts) ? posts.filter(p => !!p?.imageUrl).slice(0, 6) : [];
@@ -116,7 +124,7 @@ export default function Homepage() {
   useEffect(() => {
     const loadBoard = async () => {
       try {
-        const res = await fetch('/Board Member Photos/board-members.json');
+        const res = await fetch(`${getBasePath()}/Board Member Photos/board-members.json`);
         const data = await res.json();
         const members = Array.isArray(data?.members) ? data.members : [];
         const alumni = Array.isArray(data?.alumni) ? data.alumni : [];
@@ -136,7 +144,7 @@ export default function Homepage() {
   useEffect(() => {
     if (!boardMembers || boardMembers.length === 0) return;
     boardMembers.forEach((m) => {
-      const src = `/Board Member Photos/${m.photo}`;
+      const src = `${getBasePath()}/Board Member Photos/${m.photo}`;
       const img = new Image();
       img.decoding = 'async';
       img.loading = 'eager';
@@ -148,7 +156,7 @@ export default function Homepage() {
     if (!boardMembers || boardMembers.length === 0) return;
     const head = document.head;
     const links = boardMembers.map((m) => {
-      const href = `/Board Member Photos/${m.photo}`;
+      const href = `${getBasePath()}/Board Member Photos/${m.photo}`;
       const l = document.createElement('link');
       l.rel = 'preload';
       l.as = 'image';
@@ -163,7 +171,7 @@ export default function Homepage() {
   useEffect(() => {
     if (!alumniMembers || alumniMembers.length === 0) return;
     alumniMembers.forEach((m) => {
-      const src = `/Board Member Photos/${m.photo}`;
+      const src = `${getBasePath()}/Board Member Photos/${m.photo}`;
       const img = new Image();
       img.decoding = 'async';
       img.loading = 'eager';
@@ -171,7 +179,7 @@ export default function Homepage() {
     });
     const head = document.head;
     const links = alumniMembers.map((m) => {
-      const href = `/Board Member Photos/${m.photo}`;
+      const href = `${getBasePath()}/Board Member Photos/${m.photo}`;
       const l = document.createElement('link');
       l.rel = 'preload';
       l.as = 'image';
@@ -187,7 +195,7 @@ export default function Homepage() {
   useEffect(() => {
     const loadInitiatives = async () => {
       try {
-        const res = await fetch('/initiatives/initiatives.json');
+        const res = await fetch(`${getBasePath()}/initiatives/initiatives.json`);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const data = await res.json();
         if (Array.isArray(data)) {
@@ -338,7 +346,7 @@ export default function Homepage() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
               <div className="flex-shrink-0 lg:w-1/2">
                 <img
-                    src="/USB Group photo/usb_group_2024.webp"
+                    src={`${getBasePath()}/USB Group photo/usb_group_2024.webp`}
                     alt="USB Group Photo 2024"
                     className="w-full max-w-3xl rounded-lg shadow-2xl"
                 />
@@ -356,14 +364,14 @@ export default function Homepage() {
                   <div className="flex gap-4">
                     <a href="https://www.instagram.com/purdueusb" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity duration-200">
                       <img
-                          src="/Logos & Icons/social media logos/instagram.svg"
+                          src={`${getBasePath()}/Logos & Icons/social media logos/instagram.svg`}
                           alt="Instagram"
                           className="w-12 h-12"
                       />
                     </a>
                     <a href="https://github.com/Purdue-CSUSB" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity duration-200">
                       <img
-                          src="/Logos & Icons/social media logos/github.svg"
+                          src={`${getBasePath()}/Logos & Icons/social media logos/github.svg`}
                           alt="GitHub"
                           className="w-12 h-12"
                       />
@@ -440,7 +448,7 @@ export default function Homepage() {
                   <div className="flex-1 text-center">
                     <div className="w-20 h-20 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
                       <img
-                          src="/Logos & Icons/about us logos/hands.svg"
+                          src={`${getBasePath()}/Logos & Icons/about us logos/hands.svg`}
                           alt="Advocacy"
                           className="w-10 h-10"
                       />
@@ -456,7 +464,7 @@ export default function Homepage() {
                   <div className="flex-1 text-center">
                     <div className="w-20 h-20 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
                       <img
-                          src="/Logos & Icons/about us logos/care.svg"
+                          src={`${getBasePath()}/Logos & Icons/about us logos/care.svg`}
                           alt="Events"
                           className="w-10 h-10"
                       />
@@ -472,7 +480,7 @@ export default function Homepage() {
                   <div className="flex-1 text-center">
                     <div className="w-20 h-20 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
                       <img
-                          src="/Logos & Icons/about us logos/chart.svg"
+                          src={`${getBasePath()}/Logos & Icons/about us logos/chart.svg`}
                           alt="Resources"
                           className="w-10 h-10"
                       />
@@ -552,7 +560,7 @@ export default function Homepage() {
                             <div className="flex items-center justify-between px-4 py-3">
                               <div className="flex items-center gap-3">
                                 <div className="w-8 h-8 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
-                                  <img src="/Logos & Icons/usb logos/USB_Icon_Black_Gold_Small.webp" alt="purdueusb" className="w-6 h-6 object-contain" />
+                                  <img src={`${getBasePath()}/Logos & Icons/usb logos/USB_Icon_Black_Gold_Small.webp`} alt="purdueusb" className="w-6 h-6 object-contain" />
                                 </div>
                                 <div className="leading-tight">
                                   <p className="text-sm font-montserrat font-bold" style={{ color: '#111827' }}>purdueusb</p>
@@ -581,7 +589,7 @@ export default function Homepage() {
                                   <div className="text-center">
                                     <div className="w-16 h-16 mx-auto mb-2 bg-gray-300 rounded-full flex items-center justify-center">
                                       <img
-                                          src="/Logos & Icons/social media logos/instagram.svg"
+                                          src={`${getBasePath()}/Logos & Icons/social media logos/instagram.svg`}
                                           alt="Instagram"
                                           className="w-8 h-8"
                                       />
@@ -661,11 +669,11 @@ export default function Homepage() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
               {boardMembers.map((m, idx) => {
-                const photoSrc = `/Board Member Photos/${m.photo}`;
+                const photoSrc = `${getBasePath()}/Board Member Photos/${m.photo}`;
                 const card = (
                     <div key={`${m.name}-${idx}`} className="group flex flex-col items-center text-center">
                       <div className="relative w-44 h-44 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg transition-transform duration-100 ease-out group-hover:scale-105" style={{ willChange: 'transform' }}>
-                        <img src={photoSrc} alt={m.name} className="w-full h-full object-cover will-change-auto" loading="eager" decoding="async" fetchpriority="high" width="512" height="512" onError={(e) => { e.currentTarget.src = '/Board Member Photos/png/None.png'; }} />
+                        <img src={photoSrc} alt={m.name} className="w-full h-full object-cover will-change-auto" loading="eager" decoding="async" fetchpriority="high" width="512" height="512" onError={(e) => { e.currentTarget.src = `${getBasePath()}/Board Member Photos/png/None.png`; }} />
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out bg-black/30 px-4 text-center" style={{ willChange: 'opacity' }}>
                           <div className="space-y-1">
                             <p className="font-montserrat font-bold text-white text-lg leading-snug">{m.name}</p>
@@ -715,11 +723,11 @@ export default function Homepage() {
               {showAlumni && (
                   <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
                     {alumniMembers.map((m, idx) => {
-                      const photoSrc = `/Board Member Photos/${m.photo}`;
+                      const photoSrc = `${getBasePath()}/Board Member Photos/${m.photo}`;
                       const card = (
                           <div key={`${m.name}-${idx}`} className="group flex flex-col items-center text-center">
                             <div className="relative w-44 h-44 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-md transition-transform duration-100 ease-out group-hover:scale-105" style={{ willChange: 'transform' }}>
-                              <img src={photoSrc} alt={m.name} className="w-full h-full object-cover will-change-auto" loading="eager" decoding="async" width="512" height="512" onError={(e) => { e.currentTarget.src = '/Board Member Photos/png/None.png'; }} />
+                              <img src={photoSrc} alt={m.name} className="w-full h-full object-cover will-change-auto" loading="eager" decoding="async" width="512" height="512" onError={(e) => { e.currentTarget.src = `${getBasePath()}/Board Member Photos/png/None.png`; }} />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out bg-black/30 px-4 text-center" style={{ willChange: 'opacity' }}>
                                 <div className="space-y-1">
                                   <p className="font-montserrat font-bold text-white text-lg leading-snug">{m.name}</p>
@@ -770,7 +778,7 @@ export default function Homepage() {
                       whileTap={{ scale: 1.02 }}
                   >
                     <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden flex items-center justify-center" style={{ backgroundColor: '#333333FF' }}>
-                      <img src="/Logos & Icons/usb logos/USB_Icon_Black_Gold_Small.webp" alt="USB Icon" className="w-12 h-12" />
+                      <img src={`${getBasePath()}/Logos & Icons/usb logos/USB_Icon_Black_Gold_Small.webp`} alt="USB Icon" className="w-12 h-12" />
                     </div>
                     <div className="flex-1">
                       <div className="relative">
