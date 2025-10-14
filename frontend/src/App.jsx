@@ -10,11 +10,9 @@ import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
-  // Use HashRouter for GitHub Pages compatibility
-  const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
-  
+  // Use BrowserRouter with basename for GitHub Pages compatibility
   return (
-    <Router>
+    <BrowserRouter basename="/USB-Website-Revamp">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/initiatives/blog" element={<BlogList />} />
@@ -25,7 +23,7 @@ function App() {
         <Route path="/student-wiki/:slug" element={<StudentWikiPost />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 

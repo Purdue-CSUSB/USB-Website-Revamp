@@ -6,9 +6,6 @@ import { Link } from 'react-router-dom';
 
 // Get the base path for GitHub Pages
 const getBasePath = () => {
-  if (process.env.NODE_ENV === 'production') {
-    return '/USB-Website-Revamp';
-  }
   return '';
 };
 

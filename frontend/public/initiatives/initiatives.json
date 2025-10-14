@@ -11,7 +11,7 @@
   {
     "title": "Club Hub",
     "description": "Club Hub aims to connect the different computing related clubs and organizations within Purdue's CS department and at Purdue as a whole. At the beginning of each semester, this initiative facilitates a CS Club Fair for students to find out about these different organizations and how to get involved.",
-    "link": "/initiatives/club-hub"
+    "link": "/USB-Website-Revamp/initiatives/club-hub"
   },
   {
     "title": "CS193",
@@ -31,7 +31,8 @@
   },
   {
     "title": "Purdue Technical Projects",
-    "description": "USB provides a space for students to collaborate on and promote their Purdue-related technical projects. This initiative connects students with meaningful projects, highlights creativity, and promotes the versatile, interdisciplinary nature of coding."
+    "description": "USB provides a space for students to collaborate on and promote their Purdue-related technical projects. This initiative connects students with meaningful projects, highlights creativity, and promotes the versatile, interdisciplinary nature of coding.",
+    "link": "https://purdue-csusb.github.io/Purdue-Technical-Projects/"
   },
   {
     "title": "Panels",
@@ -40,7 +41,7 @@
   {
     "title": "Research Resources",
     "description": "Although there are many research opportunities available to students at Purdue, getting started can be difficult or intimidating. This initiative makes the process easier—from reaching out to professors to presenting your work—and provides a consolidated list of projects seeking CS/DS/AI students.",
-    "link": "https://purdue-csusb.github.io/Purdue-USB-Research-Resources-Website/"
+    "link": "https://purdue-csusb.github.io/Research-Resources/"
   },
   {
     "title": "Social Wellness",
