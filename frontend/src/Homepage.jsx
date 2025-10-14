@@ -330,8 +330,8 @@ export default function Homepage() {
   };
 
   return (
-      <div className="min-h-screen bg-white">
-        <Navbar />
+        <div className="min-h-screen bg-white">
+          <Navbar />
 
         <section className="py-16 px-8" style={{ backgroundColor: '#333333FF' }}>
           <div className="w-full">

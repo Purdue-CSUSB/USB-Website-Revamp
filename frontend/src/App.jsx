@@ -6,12 +6,15 @@ import StudentWikiPost from './StudentWiki/StudentWikiPost'
 import InitiativesIndex from './Initiatives/Index'
 import ClubHub from './Initiatives/ClubHub/ClubHub'
 import Contact from './Contact/Contact'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
 function App() {
+  // Use HashRouter for GitHub Pages compatibility
+  const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
+  
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/initiatives/blog" element={<BlogList />} />
@@ -22,7 +25,7 @@ function App() {
         <Route path="/student-wiki/:slug" element={<StudentWikiPost />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
