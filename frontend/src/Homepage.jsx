@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import Navbar from './Components/Navbar';
+import Navbar from './Components/Navbar.jsx';
 import { BookOpen, Compass, ChevronLeft, ChevronRight, Send, ChevronDown, ChevronUp, Heart, MessageCircle, Bookmark, MoreHorizontal } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
+import Navbar from '../Components/Navbar.jsx';
 
 export default function Contact() {
   useEffect(() => {
