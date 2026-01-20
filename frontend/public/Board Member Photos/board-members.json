@@ -5,7 +5,7 @@
       "title": "President",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Maria-Molina.webp"
+      "photo": "png/Maria-Molina.png"
     },
     {
       "name": "Shruti Sharma",
@@ -17,9 +17,9 @@
     {
       "name": "Tristan Sze",
       "title": "Treasurer",
-      "class": "Senior",
+      "class": "Junior",
       "site": "",
-      "photo": "webp/Tristan-Sze.webp"
+      "photo": "png/Tristan-Sze.png"
     },
     {
       "name": "Chris McLoughlin",
