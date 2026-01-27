@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../../Components/Navbar.jsx';
+import Footer from '../../Components/Footer.jsx';
 import { motion } from 'framer-motion';
 
 // Get the base path for assets
@@ -184,6 +185,7 @@ export default function SocialWellness() {
           </motion.div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

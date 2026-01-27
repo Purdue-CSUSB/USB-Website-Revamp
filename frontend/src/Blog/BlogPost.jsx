@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import Navbar from '../Components/Navbar.jsx';
+import Footer from '../Components/Footer.jsx';
 import { motion } from 'framer-motion';
 
 // Get the base path for assets
@@ -168,6 +169,7 @@ export default function BlogPost() {
           )}
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

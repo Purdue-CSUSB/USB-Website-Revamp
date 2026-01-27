@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Navbar from '../Components/Navbar.jsx';
+import Footer from '../Components/Footer.jsx';
 import { motion } from 'framer-motion';
 
 export default function Contact() {
@@ -156,8 +157,7 @@ export default function Contact() {
           </motion.form>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
-
-

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar.jsx';
+import Footer from '../Components/Footer.jsx';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
@@ -138,6 +139,7 @@ export default function InitiativesIndex() {
             )}
           </div>
         </section>
+        <Footer />
       </div>
   );
 }

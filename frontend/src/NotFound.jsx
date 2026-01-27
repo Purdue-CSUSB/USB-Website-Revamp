@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Home, ArrowLeft, Search } from 'lucide-react';
 import Navbar from './Components/Navbar.jsx';
+import Footer from './Components/Footer.jsx';
 
 export default function NotFound() {
   return (
@@ -151,7 +152,7 @@ export default function NotFound() {
           </motion.div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
-

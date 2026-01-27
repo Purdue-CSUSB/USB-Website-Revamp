@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Components/Navbar.jsx';
+import Footer from '../Components/Footer.jsx';
 import { motion } from 'framer-motion';
 
 // Get the base path for assets
@@ -142,6 +143,7 @@ export default function BlogList() {
           )}
           </div>
         </section>
+        <Footer />
       </div>
     </div>
   );

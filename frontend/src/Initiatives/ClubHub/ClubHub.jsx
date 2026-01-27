@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../Components/Navbar.jsx';
+import Footer from '../../Components/Footer.jsx';
 import { motion } from 'framer-motion';
 
 // Get the base path for assets
@@ -186,6 +187,7 @@ export default function ClubHub() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

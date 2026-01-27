@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar.jsx';
+import Footer from '../Components/Footer.jsx';
 import { Search } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -434,6 +435,7 @@ export default function StudentWikiList() {
           )}
         </div>
       </section>
+      <Footer />
     </div>
   );
 }
