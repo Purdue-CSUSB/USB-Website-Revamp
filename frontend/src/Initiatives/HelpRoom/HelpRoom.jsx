@@ -111,6 +111,17 @@ const taSchedule = [
       { day: 4, startHour: 18, endHour: 20, type: "virtual" },
     ]
   },
+  {
+    name: "Arnav Daryani",
+    email: "adaryan@purdue.edu",
+    courses: ["CS180", "CS182", "CS240"],
+    zoomLink: "https://purdue-edu.zoom.us/j/6460957285",
+    schedule: [
+      { day: 1, startHour: 12, endHour: 14, type: "virtual" },
+      { day: 2, startHour: 19, endHour: 21, type: "virtual" },
+      { day: 4, startHour: 19, endHour: 21, type: "virtual" },
+    ]
+  },
 ];
 
 // Helper function to get available TAs for a specific day and hour
@@ -274,56 +285,11 @@ export default function HelpRoom() {
             </motion.div>
           </motion.div>
 
-          {/* Apply to be a TA Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.25, delay: 0.09 }}
-            className="mb-12 text-center py-8 px-8 rounded-2xl"
-            style={{ backgroundColor: '#FFCA44FF' }}
-          >
-            <h2 className="font-montserrat text-3xl font-bold mb-4" style={{ color: '#333333FF' }}>
-              Interested in becoming a Help Room TA?
-            </h2>
-            <p className="font-raleway text-base mb-6 max-w-2xl mx-auto" style={{ color: '#333333FF' }}>
-              Join our team of tutors and help fellow students succeed! Apply through BoilerHire towards the end of each semester to become a Help Room Teaching Assistant.
-            </p>
-            <motion.a
-              whileHover={{ scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0,0,0,0.2), 0 4px 6px -2px rgba(0,0,0,0.1)' }}
-              whileTap={{ scale: 0.98 }}
-              transition={{ duration: 0.18, ease: 'easeOut' }}
-              href="https://courses.cs.purdue.edu/boilerhire/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-3 rounded-lg font-raleway font-semibold text-lg"
-              style={{ backgroundColor: '#333333FF', color: '#FFFFFF', willChange: 'transform, box-shadow' }}
-            >
-              Apply on BoilerHire
-            </motion.a>
-          </motion.div>
-
-          {/* Help Room Flyer */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.25, delay: 0.04 }}
-            className="mb-12 flex justify-center"
-          >
-            <motion.img
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.18, ease: 'easeOut' }}
-              src="/Instagram Posts/images/help-room-flyer-2026.png"
-              alt="Help Room Spring 2026 - Now Open!"
-              className="rounded-xl shadow-lg max-w-md w-full"
-              style={{ willChange: 'transform' }}
-            />
-          </motion.div>
-
           {/* Find a TA Section */}
           <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.25, delay: 0.07 }}
+              transition={{ duration: 0.25, delay: 0.05 }}
               className="mb-12"
             >
               <h2 className="font-montserrat text-3xl font-bold mb-6" style={{ color: '#333333FF' }}>
@@ -481,6 +447,57 @@ export default function HelpRoom() {
                 </a>
               </div>
             </motion.div>
+
+          {/* Help Room Flyer */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25, delay: 0.04 }}
+            className="mb-12 flex justify-center"
+          >
+            <motion.img
+              whileHover={{ scale: 1.02 }}
+              transition={{ duration: 0.18, ease: 'easeOut' }}
+              src="/Instagram Posts/images/help-room-flyer-2026.png"
+              alt="Help Room Spring 2026 - Now Open!"
+              className="rounded-xl shadow-lg max-w-md w-full"
+              style={{ willChange: 'transform' }}
+            />
+          </motion.div>
+
+          {/* Apply to BoilerHire Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25, delay: 0.08 }}
+            className="mb-12"
+          >
+            <motion.div
+              whileHover={{ scale: 1.02, boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)' }}
+              transition={{ duration: 0.18, ease: 'easeOut' }}
+              className="rounded-xl p-8 text-center"
+              style={{ backgroundColor: '#FFCA44FF', willChange: 'transform, box-shadow' }}
+            >
+              <h2 className="font-montserrat text-3xl font-bold mb-4" style={{ color: '#333333FF' }}>
+                Want to Help Out?
+              </h2>
+              <p className="font-raleway text-base mb-6 max-w-2xl mx-auto" style={{ color: '#333333FF' }}>
+                Join our team of TAs through BoilerHire! Help fellow students with their CS coursework while gaining valuable teaching experience.
+              </p>
+              <motion.a
+                whileHover={{ scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0,0,0,0.2), 0 4px 6px -2px rgba(0,0,0,0.1)' }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ duration: 0.18, ease: 'easeOut' }}
+                href="https://purdue.joinhandshake.com/articles/43588"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 rounded-lg font-raleway font-semibold text-lg"
+                style={{ backgroundColor: '#333333FF', color: '#FFFFFF', willChange: 'transform, box-shadow' }}
+              >
+                Apply to BoilerHire
+              </motion.a>
+            </motion.div>
+          </motion.div>
         </div>
       </section>
       <Footer />
