@@ -178,9 +178,6 @@ export default function HelpRoom() {
   const [searchedDay, setSearchedDay] = useState(1);
   const [searchedHour, setSearchedHour] = useState(10);
 
-  // Modal state for Google Form confirmation
-  const [showModal, setShowModal] = useState(false);
-  const [pendingLink, setPendingLink] = useState(null);
   const [hasCheckedIn, setHasCheckedIn] = useState(false);
 
   // Check localStorage on mount
@@ -191,28 +188,16 @@ export default function HelpRoom() {
     }
   }, []);
 
-  const handleTAClick = (ta, type) => {
-    const targetLink = type === 'virtual' ? ta.zoomLink : DSAI_MAPS_LINK;
-
-    if (hasCheckedIn) {
-      // Already checked in, proceed directly
-      window.open(targetLink, '_blank');
-    } else {
-      // Open Google Form first, then show confirmation modal
-      window.open(GOOGLE_FORM_LINK, '_blank');
-      setPendingLink(targetLink);
-      setShowModal(true);
-    }
-  };
-
-  const handleConfirmSubmitted = () => {
+  const handleCheckIn = () => {
+    window.open(GOOGLE_FORM_LINK, '_blank');
     localStorage.setItem(STORAGE_KEY, 'true');
     setHasCheckedIn(true);
-    setShowModal(false);
-    if (pendingLink) {
-      window.open(pendingLink, '_blank');
-    }
-    setPendingLink(null);
+  };
+
+  const handleTAClick = (ta, type) => {
+    if (!hasCheckedIn) return;
+    const targetLink = type === 'virtual' ? ta.zoomLink : DSAI_MAPS_LINK;
+    window.open(targetLink, '_blank');
   };
 
   const handleSearch = () => {
@@ -256,10 +241,10 @@ export default function HelpRoom() {
                     Office Hours
                   </h3>
                   <p className="font-raleway text-base leading-relaxed mb-2" style={{ color: '#333333FF' }}>
-                    <strong>In-Person:</strong> Monday - Thursday, 11:00 am - 2:00 pm
+                    <strong>In-Person:</strong> Monday - Thursday, 11:00am - 2:00pm
                   </p>
                   <p className="font-raleway text-base leading-relaxed mb-2" style={{ color: '#333333FF' }}>
-                    <strong>Virtual:</strong> Monday - Thursday, 10:00 am - 2:00 pm and 6:00 pm - 10:00 pm
+                    <strong>Virtual:</strong> Monday - Thursday, 10:00am - 2:00pm and 6:00pm - 10:00pm
                   </p>
                 </div>
                 <div>
@@ -267,7 +252,10 @@ export default function HelpRoom() {
                     Location
                   </h3>
                   <p className="font-raleway text-base leading-relaxed" style={{ color: '#333333FF' }}>
-                    In-person sessions are held in the DSAI (Data Science and Artificial Intelligence) lobby. If you walk in through the doors from the engineering fountain and look left there should be tables with our TAs. Virtual sessions are conducted via Zoom links provided below.
+                    In-person sessions are held in the DSAI (Data Science and Artificial Intelligence) lobby. If you walk in through the doors from the engineering fountain and look left there should be tables with our TAs.
+                  </p>
+                  <p className="font-raleway text-base leading-relaxed mt-2" style={{ color: '#333333FF' }}>
+                    Virtual sessions are conducted via Zoom links provided below.
                   </p>
                 </div>
               </div>
@@ -276,12 +264,62 @@ export default function HelpRoom() {
                   About Help Room
                 </h3>
                 <p className="font-raleway text-base leading-relaxed" style={{ color: '#333333FF' }}>
-                  We offer additional office hours for CS180, CS182, CS193, and CS240. Help Room's main focus is debugging code and providing tips for completing assignments rather than going over lecture topics. We guide students toward the correct solution in various projects, labs, and homework. Whenever a student walks in we take a look at their code and try giving them a personal explanation on how to solve the problem.
+                  We offer additional office hours for CS180, CS182, CS193, and CS240. Help Room's main focus is debugging code and providing tips for completing assignments rather than going over lecture topics. We guide students toward the correct solution in various projects, labs, and homework. Whenever a student joins one of our sessions we try to give them a personal explanation on how to solve the problem.
                 </p>
                 <p className="font-raleway text-base leading-relaxed mt-4" style={{ color: '#333333FF' }}>
                   If you have any questions or concerns, please reach out to Tristan (<a href="mailto:tsze@purdue.edu" className="text-blue-600 hover:text-blue-800 underline">tsze@purdue.edu</a>) and Philip (<a href="mailto:liu3688@purdue.edu" className="text-blue-600 hover:text-blue-800 underline">liu3688@purdue.edu</a>).
                 </p>
               </div>
+            </motion.div>
+          </motion.div>
+
+          {/* Check-In Section */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.25, delay: 0.04 }}
+            className="mb-12"
+          >
+            <motion.div
+              whileHover={{ scale: 1.02, boxShadow: '0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)' }}
+              transition={{ duration: 0.18, ease: 'easeOut' }}
+              className="rounded-xl p-8 text-center"
+              style={{ backgroundColor: hasCheckedIn ? '#D1FAE5' : '#FEF3C7', willChange: 'transform, box-shadow' }}
+            >
+              {hasCheckedIn ? (
+                <>
+                  <div className="flex items-center justify-center gap-2 mb-2">
+                    <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <h2 className="font-montserrat text-2xl font-bold" style={{ color: '#065F46' }}>
+                      You're Checked In
+                    </h2>
+                  </div>
+                  <p className="font-raleway text-base" style={{ color: '#065F46' }}>
+                    You can now join any available TA session below.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <h2 className="font-montserrat text-2xl font-bold mb-3" style={{ color: '#333333FF' }}>
+                    Check In Before Joining
+                  </h2>
+                  <p className="font-raleway text-base mb-5" style={{ color: '#333333FF' }}>
+                    Please check in by filling out a quick Google Form before joining a TA session. This helps us track attendance and improve our operations.
+                  </p>
+                  <motion.button
+                    whileHover={{ scale: 1.05, boxShadow: '0 10px 15px -3px rgba(0,0,0,0.2), 0 4px 6px -2px rgba(0,0,0,0.1)' }}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ duration: 0.18, ease: 'easeOut' }}
+                    onClick={handleCheckIn}
+                    className="inline-block px-8 py-3 rounded-lg font-raleway font-semibold text-lg"
+                    style={{ backgroundColor: '#FFCA44FF', color: '#333333FF', willChange: 'transform, box-shadow' }}
+                  >
+                    Check In Now
+                  </motion.button>
+                </>
+              )}
             </motion.div>
           </motion.div>
 
@@ -394,29 +432,33 @@ export default function HelpRoom() {
                         {/* Virtual or In-Person Badge */}
                         {ta.currentType === 'virtual' ? (
                           <motion.button
-                            whileHover={{ scale: 1.03 }}
-                            whileTap={{ scale: 0.98 }}
+                            whileHover={hasCheckedIn ? { scale: 1.03 } : {}}
+                            whileTap={hasCheckedIn ? { scale: 0.98 } : {}}
                             onClick={() => handleTAClick(ta, 'virtual')}
-                            className="inline-flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg font-raleway font-semibold text-sm cursor-pointer"
+                            disabled={!hasCheckedIn}
+                            className={`inline-flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg font-raleway font-semibold text-sm ${hasCheckedIn ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
                             style={{ backgroundColor: '#2D8CFF', color: '#FFFFFF' }}
+                            title={!hasCheckedIn ? 'Please check in first' : ''}
                           >
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm16 3.5v7l4-3.5-4-3.5z"/>
                             </svg>
-                            Virtual - Join Zoom
+                            {hasCheckedIn ? 'Virtual - Join Zoom' : 'Check in to join'}
                           </motion.button>
                         ) : (
                           <motion.button
-                            whileHover={{ scale: 1.03 }}
-                            whileTap={{ scale: 0.98 }}
+                            whileHover={hasCheckedIn ? { scale: 1.03 } : {}}
+                            whileTap={hasCheckedIn ? { scale: 0.98 } : {}}
                             onClick={() => handleTAClick(ta, 'in-person')}
-                            className="inline-flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg font-raleway font-semibold text-sm cursor-pointer"
+                            disabled={!hasCheckedIn}
+                            className={`inline-flex items-center gap-2 w-full justify-center px-4 py-2 rounded-lg font-raleway font-semibold text-sm ${hasCheckedIn ? 'cursor-pointer' : 'cursor-not-allowed opacity-50'}`}
                             style={{ backgroundColor: '#10B981', color: '#FFFFFF' }}
+                            title={!hasCheckedIn ? 'Please check in first' : ''}
                           >
                             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/>
                             </svg>
-                            In-Person - DSAI Lobby
+                            {hasCheckedIn ? 'In-Person - DSAI Lobby' : 'Check in to join'}
                           </motion.button>
                         )}
                       </motion.div>
@@ -502,44 +544,6 @@ export default function HelpRoom() {
       </section>
       <Footer />
 
-      {/* Google Form Confirmation Modal */}
-      {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.2 }}
-            className="bg-white rounded-xl p-8 max-w-md w-full text-center"
-          >
-            <h2 className="font-montserrat text-2xl font-bold mb-4" style={{ color: '#333333FF' }}>
-              Quick Check-In
-            </h2>
-            <p className="font-raleway text-base mb-6" style={{ color: '#666666' }}>
-              A Google Form has opened in a new tab. Please complete it to help us improve Help Room, then click the button below to continue.
-            </p>
-            <div className="flex flex-col gap-3">
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                onClick={handleConfirmSubmitted}
-                className="w-full px-8 py-3 rounded-lg font-raleway font-semibold text-lg"
-                style={{ backgroundColor: '#FFCA44FF', color: '#333333FF' }}
-              >
-                I've Submitted the Form
-              </motion.button>
-              <button
-                onClick={() => {
-                  setShowModal(false);
-                  setPendingLink(null);
-                }}
-                className="font-raleway text-sm text-gray-500 hover:text-gray-700 underline"
-              >
-                Cancel
-              </button>
-            </div>
-          </motion.div>
-        </div>
-      )}
     </div>
   );
 }
