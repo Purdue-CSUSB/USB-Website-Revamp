@@ -122,6 +122,16 @@ const taSchedule = [
       { day: 4, startHour: 19, endHour: 21, type: "virtual" },
     ]
   },
+  {
+    name: "Charlotte Liu",
+    email: "liu3972@purdue.edu",
+    courses: ["CS180", "CS182", "CS240"],
+    zoomLink: "https://purdue-edu.zoom.us/j/7379702631",
+    schedule: [
+      { day: 1, startHour: 13, endHour: 14, type: "virtual" },
+      { day: 3, startHour: 13, endHour: 14, type: "virtual" },
+    ]
+  }
 ];
 
 // Helper function to get available TAs for a specific day and hour
