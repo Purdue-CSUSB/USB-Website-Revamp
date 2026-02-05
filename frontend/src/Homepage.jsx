@@ -222,53 +222,53 @@ export default function Homepage() {
       <div className="min-h-screen bg-white">
         <Navbar />
 
-        {/* Apply Now Banner - Comment out this section to remove the banner */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3 }}
-          className="w-full pt-6 pb-5 px-8 text-center relative z-10"
-          style={{ backgroundColor: '#87CEEB' }}
-        >
-          <div className="flex flex-row items-center justify-center gap-4 flex-wrap">
-            <p className="font-raleway text-lg lg:text-xl font-semibold" style={{ color: '#000000F2' }}>
-              Want to be a part of USB? Applications are open until January 31st!
-            </p>
-            <motion.div
-              whileHover={{ 
-                scale: 1.05,
-                y: -2,
-                transition: { 
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 17
-                }
-              }}
-              whileTap={{ 
-                scale: 0.98,
-                y: -1
-              }}
-            >
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfREQ9CAZjYXulbVHhJzClDQDReIVz1e556WbubP86_6NyR-w/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group inline-block font-raleway text-lg lg:text-xl font-bold transition-all duration-200 px-4 py-2 rounded-lg"
-                style={{ 
-                  backgroundColor: '#9be6fd',
-                  color: '#000000F2',
-                  willChange: 'transform',
-                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1)'
-                }}
-              >
-                Apply now!
-              </a>
-            </motion.div>
-          </div>
-        </motion.div>
-        {/* End Apply Now Banner */}
+        {/*/!* Apply Now Banner - Comment out this section to remove the banner *!/*/}
+        {/*<motion.div*/}
+        {/*  initial={{ opacity: 0, y: -20 }}*/}
+        {/*  animate={{ opacity: 1, y: 0 }}*/}
+        {/*  transition={{ duration: 0.3 }}*/}
+        {/*  className="w-full pt-6 pb-5 px-8 text-center relative z-10"*/}
+        {/*  style={{ backgroundColor: '#87CEEB' }}*/}
+        {/*>*/}
+        {/*  <div className="flex flex-row items-center justify-center gap-4 flex-wrap">*/}
+        {/*    <p className="font-raleway text-lg lg:text-xl font-semibold" style={{ color: '#000000F2' }}>*/}
+        {/*      Want to be a part of USB? Applications are open until January 31st!*/}
+        {/*    </p>*/}
+        {/*    <motion.div*/}
+        {/*      whileHover={{ */}
+        {/*        scale: 1.05,*/}
+        {/*        y: -2,*/}
+        {/*        transition: { */}
+        {/*          type: "spring",*/}
+        {/*          stiffness: 400,*/}
+        {/*          damping: 17*/}
+        {/*        }*/}
+        {/*      }}*/}
+        {/*      whileTap={{ */}
+        {/*        scale: 0.98,*/}
+        {/*        y: -1*/}
+        {/*      }}*/}
+        {/*    >*/}
+        {/*      <a*/}
+        {/*        href="https://docs.google.com/forms/d/e/1FAIpQLSfREQ9CAZjYXulbVHhJzClDQDReIVz1e556WbubP86_6NyR-w/viewform"*/}
+        {/*        target="_blank"*/}
+        {/*        rel="noopener noreferrer"*/}
+        {/*        className="group inline-block font-raleway text-lg lg:text-xl font-bold transition-all duration-200 px-4 py-2 rounded-lg"*/}
+        {/*        style={{ */}
+        {/*          backgroundColor: '#9be6fd',*/}
+        {/*          color: '#000000F2',*/}
+        {/*          willChange: 'transform',*/}
+        {/*          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.1)'*/}
+        {/*        }}*/}
+        {/*      >*/}
+        {/*        Apply now!*/}
+        {/*      </a>*/}
+        {/*    </motion.div>*/}
+        {/*  </div>*/}
+        {/*</motion.div>*/}
+        {/*/!* End Apply Now Banner *!/*/}
 
-        <section className="py-8 px-8" style={{ backgroundColor: '#333333FF' }}>
+        <section className="py-18 px-8" style={{ backgroundColor: '#333333FF' }}>
           <div className="w-full">
             <div className="flex flex-col lg:flex-row items-center gap-16">
               <motion.div 
