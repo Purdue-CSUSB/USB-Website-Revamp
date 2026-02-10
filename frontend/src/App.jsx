@@ -44,7 +44,7 @@ function App() {
         <Route path="/student-wiki" element={<StudentWiki />} />
         <Route path="/student-wiki/:slug" element={<StudentWikiPost />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/apply" element={<ApplyRedirect />} />
+        {/*<Route path="/apply" element={<ApplyRedirect />} />*/}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
