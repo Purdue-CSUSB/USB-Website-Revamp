@@ -1,6 +1,15 @@
 {
   "blogPosts": [
     {
+      "title": "USB Month in Rewind: February",
+      "subtitle": "A recap of some cool events!",
+      "author": "Paula Ramos Perez",
+      "authorImage": "../board member photos/webp/Paula-Perez.webp",
+      "date": "March 1, 2026",
+      "category": "events",
+      "markdownFile": "blog posts/2026-03-01-febrecap.md"
+    },
+    {
       "title": "Considering Graduate School at Purdue?",
       "subtitle": "If you are considering graduate school at Purdue, here are some incentives to apply.",
       "author": "Pinaki Mohanty",
