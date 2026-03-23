@@ -1,6 +1,15 @@
 {
   "blogPosts": [
     {
+      "title": "Succeeding as a Freshman in CS",
+      "subtitle": "Learning Strategies and Mindset Shifts",
+      "author": "Shruti harma",
+      "authorImage": "../board member photos/webp/Shruti-Sharma.webp",
+      "date": "March 23, 2026",
+      "category": "FreshmanYear",
+      "markdownFile": "blog posts/2026-03-23-freshmanyearadvice.md"
+    },
+    {
       "title": "USB Month in Rewind: February",
       "subtitle": "A recap of some cool events!",
       "author": "Paula Ramos Perez",
