@@ -37,11 +37,11 @@
       "markdownFile": "wiki posts/lawson-fob.md"
     },
     {
-      "title": "SSH Shortcut for Purdue Servers",
-      "subtitle": "Tired of typing data.cs.purdue.edu?",
-      "author": "Jay Hankins",
-      "authorImage": "../board member photos/webp/Jay-Hankins.webp",
-      "date": "May 10, 2020",
+      "title": "Purdue SSH Server Shortcut: Using SSH Key and Setting Up Alias",
+      "subtitle": "Tired of Reaching for Your Phone for Duo Mobile?",
+      "author": "Theo Park",
+      "authorImage": "../board member photos/webp/Theo-Park.webp",
+      "date": "Mar 10, 2026",
       "category": "technical",
       "markdownFile": "wiki posts/ssh-shortcut.md"
     },

@@ -71,20 +71,6 @@
       "photo": "webp/Sravya-Nagalakunta.webp"
     },
     {
-      "name": "Daniel Tian",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Daniel-Tian.webp"
-    },
-    {
-      "name": "Justin Kam",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Justin-Kam.webp"
-    },
-    {
       "name": "Netra Joshi",
       "title": "",
       "class": "Junior",
@@ -160,9 +146,79 @@
       "class": "Sophomore",
       "site": "",
       "photo": "webp/Ryan-Sierra.webp"
+    },
+    {
+      "name": "Emily Li",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "png/Emily-Li.png"
+    },
+    {
+      "name": "Adam Zhang",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Adam-Zhang.png"
+    },
+    {
+      "name": "Deji Solola",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Deji-Solola.png"
+    },
+    {
+      "name": "Hannah Ju",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Hannah-Ju.png"
+    },
+    {
+      "name": "Jack Ruzynski",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Jack-Ruzynski.png"
+    },
+    {
+      "name": "Megan Ragozzino",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Megan-Ragozzino.png"
+    },
+    {
+      "name": "Nakita Ray",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Nakita-Ray.png"
+    },
+    {
+      "name": "Rain Song",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Rain-Song.png"
+    },
+    {
+      "name": "Rishi Bagri",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Rishi-Bagri.png"
     }
   ],
   "alumni": [
+    {
+      "name": "Daniel Tian",
+      "title": "",
+      "class": "2025",
+      "site": "",
+      "photo": "webp/Daniel-Tian.webp"
+    },
     {
       "name": "Emily Hao",
       "title": "Former President",
@@ -423,18 +479,18 @@
       "photo": "webp/Zach-Bryant.webp"
     },
     {
-      "name": "Nirali Rai",
-      "title": "Former Treasurer",
-      "class": "2020",
-      "site": "",
-      "photo": "webp/None.webp"
-    },
-    {
       "name": "Megan Walsh",
       "title": "",
       "class": "2020",
       "site": "",
       "photo": "webp/Megan-Walsh.webp"
+    },
+    {
+      "name": "Nirali Rai",
+      "title": "Former Treasurer",
+      "class": "2020",
+      "site": "",
+      "photo": "webp/None.webp"
     },
     {
       "name": "Kameron Lutes",
