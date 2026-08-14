@@ -593,11 +593,14 @@
       "blurColor": "#7b6f69"
     },
     {
-    "name": "Pinaki Mohanty",
-    "title": "",
-    "class": "2021",
-    "site": "https://pinakirm.github.io/",
-    "photo":  ""
+      "name": "Pinaki Mohanty",
+      "title": "",
+      "class": "2021",
+      "site": "https://pinakirm.github.io/",
+      "photo": "",
+      "srcBase": "/board-photos/None.58414ec1",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e1e1e1"
     },
     {
       "name": "Pallav Agarwal",
