@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "npm --prefix frontend run dev",
     "build": "npm --prefix frontend run build",
-    "vercel-build": "npm --prefix frontend install --no-audit --no-fund && npm --prefix frontend run build",
+    "vercel-build": "npm --prefix frontend install --include=dev --no-audit --no-fund && npm --prefix frontend run build",
     "lint": "npm --prefix frontend run lint",
     "optimize:photos": "npm --prefix frontend run optimize:photos",
     "seed:database": "python3 backend/seed_from_static.py",
