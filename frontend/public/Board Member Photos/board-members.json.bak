@@ -1,49 +1,9 @@
 {
   "members": [
     {
-      "name": "Chris McLoughlin",
+      "name": "Maria Molina",
       "title": "President",
       "class": "Junior",
-      "site": "",
-      "photo": "webp/Chris-McLoughlin.webp",
-      "srcBase": "/board-photos/Chris-McLoughlin.104649fc",
-      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQABAABABsJbACdACJymKtCAD8UDNZehvoCfT6AFZg05WYzr/FfyqxLeE/dnsP5qCgAA==",
-      "blurColor": "#a47037"
-    },
-    {
-      "name": "Paula Perez",
-      "title": "Vice President",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Paula-Perez.webp",
-      "srcBase": "/board-photos/Paula-Perez.e976209b",
-      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBWACPvw7kiqAAA/szMJ92BB96V07gDsaNnXeQKZAvQ7k9rSJHH4YAAAA==",
-      "blurColor": "#58634b"
-    },
-    {
-      "name": "Charlotte Liu",
-      "title": "Treasurer",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Charlotte-Liu.webp",
-      "srcBase": "/board-photos/Charlotte-Liu.1e3e2aa2",
-      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoQABAABABsJZAC7H8AGZKX/+MUAAD+zxDRx13sobgMWJu9/kBRDWlTWanoRUTN0hhRzaWG5fAAAA==",
-      "blurColor": "#6a6b59"
-    },
-    {
-      "name": "Megan Ragozzino",
-      "title": "Secretary",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Megan-Ragozzino.png",
-      "srcBase": "/board-photos/Megan-Ragozzino.70ce2a1f",
-      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQABAABABsJZQCdACqo7YAAP7s1+rxsZ84Nsa8Dtn6gvOQtUWWhH5TQzO9Tk2LBVOAAA==",
-      "blurColor": "#8c847b"
-    },
-    {
-      "name": "Maria Molina",
-      "title": "",
-      "class": "Senior",
       "site": "",
       "photo": "png/Maria-Molina.png",
       "srcBase": "/board-photos/Maria-Molina.49368d46",
@@ -51,211 +11,9 @@
       "blurColor": "#837b75"
     },
     {
-      "name": "Tristan Sze",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "png/Tristan-Sze.png",
-      "srcBase": "/board-photos/Tristan-Sze.a11dd223",
-      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZAC7AC9dJYT4ADJ25GdCZlsufx5REMwxxL8sD4ptw/iDY60+sH/pmAuHAAA",
-      "blurColor": "#665847"
-    },
-    {
-      "name": "Theo Park",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Theo-Park.webp",
-      "srcBase": "/board-photos/Theo-Park.81fbe004",
-      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBdgB3eazCaxAAA+i8Q++02yVrj3pwI5+hE4t34tnzhHnBFqd+OBpCAAA==",
-      "blurColor": "#676c5d"
-    },
-    {
-      "name": "Sravya Nagalakunta",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Sravya-Nagalakunta.webp",
-      "srcBase": "/board-photos/Sravya-Nagalakunta.001234a5",
-      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQABAABABsJQBOgBX5NAAA/tUQ4sHlYt7XF93xrIVFb6W0fjBIv1rerfx1o1eg6WuVamAA",
-      "blurColor": "#728692"
-    },
-    {
-      "name": "Netra Joshi",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Netra-Joshi.webp",
-      "srcBase": "/board-photos/Netra-Joshi.16e39c3e",
-      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAABABsJYwAAp0oFUN3JAAA/K8NPfVLzSyDGUwCqLiHFz+/FD4FEL5cXcmAAAA=",
-      "blurColor": "#7f7d7c"
-    },
-    {
-      "name": "Philip Liu",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Philip-Liu.webp",
-      "srcBase": "/board-photos/Philip-Liu.53461b10",
-      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQABAABABsJQBOj+ACuDniknyAAP7qlaN+3Jas2anNCfzuHqUIrtGU8BNvzRXcF2daQGQDivBbpBMiT/SwAA==",
-      "blurColor": "#86979f"
-    },
-    {
-      "name": "Pranavi Chaganti",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Pranavi-Chaganti.webp",
-      "srcBase": "/board-photos/Pranavi-Chaganti.5f33d068",
-      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoQABAABABsJZQAAuaKEwAA/u3uH3M8nXpQvIJQhuZ5WdPDAbWVZA9ymnJpAX1cAAA=",
-      "blurColor": "#8b8e8d"
-    },
-    {
-      "name": "Anokhi Matta",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Anokhi-Matta.webp",
-      "srcBase": "/board-photos/Anokhi-Matta.61453da9",
-      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQABAABABsJZAC7ACC/Bm2AAD81j8w+8K6iZFYG9nmmj9rBrfkmwbSs6YAAA==",
-      "blurColor": "#6e6946"
-    },
-    {
-      "name": "Madhav Valiaparambil",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Madhav-Valiaparambil.webp",
-      "srcBase": "/board-photos/Madhav-Valiaparambil.53caddc7",
-      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQABAABABsJZwC7AEOecWot4AA/rBT0v9PVZPbstNCYZRYprAAAA==",
-      "blurColor": "#969899"
-    },
-    {
-      "name": "Hanako Keney",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Hanako-Keney.webp",
-      "srcBase": "/board-photos/Hanako-Keney.5d9483ee",
-      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoQABAABABsJbACdABWgP2wAPnqPgpF6Fc4lK3+Na+uCM+ha92akp/Hoa4AAA==",
-      "blurColor": "#6e6d49"
-    },
-    {
-      "name": "Kevin Qu",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Kevin-Qu.webp",
-      "srcBase": "/board-photos/Kevin-Qu.ea4471cd",
-      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQABAABABsJbACdADRkaMRogAA/h3OdKfE3DzT+1/TGrowRx7Trjck0SLgrK+NvaJjVIA9IAA=",
-      "blurColor": "#986152"
-    },
-    {
-      "name": "Anika Thapar",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Anika-Thapar.webp",
-      "srcBase": "/board-photos/Anika-Thapar.32d44265",
-      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQABAABABsJQAAVeWNcyQAAN//WHwUozwBr6E6vUXdhLttBEMkxv2uwdZ9rr+BsQAAAA==",
-      "blurColor": "#7e8582"
-    },
-    {
-      "name": "Ryan Sierra",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "webp/Ryan-Sierra.webp",
-      "srcBase": "/board-photos/Ryan-Sierra.3363ed63",
-      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoQABAABABsJQBOgBTpYZWwAP1NUJqTsP7FjQVP69x2ipFq2sqxhD722WkPqkuaAAA=",
-      "blurColor": "#665443"
-    },
-    {
-      "name": "Emily Li",
-      "title": "",
-      "class": "Junior",
-      "site": "",
-      "photo": "png/Emily-Li.png",
-      "srcBase": "/board-photos/Emily-Li.1067d573",
-      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAABABsJZgCdADsW8J46YAA+ejCVB92xd+u9uR0mG9G7+UxjcNv73KQoTPkAAA=",
-      "blurColor": "#948067"
-    },
-    {
-      "name": "Adam Zhang",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Adam-Zhang.png",
-      "srcBase": "/board-photos/Adam-Zhang.b503ee34",
-      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAABwAQCdASoQABAABABsJYwAAhD0YAD+cWX83fCDVApx8flaBB11wAQK+EpyiCoHOSAAAA==",
-      "blurColor": "#6d6c6d"
-    },
-    {
-      "name": "Deji Solola",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Deji-Solola.png",
-      "srcBase": "/board-photos/Deji-Solola.072c7bda",
-      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQABAABABsJQBOgBPBhfaAAAD9HrHHZuQLr7x8IODuidGMWkQ8t0SL2NZBEkAA",
-      "blurColor": "#665e61"
-    },
-    {
-      "name": "Hannah Ju",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Hannah-Ju.png",
-      "srcBase": "/board-photos/Hannah-Ju.32ff0807",
-      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQABAABABsJYgCdACj6h9jXXmAAP3ZE/MBH0cf2ruH3LoT6msTNKRebYtDQAAA",
-      "blurColor": "#697b65"
-    },
-    {
-      "name": "Jack Ruzynski",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Jack-Ruzynski.png",
-      "srcBase": "/board-photos/Jack-Ruzynski.d856b824",
-      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQABAABABsJQBdgBkvIaKzjzgA/rk+RjaeY+ud3VubS6uAX24vs6NDPm8mGAAA",
-      "blurColor": "#5e6560"
-    },
-    {
-      "name": "Nakita Ray",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Nakita-Ray.png",
-      "srcBase": "/board-photos/Nakita-Ray.22b187bf",
-      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQABAABABsJQBOgCHNHupGwwAA/uw9gSLRlbR9D99NhIjWCmvTQlsECVIT1WYA",
-      "blurColor": "#3e3637"
-    },
-    {
-      "name": "Rain Song",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Rain-Song.png",
-      "srcBase": "/board-photos/Rain-Song.17f225e5",
-      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZQAAbKOekoZAAD+tdSQSA4VGKMdYlI9FTL22BzyGYNT/cOrdY01tRyMehAA",
-      "blurColor": "#908687"
-    },
-    {
-      "name": "Rishi Bagri",
-      "title": "",
-      "class": "Sophomore",
-      "site": "",
-      "photo": "png/Rishi-Bagri.png",
-      "srcBase": "/board-photos/Rishi-Bagri.704331c5",
-      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJQBOgCFEUFLqEgD+XcBNCDpnDLLWhXoMB7q1VLXTCsrlzjVXA+3LvPj2AAAA",
-      "blurColor": "#7f725f"
-    }
-  ],
-  "alumni": [
-    {
       "name": "Shruti Sharma",
-      "title": "Former Vice President",
-      "class": "2026",
+      "title": "Vice President",
+      "class": "Senior",
       "site": "https://www.linkedin.com/in/shruti-sharma-08741223b/",
       "photo": "webp/Shruti-Sharma.webp",
       "srcBase": "/board-photos/Shruti-Sharma.ceaa0a4f",
@@ -263,9 +21,39 @@
       "blurColor": "#99695b"
     },
     {
+      "name": "Tristan Sze",
+      "title": "Treasurer",
+      "class": "Junior",
+      "site": "",
+      "photo": "png/Tristan-Sze.png",
+      "srcBase": "/board-photos/Tristan-Sze.a11dd223",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZAC7AC9dJYT4ADJ25GdCZlsufx5REMwxxL8sD4ptw/iDY60+sH/pmAuHAAA",
+      "blurColor": "#665847"
+    },
+    {
+      "name": "Chris McLoughlin",
+      "title": "Secretary",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Chris-McLoughlin.webp",
+      "srcBase": "/board-photos/Chris-McLoughlin.104649fc",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQABAABABsJbACdACJymKtCAD8UDNZehvoCfT6AFZg05WYzr/FfyqxLeE/dnsP5qCgAA==",
+      "blurColor": "#a47037"
+    },
+    {
+      "name": "Theo Park",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Theo-Park.webp",
+      "srcBase": "/board-photos/Theo-Park.81fbe004",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBdgB3eazCaxAAA+i8Q++02yVrj3pwI5+hE4t34tnzhHnBFqd+OBpCAAA==",
+      "blurColor": "#676c5d"
+    },
+    {
       "name": "Arman Kumar",
       "title": "",
-      "class": "2026",
+      "class": "Senior",
       "site": "https://www.linkedin.com/in/arman-kumar",
       "photo": "webp/Arman-Kumar.webp",
       "srcBase": "/board-photos/Arman-Kumar.a29b3e76",
@@ -275,7 +63,7 @@
     {
       "name": "Ishita Shukla",
       "title": "",
-      "class": "2026",
+      "class": "Senior",
       "site": "",
       "photo": "webp/Ishita-Shukla.webp",
       "srcBase": "/board-photos/Ishita-Shukla.95059b93",
@@ -285,7 +73,7 @@
     {
       "name": "Jagannath Prabhakaran",
       "title": "",
-      "class": "2026",
+      "class": "Senior",
       "site": "https://www.linkedin.com/in/jag-prabhakaran/",
       "photo": "webp/Jagannath-Prabhakaran.webp",
       "srcBase": "/board-photos/Jagannath-Prabhakaran.5367a79b",
@@ -295,13 +83,225 @@
     {
       "name": "Pranav Konda",
       "title": "",
-      "class": "2026",
+      "class": "Senior",
       "site": "",
       "photo": "webp/Pranav-Konda.webp",
       "srcBase": "/board-photos/Pranav-Konda.2d263afd",
       "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQABAABABsJYwCdAEMviF8OtAA1IYZEaurqPOdByZhDmUS7w6wAA==",
       "blurColor": "#867e78"
     },
+    {
+      "name": "Sravya Nagalakunta",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Sravya-Nagalakunta.webp",
+      "srcBase": "/board-photos/Sravya-Nagalakunta.001234a5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQABAABABsJQBOgBX5NAAA/tUQ4sHlYt7XF93xrIVFb6W0fjBIv1rerfx1o1eg6WuVamAA",
+      "blurColor": "#728692"
+    },
+    {
+      "name": "Netra Joshi",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Netra-Joshi.webp",
+      "srcBase": "/board-photos/Netra-Joshi.16e39c3e",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAABABsJYwAAp0oFUN3JAAA/K8NPfVLzSyDGUwCqLiHFz+/FD4FEL5cXcmAAAA=",
+      "blurColor": "#7f7d7c"
+    },
+    {
+      "name": "Paula Perez",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Paula-Perez.webp",
+      "srcBase": "/board-photos/Paula-Perez.e976209b",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBWACPvw7kiqAAA/szMJ92BB96V07gDsaNnXeQKZAvQ7k9rSJHH4YAAAA==",
+      "blurColor": "#58634b"
+    },
+    {
+      "name": "Philip Liu",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Philip-Liu.webp",
+      "srcBase": "/board-photos/Philip-Liu.53461b10",
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQABAABABsJQBOj+ACuDniknyAAP7qlaN+3Jas2anNCfzuHqUIrtGU8BNvzRXcF2daQGQDivBbpBMiT/SwAA==",
+      "blurColor": "#86979f"
+    },
+    {
+      "name": "Pranavi Chaganti",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Pranavi-Chaganti.webp",
+      "srcBase": "/board-photos/Pranavi-Chaganti.5f33d068",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoQABAABABsJZQAAuaKEwAA/u3uH3M8nXpQvIJQhuZ5WdPDAbWVZA9ymnJpAX1cAAA=",
+      "blurColor": "#8b8e8d"
+    },
+    {
+      "name": "Anokhi Matta",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Anokhi-Matta.webp",
+      "srcBase": "/board-photos/Anokhi-Matta.61453da9",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQABAABABsJZAC7ACC/Bm2AAD81j8w+8K6iZFYG9nmmj9rBrfkmwbSs6YAAA==",
+      "blurColor": "#6e6946"
+    },
+    {
+      "name": "Madhav Valiaparambil",
+      "title": "",
+      "class": "Junior",
+      "site": "",
+      "photo": "webp/Madhav-Valiaparambil.webp",
+      "srcBase": "/board-photos/Madhav-Valiaparambil.53caddc7",
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQABAABABsJZwC7AEOecWot4AA/rBT0v9PVZPbstNCYZRYprAAAA==",
+      "blurColor": "#969899"
+    },
+    {
+      "name": "Hanako Keney",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Hanako-Keney.webp",
+      "srcBase": "/board-photos/Hanako-Keney.5d9483ee",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoQABAABABsJbACdABWgP2wAPnqPgpF6Fc4lK3+Na+uCM+ha92akp/Hoa4AAA==",
+      "blurColor": "#6e6d49"
+    },
+    {
+      "name": "Charlotte Liu",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Charlotte-Liu.webp",
+      "srcBase": "/board-photos/Charlotte-Liu.1e3e2aa2",
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoQABAABABsJZAC7H8AGZKX/+MUAAD+zxDRx13sobgMWJu9/kBRDWlTWanoRUTN0hhRzaWG5fAAAA==",
+      "blurColor": "#6a6b59"
+    },
+    {
+      "name": "Kevin Qu",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Kevin-Qu.webp",
+      "srcBase": "/board-photos/Kevin-Qu.ea4471cd",
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQABAABABsJbACdADRkaMRogAA/h3OdKfE3DzT+1/TGrowRx7Trjck0SLgrK+NvaJjVIA9IAA=",
+      "blurColor": "#986152"
+    },
+    {
+      "name": "Anika Thapar",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Anika-Thapar.webp",
+      "srcBase": "/board-photos/Anika-Thapar.32d44265",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQABAABABsJQAAVeWNcyQAAN//WHwUozwBr6E6vUXdhLttBEMkxv2uwdZ9rr+BsQAAAA==",
+      "blurColor": "#7e8582"
+    },
+    {
+      "name": "Ryan Sierra",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "webp/Ryan-Sierra.webp",
+      "srcBase": "/board-photos/Ryan-Sierra.3363ed63",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoQABAABABsJQBOgBTpYZWwAP1NUJqTsP7FjQVP69x2ipFq2sqxhD722WkPqkuaAAA=",
+      "blurColor": "#665443"
+    },
+    {
+      "name": "Emily Li",
+      "title": "",
+      "class": "Sophomore",
+      "site": "",
+      "photo": "png/Emily-Li.png",
+      "srcBase": "/board-photos/Emily-Li.1067d573",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAABABsJZgCdADsW8J46YAA+ejCVB92xd+u9uR0mG9G7+UxjcNv73KQoTPkAAA=",
+      "blurColor": "#948067"
+    },
+    {
+      "name": "Adam Zhang",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Adam-Zhang.png",
+      "srcBase": "/board-photos/Adam-Zhang.b503ee34",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAABwAQCdASoQABAABABsJYwAAhD0YAD+cWX83fCDVApx8flaBB11wAQK+EpyiCoHOSAAAA==",
+      "blurColor": "#6d6c6d"
+    },
+    {
+      "name": "Deji Solola",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Deji-Solola.png",
+      "srcBase": "/board-photos/Deji-Solola.072c7bda",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQABAABABsJQBOgBPBhfaAAAD9HrHHZuQLr7x8IODuidGMWkQ8t0SL2NZBEkAA",
+      "blurColor": "#665e61"
+    },
+    {
+      "name": "Hannah Ju",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Hannah-Ju.png",
+      "srcBase": "/board-photos/Hannah-Ju.32ff0807",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQABAABABsJYgCdACj6h9jXXmAAP3ZE/MBH0cf2ruH3LoT6msTNKRebYtDQAAA",
+      "blurColor": "#697b65"
+    },
+    {
+      "name": "Jack Ruzynski",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Jack-Ruzynski.png",
+      "srcBase": "/board-photos/Jack-Ruzynski.d856b824",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQABAABABsJQBdgBkvIaKzjzgA/rk+RjaeY+ud3VubS6uAX24vs6NDPm8mGAAA",
+      "blurColor": "#5e6560"
+    },
+    {
+      "name": "Megan Ragozzino",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Megan-Ragozzino.png",
+      "srcBase": "/board-photos/Megan-Ragozzino.70ce2a1f",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQABAABABsJZQCdACqo7YAAP7s1+rxsZ84Nsa8Dtn6gvOQtUWWhH5TQzO9Tk2LBVOAAA==",
+      "blurColor": "#8c847b"
+    },
+    {
+      "name": "Nakita Ray",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Nakita-Ray.png",
+      "srcBase": "/board-photos/Nakita-Ray.22b187bf",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQABAABABsJQBOgCHNHupGwwAA/uw9gSLRlbR9D99NhIjWCmvTQlsECVIT1WYA",
+      "blurColor": "#3e3637"
+    },
+    {
+      "name": "Rain Song",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Rain-Song.png",
+      "srcBase": "/board-photos/Rain-Song.17f225e5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZQAAbKOekoZAAD+tdSQSA4VGKMdYlI9FTL22BzyGYNT/cOrdY01tRyMehAA",
+      "blurColor": "#908687"
+    },
+    {
+      "name": "Rishi Bagri",
+      "title": "",
+      "class": "Freshman",
+      "site": "",
+      "photo": "png/Rishi-Bagri.png",
+      "srcBase": "/board-photos/Rishi-Bagri.704331c5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJQBOgCFEUFLqEgD+XcBNCDpnDLLWhXoMB7q1VLXTCsrlzjVXA+3LvPj2AAAA",
+      "blurColor": "#7f725f"
+    }
+  ],
+  "alumni": [
     {
       "name": "Daniel Tian",
       "title": "",

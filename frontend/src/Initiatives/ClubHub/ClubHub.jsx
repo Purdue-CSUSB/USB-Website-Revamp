@@ -161,28 +161,41 @@ export default function ClubHub() {
                   <p className="font-montserrat text-xl mb-2" style={{ color: '#333333FF' }}><b>{c.name}</b></p>
                   <p className="font-raleway text-sm" style={{ color: '#333333FF' }}>{c.description}</p>
                 </div>
-                <div className="md:w-1/3 w-full px-6 py-6 flex md:flex-row flex-row md:items-center items-start gap-4">
-                  <div className="flex md:flex-col flex-row gap-3 md:w-auto w-1/3">
-                    {c.links.map((l, i) => (
-                      <img key={`icon-${i}`} src={iconSrc(l.type)} alt={l.type} style={{ width: 40, height: 'auto' }} onError={(e) => { e.currentTarget.style.display = 'none'; }} />
-                    ))}
-                  </div>
-                  <div className="flex flex-col gap-2">
-                    {c.links.map((l, i) => (
-                      <motion.a 
-                        key={`link-${i}`}
-                        whileHover={{ scale: 1.05, x: 3 }}
-                        transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
-                        href={l.href} 
-                        target={l.href.startsWith('http') ? '_blank' : undefined} 
-                        rel="noopener noreferrer" 
-                        className="font-montserrat underline" 
-                        style={{ color: '#000000F2', willChange: 'transform' }}
-                      >
-                        <b>{l.label}</b>
-                      </motion.a>
-                    ))}
-                  </div>
+                {/*
+                  Each icon lives in the same row as its own label. Rendering the
+                  icons and the labels as two separate columns cannot stay aligned:
+                  the columns have different row heights, so they drift further
+                  apart with every extra link.
+                */}
+                <div className="md:w-1/3 w-full px-6 py-6 flex flex-col justify-center gap-3">
+                  {c.links.map((l, i) => (
+                    <motion.a
+                      key={`link-${i}`}
+                      whileHover={{ scale: 1.02, x: 3 }}
+                      transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
+                      href={l.href}
+                      target={l.href.startsWith('http') ? '_blank' : undefined}
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-4 font-montserrat"
+                      style={{ color: '#000000F2', willChange: 'transform' }}
+                    >
+                      <img
+                        src={iconSrc(l.type)}
+                        // The label already names the destination, so the icon is
+                        // decorative - otherwise it reads as "instagram instagram".
+                        alt=""
+                        aria-hidden="true"
+                        width="40"
+                        height="40"
+                        className="shrink-0 object-contain"
+                        style={{ width: 40, height: 40 }}
+                        // visibility, not display: a missing icon keeps its space
+                        // so the labels stay lined up.
+                        onError={(e) => { e.currentTarget.style.visibility = 'hidden'; }}
+                      />
+                      <b className="underline">{l.label}</b>
+                    </motion.a>
+                  ))}
                 </div>
               </motion.div>
             ))}
