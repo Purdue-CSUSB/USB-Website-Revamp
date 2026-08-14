@@ -37,8 +37,7 @@ const taSchedule = [
     zoomLink: "https://purdue-edu.zoom.us/j/7809742161",
     schedule: [
       { day: 1, startHour: 11, endHour: 14, type: "in-person" },
-      { day: 3, startHour: 12, endHour: 13, type: "in-person" },
-      { day: 4, startHour: 11, endHour: 14, type: "in-person" },
+      { day: 3, startHour: 12, endHour: 13, type: "in-person" }
     ]
   },
   {
@@ -105,7 +104,9 @@ const taSchedule = [
     zoomLink: "https://purdue-edu.zoom.us/j/5267503911",
     schedule: [
       { day: 1, startHour: 18, endHour: 19, type: "virtual" },
-      { day: 2, startHour: 18, endHour: 19, type: "virtual" },
+      { day: 2, startHour: 18, endHour: 20, type: "virtual" },
+      { day: 3, startHour: 18, endHour: 19, type: "virtual" },
+      { day: 4, startHour: 18, endHour: 20, type: "virtual" },
     ]
   },
   {

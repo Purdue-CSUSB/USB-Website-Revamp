@@ -228,7 +228,7 @@ export default function Homepage() {
                   className="text-xl lg:text-2xl font-raleway leading-relaxed mb-8" 
                   style={{ color: '#FFFFFFFF' }}
                 >
-                  The Computer Science Undergraduate Board is dedicated to improving the student experience within Computer and Data Sciences at Purdue- whether by managing CS193, hosting forums for student advocacy, or maintaining a database of undergrad-tailored resources, USB is continually creating initiatives that will uphold our values.
+                  The Computer Science Undergraduate Board is dedicated to improving the student experience for CS/DS/AI students at Purdue - whether by managing CS193, hosting forums for student advocacy, or maintaining a database of undergrad-tailored resources, USB is continually creating initiatives that will uphold our values.
                 </motion.p>
 
                 <motion.div 

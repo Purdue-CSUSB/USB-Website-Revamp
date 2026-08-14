@@ -1,15 +1,6 @@
 {
   "studentWikiPosts": [
     {
-      "title": "How Do I Become an Undergraduate Teaching Assistant?",
-      "subtitle": "Get paid to help students during labs",
-      "author": "Noah Alderton",
-      "authorImage": "../board member photos/webp/Noah-Alderton.webp",
-      "date": "March 4, 2020",
-      "category": "campus",
-      "markdownFile": "wiki posts/become-uta.md"
-    },
-    {
       "title": "How Can I Rent Equipment?",
       "subtitle": "Borrow equipment to tinker with for free",
       "author": "Noah Alderton",
@@ -188,24 +179,6 @@
       "date": "May 25, 2022",
       "category": "campus",
       "markdownFile": "wiki posts/usb-constitution.md"
-    },
-    {
-      "title": "CS Course Reflections",
-      "subtitle": "Past students' feedback on CS courses at Purdue",
-      "author": "Caleb Ahn",
-      "authorImage": "../board member photos/webp/Caleb-Ahn.webp",
-      "date": "June 1, 2022",
-      "category": "campus",
-      "markdownFile": "wiki posts/cs-course-reflections.md"
-    },
-    {
-      "title": "Help Room Information",
-      "subtitle": "Extra help for CS 180, CS 182, CS 240",
-      "author": "Philip Liu",
-      "authorImage": "../board member photos/webp/Philip-Liu.webp",
-      "date": "September 9, 2025",
-      "category": "tutor",
-      "markdownFile": "wiki posts/help-room.md"
     }
   ]
 }

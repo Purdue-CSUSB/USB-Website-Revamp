@@ -1,5 +1,24 @@
 {
   "blogPosts": [
+
+    {
+      "title": "Joining Clubs at Purdue",
+      "subtitle": "Organizations and Extracurriculars at Purdue",
+      "author": "Netra Joshi",
+      "authorImage": "../board member photos/webp/Netra-Joshi.webp",
+      "date": "March 24, 2026",
+      "category": "FreshmanYear",
+      "markdownFile": "blog posts/2026-03-24-clubsatpurdue.md"
+    },
+    {
+      "title": "Succeeding as a Freshman in CS",
+      "subtitle": "Learning Strategies and Mindset Shifts",
+      "author": "Shruti Sharma",
+      "authorImage": "../board member photos/webp/Shruti-Sharma.webp",
+      "date": "March 23, 2026",
+      "category": "FreshmanYear",
+      "markdownFile": "blog posts/2026-03-23-freshmanyearadvice.md"
+    },
     {
       "title": "USB Month in Rewind: February",
       "subtitle": "A recap of some cool events!",
