@@ -1,0 +1,40 @@
+name: Keep Database Awake
+
+# Touches MongoDB once a day so Atlas never reaches its inactivity timeout. The logic lives in
+# backend/keep_database_awake.py (see that file for why this is necessary and why it goes through
+# the public HTTP endpoint rather than a direct database connection).
+#
+# Deliberately separate from instagram-sync.yml even though that job also connects to Mongo: the
+# two have nothing to do with each other, so they get their own run history and their own failure
+# notifications. A database problem should never look like a broken scrape - and the sync is the
+# job most likely to break, which is exactly when the keepalive still needs to run.
+#
+# NOTE: scheduled workflows only fire from the default branch, so this file must be on `main`
+# to run at all. GitHub also auto-disables scheduled workflows on public repos after 60 days
+# with no NEW COMMITS - runs, issues and releases do not count.
+on:
+  schedule:
+    - cron: '0 8 * * *'   # 08:00 UTC daily (~24h), just after the sync at 07:10
+  workflow_dispatch: {}    # allow manual runs from the Actions tab
+
+permissions:
+  contents: read           # least privilege: this job never writes to the repo
+
+jobs:
+  ping:
+    name: Ping the database
+    runs-on: ubuntu-latest # Linux runner = 1x billing rate (free on public repos)
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # No pip install: the script uses only the standard library, so there is nothing
+      # to resolve and nothing that can break when a dependency changes upstream.
+      - name: Ping the API so Atlas sees a connection
+        run: python backend/keep_database_awake.py
+        env:
+          # A repository *variable*, not a secret - the deployed URL is public. Set it at
+          # Settings -> Secrets and variables -> Actions -> Variables, e.g.
+          #   SITE_URL = https://purdueusb.com
+          SITE_URL: ${{ vars.SITE_URL }}

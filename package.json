@@ -14,6 +14,7 @@
     "lint": "npm --prefix frontend run lint",
     "optimize:photos": "npm --prefix frontend run optimize:photos",
     "seed:database": "python3 backend/seed_from_static.py",
+    "keepalive": "python3 backend/keep_database_awake.py",
     "sync:instagram": "python3 backend/run_sync.py",
     "sync:instagram:dry": "python3 backend/run_sync.py --dry-run"
   },

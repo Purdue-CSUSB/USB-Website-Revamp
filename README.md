@@ -171,6 +171,28 @@ Test the whole pipeline without touching the database:
 npm run sync:instagram:dry
 ```
 
+### Keeping the database awake
+
+MongoDB Atlas pauses a free cluster after a stretch with no connection, and a
+paused cluster refuses every connection until somebody clicks Resume in the
+dashboard - it does not wake itself when traffic arrives. A serverless site only
+touches Mongo when someone visits, so a quiet summer can genuinely reach that
+threshold. `.github/workflows/keep-database-awake.yml` runs
+`backend/keep_database_awake.py` daily to prevent it.
+
+It pings the deployed `/api/instagram/posts` rather than connecting with the
+driver: that endpoint already reads MongoDB, so serving it resets the idle
+timer, no database credential has to live in the workflow, and it exercises the
+whole Vercel-to-Atlas path as an uptime check. It insists on the endpoint's JSON
+shape, so a misconfigured URL that falls through to the SPA and returns HTML
+with a 200 fails loudly instead of passing.
+
+Set `SITE_URL` as a repository **variable** (not a secret - the URL is public)
+under Settings -> Secrets and variables -> Actions -> Variables.
+
+Note that scheduled workflows only fire from the default branch, and GitHub
+auto-disables them on public repos after 60 days with no new commits.
+
 ### ⚠️ Required Vercel change
 
 `api/` lives at the repo root, so the Vercel project's **Root Directory must be
@@ -220,6 +242,7 @@ npm run dev                  # frontend dev server
 npm run build                # optimize photos + build to frontend/dist
 npm run optimize:photos      # regenerate avatar derivatives only
 npm run seed:database        # seed Mongo from the checked-in posts
+npm run keepalive            # ping the deployed API so Atlas stays awake
 npm run sync:instagram       # run the sync locally (writes to Mongo)
 npm run sync:instagram:dry   # same, but --dry-run: no writes
 python3 backend/run_sync.py --allow-heuristic   # write without the vision model
