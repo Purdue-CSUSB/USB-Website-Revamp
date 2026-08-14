@@ -5,210 +5,300 @@
       "title": "President",
       "class": "Junior",
       "site": "",
-      "photo": "png/Maria-Molina.png"
+      "photo": "png/Maria-Molina.png",
+      "srcBase": "/board-photos/Maria-Molina.49368d46",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAABABsJYwCdACxuRzrcSAAAP7FdOAPXus1bGVO43bVb9zXBV8liDoJIByWwAA=",
+      "blurColor": "#837b75"
     },
     {
       "name": "Shruti Sharma",
       "title": "Vice President",
       "class": "Senior",
       "site": "https://www.linkedin.com/in/shruti-sharma-08741223b/",
-      "photo": "webp/Shruti-Sharma.webp"
+      "photo": "webp/Shruti-Sharma.webp",
+      "srcBase": "/board-photos/Shruti-Sharma.ceaa0a4f",
+      "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQABAABABsJbACdADJsGN4WAD8oNBtq0PLITOSCMaSIGHXEptVuxLQudvq9soGoD/t0rSU9SeczIsAAAA=",
+      "blurColor": "#99695b"
     },
     {
       "name": "Tristan Sze",
       "title": "Treasurer",
       "class": "Junior",
       "site": "",
-      "photo": "png/Tristan-Sze.png"
+      "photo": "png/Tristan-Sze.png",
+      "srcBase": "/board-photos/Tristan-Sze.a11dd223",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZAC7AC9dJYT4ADJ25GdCZlsufx5REMwxxL8sD4ptw/iDY60+sH/pmAuHAAA",
+      "blurColor": "#665847"
     },
     {
       "name": "Chris McLoughlin",
       "title": "Secretary",
       "class": "Sophomore",
       "site": "",
-      "photo": "webp/Chris-McLoughlin.webp"
+      "photo": "webp/Chris-McLoughlin.webp",
+      "srcBase": "/board-photos/Chris-McLoughlin.104649fc",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQABAABABsJbACdACJymKtCAD8UDNZehvoCfT6AFZg05WYzr/FfyqxLeE/dnsP5qCgAA==",
+      "blurColor": "#a47037"
     },
     {
       "name": "Theo Park",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Theo-Park.webp"
+      "photo": "webp/Theo-Park.webp",
+      "srcBase": "/board-photos/Theo-Park.81fbe004",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBdgB3eazCaxAAA+i8Q++02yVrj3pwI5+hE4t34tnzhHnBFqd+OBpCAAA==",
+      "blurColor": "#676c5d"
     },
     {
       "name": "Arman Kumar",
       "title": "",
       "class": "Senior",
       "site": "https://www.linkedin.com/in/arman-kumar",
-      "photo": "webp/Arman-Kumar.webp"
+      "photo": "webp/Arman-Kumar.webp",
+      "srcBase": "/board-photos/Arman-Kumar.a29b3e76",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAABABsJZAC7AC23JA/NdPUAP4fIhK4/F0m+Uzke/dSDEukudRbxNlxCG2QAAA=",
+      "blurColor": "#7d7562"
     },
     {
       "name": "Ishita Shukla",
       "title": "",
       "class": "Senior",
       "site": "",
-      "photo": "webp/Ishita-Shukla.webp"
+      "photo": "webp/Ishita-Shukla.webp",
+      "srcBase": "/board-photos/Ishita-Shukla.95059b93",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACQAQCdASoQABAABABsJbACdABaLAAA92Lmt0c0p06TwReZ2KZM1boRXqigzxBgtJmsAA==",
+      "blurColor": "#9b7c77"
     },
     {
       "name": "Jagannath Prabhakaran",
       "title": "",
       "class": "Senior",
       "site": "https://www.linkedin.com/in/jag-prabhakaran/",
-      "photo": "webp/Jagannath-Prabhakaran.webp"
+      "photo": "webp/Jagannath-Prabhakaran.webp",
+      "srcBase": "/board-photos/Jagannath-Prabhakaran.5367a79b",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAABABsJQBOj+ADAafUnIAAAP7Fz0RNatqHqOQukUt+DsA3s5jRutp1FH5AAAA=",
+      "blurColor": "#9d8677"
     },
     {
       "name": "Pranav Konda",
       "title": "",
       "class": "Senior",
       "site": "",
-      "photo": "webp/Pranav-Konda.webp"
+      "photo": "webp/Pranav-Konda.webp",
+      "srcBase": "/board-photos/Pranav-Konda.2d263afd",
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQABAABABsJYwCdAEMviF8OtAA1IYZEaurqPOdByZhDmUS7w6wAA==",
+      "blurColor": "#867e78"
     },
     {
       "name": "Sravya Nagalakunta",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Sravya-Nagalakunta.webp"
+      "photo": "webp/Sravya-Nagalakunta.webp",
+      "srcBase": "/board-photos/Sravya-Nagalakunta.001234a5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQABAABABsJQBOgBX5NAAA/tUQ4sHlYt7XF93xrIVFb6W0fjBIv1rerfx1o1eg6WuVamAA",
+      "blurColor": "#728692"
     },
     {
       "name": "Netra Joshi",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Netra-Joshi.webp"
+      "photo": "webp/Netra-Joshi.webp",
+      "srcBase": "/board-photos/Netra-Joshi.16e39c3e",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAABABsJYwAAp0oFUN3JAAA/K8NPfVLzSyDGUwCqLiHFz+/FD4FEL5cXcmAAAA=",
+      "blurColor": "#7f7d7c"
     },
     {
       "name": "Paula Perez",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Paula-Perez.webp"
+      "photo": "webp/Paula-Perez.webp",
+      "srcBase": "/board-photos/Paula-Perez.e976209b",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBWACPvw7kiqAAA/szMJ92BB96V07gDsaNnXeQKZAvQ7k9rSJHH4YAAAA==",
+      "blurColor": "#58634b"
     },
     {
       "name": "Philip Liu",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Philip-Liu.webp"
+      "photo": "webp/Philip-Liu.webp",
+      "srcBase": "/board-photos/Philip-Liu.53461b10",
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAQAgCdASoQABAABABsJQBOj+ACuDniknyAAP7qlaN+3Jas2anNCfzuHqUIrtGU8BNvzRXcF2daQGQDivBbpBMiT/SwAA==",
+      "blurColor": "#86979f"
     },
     {
       "name": "Pranavi Chaganti",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Pranavi-Chaganti.webp"
+      "photo": "webp/Pranavi-Chaganti.webp",
+      "srcBase": "/board-photos/Pranavi-Chaganti.5f33d068",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACQAQCdASoQABAABABsJZQAAuaKEwAA/u3uH3M8nXpQvIJQhuZ5WdPDAbWVZA9ymnJpAX1cAAA=",
+      "blurColor": "#8b8e8d"
     },
     {
       "name": "Anokhi Matta",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Anokhi-Matta.webp"
+      "photo": "webp/Anokhi-Matta.webp",
+      "srcBase": "/board-photos/Anokhi-Matta.61453da9",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADQAQCdASoQABAABABsJZAC7ACC/Bm2AAD81j8w+8K6iZFYG9nmmj9rBrfkmwbSs6YAAA==",
+      "blurColor": "#6e6946"
     },
     {
       "name": "Madhav Valiaparambil",
       "title": "",
       "class": "Junior",
       "site": "",
-      "photo": "webp/Madhav-Valiaparambil.webp"
+      "photo": "webp/Madhav-Valiaparambil.webp",
+      "srcBase": "/board-photos/Madhav-Valiaparambil.53caddc7",
+      "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQABAABABsJZwC7AEOecWot4AA/rBT0v9PVZPbstNCYZRYprAAAA==",
+      "blurColor": "#969899"
     },
     {
       "name": "Hanako Keney",
       "title": "",
       "class": "Sophomore",
       "site": "",
-      "photo": "webp/Hanako-Keney.webp"
+      "photo": "webp/Hanako-Keney.webp",
+      "srcBase": "/board-photos/Hanako-Keney.5d9483ee",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAACwAQCdASoQABAABABsJbACdABWgP2wAPnqPgpF6Fc4lK3+Na+uCM+ha92akp/Hoa4AAA==",
+      "blurColor": "#6e6d49"
     },
     {
       "name": "Charlotte Liu",
       "title": "",
       "class": "Sophomore",
       "site": "",
-      "photo": "webp/Charlotte-Liu.webp"
+      "photo": "webp/Charlotte-Liu.webp",
+      "srcBase": "/board-photos/Charlotte-Liu.1e3e2aa2",
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAAAwAgCdASoQABAABABsJZAC7H8AGZKX/+MUAAD+zxDRx13sobgMWJu9/kBRDWlTWanoRUTN0hhRzaWG5fAAAA==",
+      "blurColor": "#6a6b59"
     },
     {
       "name": "Kevin Qu",
       "title": "",
       "class": "Sophomore",
       "site": "",
-      "photo": "webp/Kevin-Qu.webp"
+      "photo": "webp/Kevin-Qu.webp",
+      "srcBase": "/board-photos/Kevin-Qu.ea4471cd",
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADwAQCdASoQABAABABsJbACdADRkaMRogAA/h3OdKfE3DzT+1/TGrowRx7Trjck0SLgrK+NvaJjVIA9IAA=",
+      "blurColor": "#986152"
     },
     {
       "name": "Anika Thapar",
       "title": "",
       "class": "Sophomore",
       "site": "",
-      "photo": "webp/Anika-Thapar.webp"
+      "photo": "webp/Anika-Thapar.webp",
+      "srcBase": "/board-photos/Anika-Thapar.32d44265",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQABAABABsJQAAVeWNcyQAAN//WHwUozwBr6E6vUXdhLttBEMkxv2uwdZ9rr+BsQAAAA==",
+      "blurColor": "#7e8582"
     },
     {
       "name": "Ryan Sierra",
       "title": "",
       "class": "Sophomore",
       "site": "",
-      "photo": "webp/Ryan-Sierra.webp"
+      "photo": "webp/Ryan-Sierra.webp",
+      "srcBase": "/board-photos/Ryan-Sierra.3363ed63",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoQABAABABsJQBOgBTpYZWwAP1NUJqTsP7FjQVP69x2ipFq2sqxhD722WkPqkuaAAA=",
+      "blurColor": "#665443"
     },
     {
       "name": "Emily Li",
       "title": "",
       "class": "Sophomore",
       "site": "",
-      "photo": "png/Emily-Li.png"
+      "photo": "png/Emily-Li.png",
+      "srcBase": "/board-photos/Emily-Li.1067d573",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQABAABABsJZgCdADsW8J46YAA+ejCVB92xd+u9uR0mG9G7+UxjcNv73KQoTPkAAA=",
+      "blurColor": "#948067"
     },
     {
       "name": "Adam Zhang",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Adam-Zhang.png"
+      "photo": "png/Adam-Zhang.png",
+      "srcBase": "/board-photos/Adam-Zhang.b503ee34",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAABwAQCdASoQABAABABsJYwAAhD0YAD+cWX83fCDVApx8flaBB11wAQK+EpyiCoHOSAAAA==",
+      "blurColor": "#6d6c6d"
     },
     {
       "name": "Deji Solola",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Deji-Solola.png"
+      "photo": "png/Deji-Solola.png",
+      "srcBase": "/board-photos/Deji-Solola.072c7bda",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQABAABABsJQBOgBPBhfaAAAD9HrHHZuQLr7x8IODuidGMWkQ8t0SL2NZBEkAA",
+      "blurColor": "#665e61"
     },
     {
       "name": "Hannah Ju",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Hannah-Ju.png"
+      "photo": "png/Hannah-Ju.png",
+      "srcBase": "/board-photos/Hannah-Ju.32ff0807",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQABAABABsJYgCdACj6h9jXXmAAP3ZE/MBH0cf2ruH3LoT6msTNKRebYtDQAAA",
+      "blurColor": "#697b65"
     },
     {
       "name": "Jack Ruzynski",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Jack-Ruzynski.png"
+      "photo": "png/Jack-Ruzynski.png",
+      "srcBase": "/board-photos/Jack-Ruzynski.d856b824",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQABAABABsJQBdgBkvIaKzjzgA/rk+RjaeY+ud3VubS6uAX24vs6NDPm8mGAAA",
+      "blurColor": "#5e6560"
     },
     {
       "name": "Megan Ragozzino",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Megan-Ragozzino.png"
+      "photo": "png/Megan-Ragozzino.png",
+      "srcBase": "/board-photos/Megan-Ragozzino.70ce2a1f",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQABAABABsJZQCdACqo7YAAP7s1+rxsZ84Nsa8Dtn6gvOQtUWWhH5TQzO9Tk2LBVOAAA==",
+      "blurColor": "#8c847b"
     },
     {
       "name": "Nakita Ray",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Nakita-Ray.png"
+      "photo": "png/Nakita-Ray.png",
+      "srcBase": "/board-photos/Nakita-Ray.22b187bf",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoQABAABABsJQBOgCHNHupGwwAA/uw9gSLRlbR9D99NhIjWCmvTQlsECVIT1WYA",
+      "blurColor": "#3e3637"
     },
     {
       "name": "Rain Song",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Rain-Song.png"
+      "photo": "png/Rain-Song.png",
+      "srcBase": "/board-photos/Rain-Song.17f225e5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZQAAbKOekoZAAD+tdSQSA4VGKMdYlI9FTL22BzyGYNT/cOrdY01tRyMehAA",
+      "blurColor": "#908687"
     },
     {
       "name": "Rishi Bagri",
       "title": "",
       "class": "Freshman",
       "site": "",
-      "photo": "png/Rishi-Bagri.png"
+      "photo": "png/Rishi-Bagri.png",
+      "srcBase": "/board-photos/Rishi-Bagri.704331c5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJQBOgCFEUFLqEgD+XcBNCDpnDLLWhXoMB7q1VLXTCsrlzjVXA+3LvPj2AAAA",
+      "blurColor": "#7f725f"
     }
   ],
   "alumni": [
@@ -217,581 +307,830 @@
       "title": "",
       "class": "2025",
       "site": "",
-      "photo": "webp/Daniel-Tian.webp"
+      "photo": "webp/Daniel-Tian.webp",
+      "srcBase": "/board-photos/Daniel-Tian.41c07a6f",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAAAQAgCdASoQABAABABsJZQCdADbJBSanoIAAP5eVaSwSzSe8qJvgiZRAlDvKmdXMa6AAA==",
+      "blurColor": "#9ca0a4"
     },
     {
       "name": "Emily Hao",
       "title": "Former President",
       "class": "2025",
       "site": "",
-      "photo": "webp/Emily-Hao.webp"
+      "photo": "webp/Emily-Hao.webp",
+      "srcBase": "/board-photos/Emily-Hao.8c7aa902",
+      "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQABAABABsJQBOgBS/q/aJUgAA/uhft7qY1De+wynnVZSRYjOG1fBXKkX5/ys3rYzzQnf14GyfGWj5XDaQAA==",
+      "blurColor": "#ad9d90"
     },
     {
       "name": "Brayden Brackett",
       "title": "Former Treasurer",
       "class": "2025",
       "site": "",
-      "photo": "webp/Brayden-Brackett.webp"
+      "photo": "webp/Brayden-Brackett.webp",
+      "srcBase": "/board-photos/Brayden-Brackett.060b42dd",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoQABAABABsJQAAXOqOnCdYAP703JE7X2NfxTkeolf0YEyHZZ4TuIsO6BZ9afwAAAA=",
+      "blurColor": "#c5b9b3"
     },
     {
       "name": "Lakshmi Talapaneni",
       "title": "Former Vice President",
       "class": "2025",
       "site": "https://www.linkedin.com/in/lakshmitalapaneni/",
-      "photo": "webp/Lakshmi-Talapaneni.webp"
+      "photo": "webp/Lakshmi-Talapaneni.webp",
+      "srcBase": "/board-photos/Lakshmi-Talapaneni.03d1f59d",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJbAC7ADx5wwAAAD+9XtZjS7zEM7eQ0xXrxEyPwnCp6/QGTSYszXs7vulApAA",
+      "blurColor": "#664f3a"
     },
     {
       "name": "Tiffany Kuang",
       "title": "",
       "class": "2025",
       "site": "https://www.linkedin.com/in/tiffanykuang/",
-      "photo": "webp/Tiffany-Kuang.webp"
+      "photo": "webp/Tiffany-Kuang.webp",
+      "srcBase": "/board-photos/Tiffany-Kuang.4f73d1d9",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJYwCdAENywnmgAAA/rkUs41gzD6tkyzJE3hQLUDGcx6M0NsmzaFsIgwAAA==",
+      "blurColor": "#685e56"
     },
     {
       "name": "Richard Silvester",
       "title": "",
       "class": "2025",
       "site": "",
-      "photo": "webp/Richard-Silvester.webp"
+      "photo": "webp/Richard-Silvester.webp",
+      "srcBase": "/board-photos/Richard-Silvester.9423b780",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQABAABABsJbACdADbRh1c28AA/uv/P261+t3hmNIgKr7PAznfUykE9DuEM9TzlqGiAAAA",
+      "blurColor": "#91794c"
     },
     {
       "name": "Jillian Urgello",
       "title": "",
       "class": "2025",
       "site": "https://www.linkedin.com/in/jillian-mae-urgello/",
-      "photo": "webp/Jillian-Urgello.webp"
+      "photo": "webp/Jillian-Urgello.webp",
+      "srcBase": "/board-photos/Jillian-Urgello.65729446",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADwAQCdASoQABAABABsJQBOgBjcW3CpYNAA/u1g0D1lhqdPYxTJTQz6Zo+VR+dX8mgDJ1iEBaF0UAAA",
+      "blurColor": "#a29792"
     },
     {
       "name": "Khoa Raisr",
       "title": "",
       "class": "2025",
       "site": "",
-      "photo": "webp/Khoa-Raisr.webp"
+      "photo": "webp/Khoa-Raisr.webp",
+      "srcBase": "/board-photos/Khoa-Raisr.798844b8",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQABAABABsJQBOgCFrNoyBrQgAAPiCzlAOL2ruET3vHs3yYsDy5MGTsoBod91eJAAAAA==",
+      "blurColor": "#7e776b"
     },
     {
       "name": "Christina Joslin",
       "title": "",
       "class": "2025",
       "site": "",
-      "photo": "webp/Christina-Joslin.webp"
+      "photo": "webp/Christina-Joslin.webp",
+      "srcBase": "/board-photos/Christina-Joslin.8a1a7e46",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAACwAQCdASoQABAABABsJYwCdADEbbuAAM4AuV7NugcklrO66LOI4PwlgCn/lDb3CeclQ8MmKAA=",
+      "blurColor": "#8d8379"
     },
     {
       "name": "Amritraj Binuraj",
       "title": "",
       "class": "2024",
       "site": "https://www.linkedin.com/in/amritraj-binuraj/",
-      "photo": "webp/Amritraj-Binuraj.webp"
+      "photo": "webp/Amritraj-Binuraj.webp",
+      "srcBase": "/board-photos/Amritraj-Binuraj.547cf92d",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQABAABABsJbACdADZHhAAAPxclrjUAiIhEynrZ/dX8l9feTyH1UN2doiFYgAA",
+      "blurColor": "#b7835b"
     },
     {
       "name": "Sarah Pushparaj",
       "title": "",
       "class": "2024",
       "site": "https://www.linkedin.com/in/sarah-pushparaj/",
-      "photo": "webp/Sarah-Pushparaj.webp"
+      "photo": "webp/Sarah-Pushparaj.webp",
+      "srcBase": "/board-photos/Sarah-Pushparaj.38da5882",
+      "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQABAABABsJbACdADRCkB6a1AA/slBQZg21kgytHYfrKul4PiBw55sT4xTYqxvgedDe8KmCFUW4AAA",
+      "blurColor": "#846b5d"
     },
     {
       "name": "Arielle Dong",
       "title": "",
       "class": "2026",
       "site": "https://www.linkedin.com/in/arielle-dong/",
-      "photo": "webp/Arielle-Dong.webp"
+      "photo": "webp/Arielle-Dong.webp",
+      "srcBase": "/board-photos/Arielle-Dong.f3d6917b",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAABABsJaACdAEOwdBapM4AAP6ycXdTJKUhs2N7+wuCrPaMy6qsCE4hEZAIAAA=",
+      "blurColor": "#87855b"
     },
     {
       "name": "Anushka Sharma",
       "title": "Former President",
       "class": "2024",
       "site": "",
-      "photo": "webp/Anushka-Sharma.webp"
+      "photo": "webp/Anushka-Sharma.webp",
+      "srcBase": "/board-photos/Anushka-Sharma.a07c0148",
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAwAgCdASoQABAABABsJbACdH8AFW6V1dNUAAD+6rs8lXeV3UOaMqgNqFP2z0XuOvCbvKzJzJvmtAoAAAA=",
+      "blurColor": "#98907e"
     },
     {
       "name": "Grace Keeton",
       "title": "Former Vice President",
       "class": "2024",
       "site": "https://www.linkedin.com/in/grace-butler-cs/",
-      "photo": "webp/Grace-Keeton.webp"
+      "photo": "webp/Grace-Keeton.webp",
+      "srcBase": "/board-photos/Grace-Keeton.58f6e2db",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJaACdAEOjj+YwwAA93NLCWSUXsrTa0gFx23ouacXNpjuzFjXxik9OJaUAA==",
+      "blurColor": "#8d6a56"
     },
     {
       "name": "Rohan Purandare",
       "title": "",
       "class": "2024",
       "site": "https://www.linkedin.com/in/rohanpurandare",
-      "photo": "webp/Rohan-Purandare.webp"
+      "photo": "webp/Rohan-Purandare.webp",
+      "srcBase": "/board-photos/Rohan-Purandare.81c7cbbb",
+      "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAgCdASoQABAABABsJYgCdH8AEeyX98P3jTYAAP7VjPUv9XUofPMjE4kazALIqmzn7M56xXFpDNqXvANnfwvgAAA=",
+      "blurColor": "#a5a2a5"
     },
     {
       "name": "Weiyi Tan",
       "title": "",
       "class": "2024",
       "site": "",
-      "photo": "webp/Weiyi-Tan.webp"
+      "photo": "webp/Weiyi-Tan.webp",
+      "srcBase": "/board-photos/Weiyi-Tan.ccffd137",
+      "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAAAQAgCdASoQABAABABsJYwCdAEVwekMwTPQAP7emTpcatYOGSiw1EwRYSP5BjIotXHsQkAA",
+      "blurColor": "#818797"
     },
     {
       "name": "Riya Verma",
       "title": "",
       "class": "2024",
       "site": "https://www.linkedin.com/in/riyaverma11/",
-      "photo": "webp/Riya-Verma.webp"
+      "photo": "webp/Riya-Verma.webp",
+      "srcBase": "/board-photos/Riya-Verma.0f0d348b",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQABAABABsJZAAAudfgva7ypgA/uvhSZm1QVPeEZSYQl999KyH7Cj6YAAAAA==",
+      "blurColor": "#bc979e"
     },
     {
       "name": "Eddie Kim",
       "title": "",
       "class": "2024",
       "site": "",
-      "photo": "webp/Eddie-Kim.webp"
+      "photo": "webp/Eddie-Kim.webp",
+      "srcBase": "/board-photos/Eddie-Kim.9a964ad5",
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQABAABABsJZQC7ACTYKwAAP7ze3zoDPSrzvqnOjP2TjkxK/WxdNLWnLuHEnynAWiElcoAAAA=",
+      "blurColor": "#a89d99"
     },
     {
       "name": "Vindhya Banda",
       "title": "Former President",
       "class": "2023",
       "site": "https://www.linkedin.com/in/vindhya-banda/",
-      "photo": "webp/Vindhya-Banda.webp"
+      "photo": "webp/Vindhya-Banda.webp",
+      "srcBase": "/board-photos/Vindhya-Banda.81544560",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAQAgCdASoQABAABABsJQBOgCFmMkHNl96AAP7o3zk5SFZuakUz7HL4kxyggrG+n4FpPm2X+AA=",
+      "blurColor": "#726764"
     },
     {
       "name": "Simran Kadadi",
       "title": "Former GSB Chair",
       "class": "2023",
       "site": "",
-      "photo": "webp/Simran-Kadadi.webp"
+      "photo": "webp/Simran-Kadadi.webp",
+      "srcBase": "/board-photos/Simran-Kadadi.647f6a4a",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQABAABABsJZACsAEXHU0POaAA/hAcp/r542xXvU6eCDnBifKvqmkgLQAAAA==",
+      "blurColor": "#816a64"
     },
     {
       "name": "Mason Adams",
       "title": "",
       "class": "2023",
       "site": "https://www.linkedin.com/in/mason-adams-184a71220/",
-      "photo": "webp/Mason-Adams.webp"
+      "photo": "webp/Mason-Adams.webp",
+      "srcBase": "/board-photos/Mason-Adams.b79a0e69",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAgCdASoQABAABABsJYgCdIExDpS6/YiMAAD+0MY+mT2cq0D02arK+BDY7+QzYhJ9Sl2/NmugubAA",
+      "blurColor": "#68676a"
     },
     {
       "name": "Ishika Kamchetty",
       "title": "",
       "class": "2023",
       "site": "",
-      "photo": "webp/Ishika-Kamchetty.webp"
+      "photo": "webp/Ishika-Kamchetty.webp",
+      "srcBase": "/board-photos/Ishika-Kamchetty.98d9d26f",
+      "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAADwAQCdASoQABAABABsJQBYdh6or0KKPgAA/tp3tn/izr9ukRh78CPIj8EGAAAA",
+      "blurColor": "#434931"
     },
     {
       "name": "Blisha Molin",
       "title": "",
       "class": "2023",
       "site": "",
-      "photo": "webp/Blisha-Molin-Mohan-Das.webp"
+      "photo": "webp/Blisha-Molin-Mohan-Das.webp",
+      "srcBase": "/board-photos/Blisha-Molin-Mohan-Das.385658ff",
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQABAABABsJYgCdADQahcQEgAA/KG9kQrwDqC6ENjJlBgvO4Roh926swMj/6R3KzC3TVgmDjwAAA==",
+      "blurColor": "#796257"
     },
     {
       "name": "Sweta Saravanan",
       "title": "",
       "class": "2023",
       "site": "https://www.linkedin.com/in/sweta-saravanan-aa3937191/",
-      "photo": "webp/Sweta-Saravanan.webp"
+      "photo": "webp/Sweta-Saravanan.webp",
+      "srcBase": "/board-photos/Sweta-Saravanan.2257d947",
+      "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQABAABABsJbACdACdzhkAAP7FZz6/VKwY9LCzS+AYFWC6y50u6FUU+W4YIiKE/n10ZheNFMC2bFf4oVesFm8tfAA=",
+      "blurColor": "#a88948"
     },
     {
       "name": "Arianna Smith",
       "title": "Former President",
       "class": "2022",
       "site": "https://www.linkedin.com/in/arianna-smith-32229816a/",
-      "photo": "webp/Arianna-Smith.webp"
+      "photo": "webp/Arianna-Smith.webp",
+      "srcBase": "/board-photos/Arianna-Smith.159faff2",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQABAABABsJYwCdACewAAA94wA0CVfrQOubZj5yxVpWX7+mT2zcs95vfQZLkqgSUnWjgAA",
+      "blurColor": "#726964"
     },
     {
       "name": "Cindy Ding",
       "title": "Former Treasurer",
       "class": "2022",
       "site": "https://www.linkedin.com/in/cindydhy/",
-      "photo": "webp/Cindy-Ding.webp"
+      "photo": "webp/Cindy-Ding.webp",
+      "srcBase": "/board-photos/Cindy-Ding.861bf6dd",
+      "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQABAABABsJaACdACqCelXAAD+4TZzZycXxMIjcXxuKWj2C+xqTAvwh/gRk0MqvlcD2aVN4WRAAA==",
+      "blurColor": "#92896a"
     },
     {
       "name": "Christopher Lehman",
       "title": "Former Secretary",
       "class": "2022",
       "site": "https://www.linkedin.com/in/christopher-lehman/",
-      "photo": "webp/Christopher-Lehman.webp"
+      "photo": "webp/Christopher-Lehman.webp",
+      "srcBase": "/board-photos/Christopher-Lehman.0e6f6465",
+      "blur": "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAAAwAgCdASoQABAABABsJZQCw7ERHs5Gb/ZwQAD+zMQk8iO0iWhbdcjUBqYXoMAA",
+      "blurColor": "#4a4744"
     },
     {
       "name": "Riley McKeever",
       "title": "",
       "class": "2022",
       "site": "",
-      "photo": "webp/Riley-McKeever.webp"
+      "photo": "webp/Riley-McKeever.webp",
+      "srcBase": "/board-photos/Riley-McKeever.4462c401",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJQBOgBuLiwtIA1AA/rZJvN35Bw2CBA5zFzkAObRWzyOTzGL1s3iuhyAAAA==",
+      "blurColor": "#b69f8f"
     },
     {
       "name": "Sarah Thomas",
       "title": "",
       "class": "2022",
       "site": "",
-      "photo": "webp/Sarah-Thomas.webp"
+      "photo": "webp/Sarah-Thomas.webp",
+      "srcBase": "/board-photos/Sarah-Thomas.f029fdf7",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJYwCdADQ8r2sYgAA/sdU6p/x2PftBjEwf3gRevepYnhkXSBigYqEwYkAAA==",
+      "blurColor": "#7b6f69"
     },
     {
       "name": "Pallav Agarwal",
       "title": "",
       "class": "2021",
       "site": "https://www.linkedin.com/in/pallav-agarwal/",
-      "photo": "webp/Pallav-Agarwal.webp"
+      "photo": "webp/Pallav-Agarwal.webp",
+      "srcBase": "/board-photos/Pallav-Agarwal.879f378f",
+      "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAAAQAgCdASoQABAABABsJbACw7DcPcCyapcAAP5yLIvuCHOXfRuatA478WX7pWZvm14e4ZkQ4hxfZdElgAA=",
+      "blurColor": "#506777"
     },
     {
       "name": "Sean Flannery",
       "title": "Former GSB Honorary Member",
       "class": "2021",
       "site": "https://www.linkedin.com/in/sflanner/",
-      "photo": "webp/Sean-Flannery.webp"
+      "photo": "webp/Sean-Flannery.webp",
+      "srcBase": "/board-photos/Sean-Flannery.69409f74",
+      "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQABAABABsJbACdAEJSlEgAADMMrFJPdkShj846AHsTz3NSJRI5ovu328Lb+y6QAA=",
+      "blurColor": "#574b2f"
     },
     {
       "name": "Noah Alderton",
       "title": "",
       "class": "2021",
       "site": "https://www.linkedin.com/in/noahalderton/",
-      "photo": "webp/Noah-Alderton.webp"
+      "photo": "webp/Noah-Alderton.webp",
+      "srcBase": "/board-photos/Noah-Alderton.67f21e7f",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQABAABABsJZACdAEN3v5WEiAAAP7aV6U3zCVOX/bLkCrt25RGTx46HFwK/vTKzw1QAA==",
+      "blurColor": "#63694f"
     },
     {
       "name": "Lauren Lum",
       "title": "Former President",
       "class": "2021",
       "site": "https://www.linkedin.com/in/lumlauren/",
-      "photo": "webp/Lauren-Lum.webp"
+      "photo": "webp/Lauren-Lum.webp",
+      "srcBase": "/board-photos/Lauren-Lum.79a708df",
+      "blur": "data:image/webp;base64,UklGRj4AAABXRUJQVlA4IDIAAADwAQCdASoQABAABABsJZQCdACponwXsAAA3ypKW+lvBJIEdLBbyAkvhaCMI82DWwAAAA==",
+      "blurColor": "#8b817c"
     },
     {
       "name": "Albert Zhong",
       "title": "",
       "class": "2021",
       "site": "https://www.linkedin.com/in/albert-zhong-695961149/",
-      "photo": "webp/Albert-Zhong.webp"
+      "photo": "webp/Albert-Zhong.webp",
+      "srcBase": "/board-photos/Albert-Zhong.75abdf93",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADwAQCdASoQABAABABsJaACdADbHhEPBgAA/H6Puuzzl4/iMS3LyIvGtC/jnb93sb511Wo5M/AAAA==",
+      "blurColor": "#728ba8"
     },
     {
       "name": "Sagar Nattuvetty",
       "title": "",
       "class": "2021",
       "site": "",
-      "photo": "webp/Sagar-Nattuvetty.webp"
+      "photo": "webp/Sagar-Nattuvetty.webp",
+      "srcBase": "/board-photos/Sagar-Nattuvetty.233c2a14",
+      "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQABAABABsJQBOgBg28NlmYAD+64sHIEvxKz90nHCx2OwCCh9r2PAHF/C8vWxSmUouRk1ADJk86L1gAAA=",
+      "blurColor": "#a38a7c"
     },
     {
       "name": "Sera Savaş",
       "title": "",
       "class": "2021",
       "site": "https://www.linkedin.com/in/sera-savas-179968148/",
-      "photo": "webp/Sera-Savaş.webp"
+      "photo": "webp/Sera-Savaş.webp",
+      "srcBase": "/board-photos/Sera-Savas.875f16ac",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAAAwAgCdASoQABAABABsJQBOgB6SBqVhgxQYAAD+7WALzxTPSIrASf/k2Wx7/zcgKR43mKV+ooxLSgAA",
+      "blurColor": "#aa9184"
     },
     {
       "name": "CJ Enright",
       "title": "",
       "class": "2020",
       "site": "https://www.linkedin.com/in/cjenright/",
-      "photo": "webp/CJ-Enright.webp"
+      "photo": "webp/CJ-Enright.webp",
+      "srcBase": "/board-photos/CJ-Enright.2fa05f47",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQABAABABsJZgCdADJwGIjNtgAAP7V5GhDgGhVOcz2Ef7vZXDBvgeBHEawSt2+vygAAA==",
+      "blurColor": "#af8886"
     },
     {
       "name": "Zach Bryant",
       "title": "Former President",
       "class": "2020",
       "site": "https://www.linkedin.com/in/zachdbryant/",
-      "photo": "webp/Zach-Bryant.webp"
+      "photo": "webp/Zach-Bryant.webp",
+      "srcBase": "/board-photos/Zach-Bryant.2cce7f8f",
+      "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAAAQAgCdASoQABAABABsJZQCdADw1XjYSTBAAP702VVQhTlo3eX8nFwQOp2/9H0BZVTfOuaSlnTqAA==",
+      "blurColor": "#aba299"
     },
     {
       "name": "Megan Walsh",
       "title": "",
       "class": "2020",
       "site": "",
-      "photo": "webp/Megan-Walsh.webp"
+      "photo": "webp/Megan-Walsh.webp",
+      "srcBase": "/board-photos/Megan-Walsh.c5b0e410",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAADQAQCdASoQABAABABsJZACdAB2E55SQADww8+wphqWAUJir8uxsmH3+cLchP5zPAsAwkyQ8HnkxgAA",
+      "blurColor": "#8f7e62"
     },
     {
       "name": "Nirali Rai",
       "title": "Former Treasurer",
       "class": "2020",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Kameron Lutes",
       "title": "Former President",
       "class": "2019",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Ian Zanger",
       "title": "Former Vice President",
       "class": "2019",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Rohan Gupta",
       "title": "",
       "class": "2019",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Puja Mittal",
       "title": "",
       "class": "2019",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Ian Renfro",
       "title": "",
       "class": "2019",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Jay Hankins",
       "title": "Former President",
       "class": "2018",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Matthew Ess",
       "title": "",
       "class": "2018",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Ahad Sagheer",
       "title": "",
       "class": "2018",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Adam Loeb",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Bryan Duffy",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Evan Walsh",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Mason Everett",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Rhys Howell",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Shane DeWael",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Spencer Brown",
       "title": "",
       "class": "2017",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Emma Wynne",
       "title": "",
       "class": "2016",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Ivan Zhang",
       "title": "",
       "class": "2016",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Kirby Kohlmorgen",
       "title": "",
       "class": "2016",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Scott Opell",
       "title": "",
       "class": "2016",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Richard Wei",
       "title": "",
       "class": "2015",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Brittany Vacchiano",
       "title": "",
       "class": "2014",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Tyler Hoffman",
       "title": "",
       "class": "2014",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Tyler Wear",
       "title": "",
       "class": "2012",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Marty Kausas",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Caitlin Kennedy",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Zach Johnson",
       "title": "",
       "class": "2018",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Andrew Shildmyer",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Ben Alderfer",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Christopher Sargent",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Clyde S. Byrd III",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Conlin Durbin",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Craig Hanna",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Curtis Knapp",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "David Koenig",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Emmy Zhang",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Jason Akers",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Joe Martella",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Joe Rattazzi",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Kenneth Brown",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Levi Starrett",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Lillian Liu",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Robyn Bognar",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     },
     {
       "name": "Stephanie Kate Ragozzino (Scherer)",
       "title": "",
       "class": "",
       "site": "",
-      "photo": "webp/None.webp"
+      "photo": "webp/None.webp",
+      "srcBase": "/board-photos/None.4e5b43b6",
+      "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+      "blurColor": "#e0e0e0"
     }
   ],
   "other": [
@@ -802,6 +1141,10 @@
       "site": "",
       "photo": "webp/None.webp"
     }
-  ]
+  ],
+  "fallback": {
+    "srcBase": "/board-photos/None.58414ec1",
+    "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAADQAQCdASoQABAABABsJaQAAudaIxA/oAD+8dtQgAfrUAAA",
+    "blurColor": "#e1e1e1"
+  }
 }
-

@@ -1,47 +1,52 @@
 [
   {
-    "name": "Girls Who Code",
-    "logo": "/initiatives/Club Hub/club_logos/gwcpurdue.png",
-    "description": "We are dedicated to closing the gender gap in technology and computer science through K-12 outreach at the middle and high schools in the Greater West Lafayette area and surrounding cities. Our outreach events consist of: meet + greet panels with students to establish a relationship and ensure familiarity, coding workshops where we help students understand a certain language, show them how they can get involved in programming, and create a project.",
+    "name": "LaunchPad",
+    "logo": "/initiatives/Club Hub/club_logos/launchpad.jpeg",
+    "description": "LaunchPad is a community of students dedicated to learning, building, and growing together. We provide a one-on-one, semester-long mentorship program to help freshmen students hit the ground running. We pair each incoming student with a talented upperclassman who will introduce them to the CS/DS community at Purdue and guide them in creating a technical project of their choosing. Throughout the semester, we host events to foster a sense of community and to build technical skills. Our goal is to ensure that every incoming student is equipped with the knowledge and connections they’ll need to get the most out of their time at Purdue.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/gwc.purdue/", "label": "@gwc.purdue" },
-      { "type": "email", "href": "mailto:purdue.girlswhocode@gmail.com", "label": "purdue.girlswhocode@gmail.com" }
+      { "type": "website", "href": "https://launchpadpurdue.com/", "label": "launchpadpurdue.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/launchpadpurdue/", "label": "@launchpadpurdue" },
+      { "type": "email", "href": "mailto:launchpadpurdue@gmail.com", "label": "launchpadpurdue@gmail.com" }
     ]
   },
   {
-    "name": "ML @ Purdue",
-    "logo": "/initiatives/Club Hub/club_logos/mlp.png",
-    "description": "ML@Purdue is the central club for AI/ML career growth for Purdue students. ML@Purdue supports careers in industry, research, and entrepreneurial ventures through projects and various events. The club serves to connect Purdue students to AI/ML leaders in and out of Purdue.",
+    "name": "ACM SIGAPP",
+    "logo": "/initiatives/Club Hub/club_logos/sigapp.svg",
+    "description": "SIGAPP is the Special Interest Group for Applied Computing under Purdue's ACM chapter, and it exists to make apps that have a real purpose. Members build full-stack projects across Android, iOS, web, and scalable cloud backends, shipping tools that Purdue students actually use — from BoilerLaundry to BoilerRooms, a housing map for rating and reviewing dorms. Meetings double as workshops, so newer members learn the stack while contributing to a live codebase alongside experienced developers.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/mlpurdue/", "label": "@mlpurdue" },
-      { "type": "linkedin", "href": "https://www.linkedin.com/company/ml-purdue/", "label": "ML@Purdue" },
-      { "type": "email", "href": "mailto:aiml@purdue.edu", "label": "aiml@purdue.edu" }
+      { "type": "website", "href": "https://sigapp.club/", "label": "sigapp.club" },
+      { "type": "instagram", "href": "https://www.instagram.com/purduesigapp/", "label": "@purduesigapp" },
+      { "type": "email", "href": "mailto:pham182@purdue.edu", "label": "pham182@purdue.edu" }
     ]
   },
   {
-    "name": "Dataception",
-    "logo": "/initiatives/Club Hub/club_logos/dataception.png",
-    "description": "Dataception is a Data Science and Data Visualization club that teaches you concepts from both majors by guiding you through your own projects. These projects will either be published on our website or it will be submitted to the Undergraduate Research Symposium.",
+    "name": "Autonomous Robotics Club of Purdue",
+    "logo": "/initiatives/Club Hub/club_logos/arc.jpeg",
+    "description": "The Autonomous Robotics Club's mission is to openly explore challenging problems within the field of autonomous robotics. Through ARC, students of any background can collaborate with an active community of shared knowledge to help create a real-world impact. ARC provides an environment for members to learn about topics such as state estimation, control algorithms, and machine learning, and new members have opportunities for leadership early on while working on projects that mix hardware and software design.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/dataception.purdue/", "label": "@dataception.purdue" }
+      { "type": "website", "href": "https://www.purduearc.com/", "label": "purduearc.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/purdue.arc/", "label": "@purdue.arc" },
+      { "type": "email", "href": "mailto:autonomy@purdue.edu", "label": "autonomy@purdue.edu" }
     ]
   },
   {
-    "name": "Purdue Hackers",
-    "logo": "/initiatives/Club Hub/club_logos/purduehackers.jpeg",
-    "description": "The CS Club Fair, held biannually by USB, serves as a collaborative platform for CS, DS, and AI clubs at Purdue University. This joint fair aims to streamline the process for students to explore and engage with various student organizations within these fields, fostering community and facilitating connections that enhance students' academic and professional journeys. We provide valuable insights, resources, and connections to support students' interests and aspirations in computer science, data science, and artificial intelligence.",
+    "name": "Boiler Blockchain",
+    "logo": "/initiatives/Club Hub/club_logos/boilerblockchain.jpeg",
+    "description": "Boiler Blockchain is building a blockchain community at Purdue University. We give students the opportunity to gain hands-on experience with blockchain technology. Through general education, skills development, and thought leadership, we are cultivating the next generation of leaders in the blockchain space. The club also maintains relationships with notable blockchain firms to connect Purdue students with job and internship opportunities.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/purduehackers/", "label": "@purduehackers" },
-      { "type": "email", "href": "mailto:purduehackers@gmail.com", "label": "purduehackers@gmail.com" }
+      { "type": "website", "href": "https://www.boilerblockchain.org/", "label": "boilerblockchain.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/boilerblockchain/", "label": "@boilerblockchain" },
+      { "type": "email", "href": "mailto:boilerblockchain@gmail.com", "label": "boilerblockchain@gmail.com" }
     ]
   },
   {
-    "name": "Computer Science Women's Network",
-    "logo": "/initiatives/Club Hub/club_logos/cswn.png",
-    "description": "CSWN is an organization as Purdue University consisting of people who are dedicated to helping women and non-binary people navigate CS/DS and the tech industry. We want to encourage those in CS/DS to stay in the field and prosper!",
+    "name": "Boiler Quant",
+    "logo": "/initiatives/Club Hub/club_logos/boilerquant.png",
+    "description": "Boiler Quant brings together students interested in finance, math, and data science to explore the world of quantitative finance. Members collaborate on projects like building FinMath libraries, developing trading algorithms, tinkering with FPGAs, and creating tools for sports arbitrage and options pricing. The club prepares members for careers at top quant firms through mock interviews, trading games, and visits to leading trading firms in Chicago.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/cswnpurdue/", "label": "@cswnpurdue" },
-      { "type": "email", "href": "mailto:cswnpurdue@gmail.com", "label": "cswnpurdue@gmail.com" }
+      { "type": "website", "href": "https://www.boilerquant.com/", "label": "boilerquant.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/boilerquant/", "label": "@boilerquant" },
+      { "type": "email", "href": "mailto:boilerquant@gmail.com", "label": "boilerquant@gmail.com" }
     ]
   },
   {
@@ -49,44 +54,79 @@
     "logo": "/initiatives/Club Hub/club_logos/boilermake.png",
     "description": "BoilerMake hosts Purdue’s largest hackathon over the course of MLK weekend. We see over 500 hackers and around 10 sponsors participate in this 36 hour long event giving everyone the chance to work on a project, network, and get free swag! In addition to this, you can apply to join the BM exec team. We have 5 sub teams, design, ux, dev, spons, and comm, that tackle different aspects of organizing the hackathon.",
     "links": [
+      { "type": "website", "href": "https://boilermake.org/", "label": "boilermake.org" },
       { "type": "instagram", "href": "https://www.instagram.com/boilermake/", "label": "@boilermake" },
       { "type": "email", "href": "mailto:team@boilermake.org", "label": "team@boilermake.org" }
     ]
   },
   {
-    "name": "Association for Computing Machinery",
-    "logo": "/initiatives/Club Hub/club_logos/acm.png",
-    "description": "ACM is the umbrella organization for Special Interest Groups (known as SIGs) who specialize in an area of computer science, like mobile applications, artificial intelligence, game development, high performance computing, multimedia, operating systems, security, and more. You are welcome to join the national organization (there are some cool benefits that you can look up), but to be a part of Purdue's Chapter of ACM, all you need to do is show up to a SIG's meeting. As long as you show up to meetings, you're a part of the group.",
+    "name": "Build Purdue",
+    "logo": "/initiatives/Club Hub/club_logos/buildpurdue.png",
+    "description": "buildpurdue is Purdue's student-led entrepreneurship community, helping Boilermakers turn ideas into real products through visibility, honest feedback, and hands-on experience. The club runs Nightshift, an open-door evening workspace where anyone can show up and make progress alongside other builders, and the Cohort, a selective semester-long program that gives teams structured mentorship, industry connections, and accountability. Members get peer reviews and access to events with engineers, designers, and founders — demos over decks, prototypes over promises.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/acmpurdue/", "label": "@acmpurdue" },
-      { "type": "email", "href": "mailto:acm@cs.purdue.edu", "label": "acm@cs.purdue.edu" }
-    ]
-  },
-  {
-    "name": "Boiler Blockchain",
-    "logo": "/initiatives/Club Hub/club_logos/boilerblockchain.jpeg",
-    "description": "Boiler Blockchain is building a blockchain community at Purdue University. We give students the opportunity to gain hands-on experience with blockchain technology. Through general education, skills development, and thought leadership, we are cultivating the next generation of leaders in the blockchain space.",
-    "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/boilerblockchain/", "label": "@boilerblockchain" },
-      { "type": "linkedin", "href": "https://www.linkedin.com/company/boilerblockchain/", "label": "Boiler Blockchain" }
+      { "type": "website", "href": "https://www.buildpurdue.org/", "label": "buildpurdue.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/buildpurdue/", "label": "@buildpurdue" },
+      { "type": "email", "href": "mailto:buildp@purdue.edu", "label": "buildp@purdue.edu" }
     ]
   },
   {
     "name": "Capture the Flag (b01lers)",
     "logo": "/initiatives/Club Hub/club_logos/ctf.png",
-    "description": "We are constantly learning and applying practical skills in web security, system security, reverse engineering, cryptography, and forensics to compete against other schools and teams in Capture The Flag competitions.",
+    "description": "We are constantly learning and applying practical skills in web security, system security, reverse engineering, cryptography, and forensics to compete against other schools and teams in Capture The Flag competitions. b01lers also hosts its own public CTF each spring, and holds training sessions where members explore advanced programming and security techniques. Students of all levels from all majors are welcome.",
     "links": [
+      { "type": "website", "href": "https://b01lers.com/", "label": "b01lers.com" },
       { "type": "instagram", "href": "https://www.instagram.com/b01lers/", "label": "@b01lers" },
       { "type": "email", "href": "mailto:ctf@purdue.edu", "label": "ctf@purdue.edu" }
     ]
   },
   {
-    "name": "Graduate Student Association (GSA)",
-    "logo": "/initiatives/Club Hub/club_logos/gsb.png",
-    "description": "The computer science graduate student association (csgsa or gsa) provides graduate students with social, academic, and professional opportunities to improve their career at purdue and afterwards. The elected computer science graduate student board serves as the leadership of the gsa, and acts as a liaison between the students and department/university leadership.",
+    "name": "Computer Science Women's Network",
+    "logo": "/initiatives/Club Hub/club_logos/cswn.png",
+    "description": "CSWN is an organization at Purdue University consisting of people who are dedicated to helping women and non-binary people navigate CS/DS and the tech industry. We want to encourage those in CS/DS to stay in the field and prosper! We host networking socials, technical workshops, and community events to help members connect, learn, and grow.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/purduecsgsb/", "label": "@purduecsgsb" },
-      { "type": "email", "href": "mailto:csgsb@purdue.edu", "label": "csgsb@purdue.edu" }
+      { "type": "website", "href": "https://www.cs.purdue.edu/cswn/", "label": "cs.purdue.edu/cswn" },
+      { "type": "instagram", "href": "https://www.instagram.com/cswnpurdue/", "label": "@cswnpurdue" },
+      { "type": "email", "href": "mailto:cswnpurdue@gmail.com", "label": "cswnpurdue@gmail.com" }
+    ]
+  },
+  {
+    "name": "Dataception",
+    "logo": "/initiatives/Club Hub/club_logos/dataception.png",
+    "description": "Dataception is a Data Science and Data Visualization club that teaches you concepts from both majors by guiding you through your own projects. These projects will either be published on our website or it will be submitted to the Undergraduate Research Symposium.",
+    "links": [
+      { "type": "website", "href": "https://dataceptionpurdue.wixsite.com/dataception", "label": "dataceptionpurdue.wixsite.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/dataception.purdue/", "label": "@dataception.purdue" },
+      { "type": "email", "href": "mailto:dataceptionpurdue@gmail.com", "label": "dataceptionpurdue@gmail.com" }
+    ]
+  },
+  {
+    "name": "Ethical Hackers of Purdue",
+    "logo": "/initiatives/Club Hub/club_logos/ethicalhackers.jpeg",
+    "description": "The mission of Ethical Hackers of Purdue is to help students of any major, including non-technical majors, understand the fundamentals of penetration testing and ethical hacking. We are beginner friendly and members of any level of experience are welcome — each week we hack into a new system guided by some of the best hackers at Purdue. Members build skills in Linux, networking, and problem solving, and the club competes in events like the National Cyber League.",
+    "links": [
+      { "type": "instagram", "href": "https://www.instagram.com/ethicalhackerspurdue/", "label": "@ethicalhackerspurdue" },
+      { "type": "linkedin", "href": "https://www.linkedin.com/company/ethical-hackers-of-purdue", "label": "Ethical Hackers of Purdue" },
+      { "type": "email", "href": "mailto:tgraewe@purdue.edu", "label": "tgraewe@purdue.edu" }
+    ]
+  },
+  {
+    "name": "Girls Who Code",
+    "logo": "/initiatives/Club Hub/club_logos/gwcpurdue.png",
+    "description": "We are dedicated to closing the gender gap in technology and computer science through K-12 outreach at the middle and high schools in the Greater West Lafayette area and surrounding cities. Our outreach events consist of: meet + greet panels with students to establish a relationship and ensure familiarity, coding workshops where we help students understand a certain language, show them how they can get involved in programming, and create a project. We also hold professional events with corporate sponsors and build a close network of students and alumni through socials.",
+    "links": [
+      { "type": "instagram", "href": "https://www.instagram.com/gwc.purdue/", "label": "@gwc.purdue" },
+      { "type": "linkedin", "href": "https://www.linkedin.com/company/gwc-purdue/", "label": "GWC Purdue" },
+      { "type": "email", "href": "mailto:girlswhocode.purdue@gmail.com", "label": "girlswhocode.purdue@gmail.com" }
+    ]
+  },
+  {
+    "name": "Google Developer Groups",
+    "logo": "/initiatives/Club Hub/club_logos/gdg.png",
+    "description": "Google Developer Group on Campus Purdue is the place for developers to learn, collaborate, and grow using Google's technologies and experts. We achieve this through various workshops and team projects, covering areas like AI/ML, web, and app development. GDG on Campus Purdue University is an independent group; its activities and opinions are not linked to Google, the corporation.",
+    "links": [
+      { "type": "instagram", "href": "https://www.instagram.com/purdue.gdg/", "label": "@purdue.gdg" },
+      { "type": "linkedin", "href": "https://www.linkedin.com/company/google-developer-groups-purdue-university/", "label": "GDG Purdue University" },
+      { "type": "email", "href": "mailto:purdue.gdg@gmail.com", "label": "purdue.gdg@gmail.com" }
     ]
   },
   {
@@ -94,62 +134,119 @@
     "logo": "/initiatives/Club Hub/club_logos/htf.png",
     "description": "Hack the Future at Purdue aims to develop software and technology-related projects for nonprofits focused on improving the community. This organization will foster a group of developers and designers passionate about using their technological skills and knowledge to help those around them. Hack the Future also seeks to create a social and friendly atmosphere among its active members and teams, as well as host open events for anyone to come and learn, hack, and have fun!",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/hackhefuturepurdue/", "label": "@hackhefuturepurdue" },
+      { "type": "website", "href": "https://htfpurdue.org/", "label": "htfpurdue.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/hackthefuturepurdue/", "label": "@hackthefuturepurdue" },
       { "type": "email", "href": "mailto:htfpurdue@gmail.com", "label": "htfpurdue@gmail.com" }
     ]
   },
   {
-    "name": "Google Developer Student Club",
-    "logo": "/initiatives/Club Hub/club_logos/gdsc.webp",
-    "description": "We are the official Purdue Chapter for GDSC, a community for students interested in Google developer technologies! We host weekly workshops on a topic related to Google technologies. Members participate in the Google Solution Challenge and develop a software project for one or more of the United Nations 17 Sustainable Development Goals",
+    "name": "Hello World",
+    "logo": "/initiatives/Club Hub/club_logos/helloworld.png",
+    "description": "Hello World is the largest beginner-friendly hackathon in the Midwest, and the first freshman-only hackathon in the country. Over 24 hours, first-time hackers from any major build their very first project with mentors working side by side with them, so nobody feels intimidated by technology they have never touched before. The team's vision is to build a community at Purdue around learning, sharing, and building.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/gdscpurdue/", "label": "@gdscpurdue" },
-      { "type": "email", "href": "mailto:gdscpurdue@gmail.com", "label": "gdscpurdue@gmail.com" }
+      { "type": "instagram", "href": "https://www.instagram.com/helloworldpurdue/", "label": "@helloworldpurdue" },
+      { "type": "email", "href": "mailto:helloworldpurdue@gmail.com", "label": "helloworldpurdue@gmail.com" }
     ]
   },
   {
-    "name": "Autonomous Robotics Club of Purdue",
-    "logo": "/initiatives/Club Hub/club_logos/arc.jpeg",
-    "description": "The Autonomous Robotics Club's mission is to openly explore challenging problems within the field of autonomous robotics. Through ARC, students of any background can collaborate with an active community of shared knowledge to help create a real-world impact.",
+    "name": "Humanoid Robot Club",
+    "logo": "/initiatives/Club Hub/club_logos/humanoid.png",
+    "description": "The Humanoid Robot Club is a robotics community at Purdue working at the forefront of humanoid robotics, with the mission of engineering a walking humanoid robot capable of space exploration. Whether you're an experienced robotics engineer or a newcomer with a passion for robots, HRC hosts collaborative projects tailored to all skill levels. The club has taken its robot from mid-air walking in simulation to first steps on the ground, and also runs StarkHacks, a global hardware hackathon.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/purdue.arc/", "label": "@purdue.arc" },
-      { "type": "email", "href": "mailto:autonomy@purdue.edu", "label": "autonomy@purdue.edu" }
+      { "type": "website", "href": "https://www.humanoidrobot.club/", "label": "humanoidrobot.club" },
+      { "type": "instagram", "href": "https://www.instagram.com/humanoid.purdue/", "label": "@humanoid.purdue" },
+      { "type": "email", "href": "mailto:humanoid@purdue.edu", "label": "humanoid@purdue.edu" }
     ]
   },
   {
-    "name": "LaunchPad",
-    "logo": "/initiatives/Club Hub/club_logos/launchpad.jpeg",
-    "description": "LaunchPad is a community of students dedicated to learning, building, and growing together. We provide a one-on-one, semester-long mentorship program to help freshmen students hit the ground running. We pair each incoming student with a talented upperclassman who will introduce them to the CS/DS community at Purdue and guide them in creating a technical project of their choosing. Throughout the semester, we host events to foster a sense of community and to build technical skills. Our goal is to ensure that every incoming student is equipped with the knowledge and connections they’ll need to get the most out of their time at Purdue.",
+    "name": "InnovateHer",
+    "logo": "/initiatives/Club Hub/club_logos/innovateher.png",
+    "description": "InnovateHer is Purdue University's women-centric hackathon and the organization behind it, dedicated to fostering inclusivity and empowerment within technology. Through a 36-hour hackathon, workshops, and mentorship, InnovateHer creates a welcoming space for students of marginalized gender identities to learn, build, and innovate together. The event encourages everyone to recognize and create solutions for issues faced by women, and to take an active part in closing the gender gap in STEM.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/launchpadpurdue/", "label": "@launchpadpurdue" },
-      { "type": "email", "href": "mailto:launchpadpurdue@gmail.com", "label": "launchpadpurdue@gmail.com" }
+      { "type": "website", "href": "https://innovateherhacks.org/", "label": "innovateherhacks.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/innovateherhacks/", "label": "@innovateherhacks" },
+      { "type": "email", "href": "mailto:InnovateHerHacks@gmail.com", "label": "InnovateHerHacks@gmail.com" }
     ]
   },
   {
-    "name": "Purdue Linux Users Group",
-    "logo": "/initiatives/Club Hub/club_logos/plug.png",
-    "description": "We are a Purdue organization that supports Linux, open source software, and Unix-like environments like Mac OSX and BSD.",
+    "name": "Kappa Theta Pi",
+    "logo": "/initiatives/Club Hub/club_logos/ktp.png",
+    "description": "Kappa Theta Pi (ΚΘΠ) is the nation's first co-ed professional technology fraternity, and this is its Purdue chapter. KTP creates bonds between students in computer science, data science, design, business, and computer engineering, and gives brothers the support and resources to pursue their interests in tech. The fraternity develops networks through professional and social growth, exposing members to career options across the technology industry.",
     "links": [
-      { "type": "email", "href": "mailto:president@purduelug.org", "label": "president@purduelug.org" }
+      { "type": "website", "href": "https://www.kappathetapi.org/", "label": "kappathetapi.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/ktp.purdue/", "label": "@ktp.purdue" },
+      { "type": "email", "href": "mailto:ktp@purdue.edu", "label": "ktp@purdue.edu" }
     ]
   },
   {
-    "name": "Upsilon Pi Epsilon",
-    "logo": "/initiatives/Club Hub/club_logos/upe.png",
-    "description": "Upsilon Pi Epsilon is an honor society which was founded in 1967 to recognize scholarship and professionalism in the Computing Sciences. In the 28 years since then, over 120 institutions of higher education around the world have established UPE chapters. It is the only international honor society in the Computing Sciences.",
+    "name": "ML @ Purdue",
+    "logo": "/initiatives/Club Hub/club_logos/mlp.png",
+    "description": "ML@Purdue is the central club for AI/ML career growth for Purdue students. ML@Purdue supports careers in industry, research, and entrepreneurial ventures through projects and various events. The club serves to connect Purdue students to AI/ML leaders in and out of Purdue.",
     "links": [
-      { "type": "email", "href": "mailto:upe@cs.purdue.edu", "label": "upe@cs.purdue.edu" }
+      { "type": "website", "href": "https://mlpurdue.com/", "label": "mlpurdue.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/mlpurdue/", "label": "@mlpurdue" },
+      { "type": "email", "href": "mailto:aiml@purdue.edu", "label": "aiml@purdue.edu" }
     ]
   },
   {
-    "name": "Web Dev Club",
-    "logo": "/initiatives/Club Hub/club_logos/wdc.jpeg",
-    "description": "The purpose of the club is to introduce web fundamentals to anyone who would like to learn. Web fundamentals include HTML & CSS as well as JavaScript. This is not an exclusive club for CS majors as it is open to anyone and everyone.",
+    "name": "Purdue Hackers",
+    "logo": "/initiatives/Club Hub/club_logos/purduehackers.jpeg",
+    "description": "Purdue Hackers is a group of students who make creative projects with technology, like apps, games, and art. The organization exists to promote hacker culture within the Purdue student body — exploring the limits of what is possible, in a spirit of playful cleverness. Through weekly Hack Nights and community events, Purdue Hackers fosters intellectual creativity, artistic expression, mentorship for those less experienced, and the free exchange of ideas.",
     "links": [
-      { "type": "instagram", "href": "https://www.instagram.com/purduewebdevclub/", "label": "@purduewebdevclub" },
-      { "type": "email", "href": "mailto:wdc@purdue.edu", "label": "wdc@purdue.edu" }
+      { "type": "website", "href": "https://purduehackers.com/", "label": "purduehackers.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/purduehackers/", "label": "@purduehackers" },
+      { "type": "email", "href": "mailto:phackers@purdue.edu", "label": "phackers@purdue.edu" }
+    ]
+  },
+  {
+    "name": "Purdue Momentum",
+    "logo": "/initiatives/Club Hub/club_logos/momentum.png",
+    "description": "Momentum at Purdue is a project-based, multidisciplinary student organization that bridges the gap between academics and industry by providing hands-on experience in finance, software, and engineering. Semester-long projects range from investment challenges to robotics builds to AI software development, supported by workshops, design reviews, and mentorship. Founded by international students and women in STEM, Momentum welcomes members from any major and prioritizes an inclusive, empowering environment.",
+    "links": [
+      { "type": "website", "href": "https://www.purduemomentum.org/", "label": "purduemomentum.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/purduemomentum/", "label": "@purduemomentum" },
+      { "type": "email", "href": "mailto:momentum@purdue.edu", "label": "momentum@purdue.edu" }
+    ]
+  },
+  {
+    "name": "Purdue Stack",
+    "logo": "/initiatives/Club Hub/club_logos/purduestack.png",
+    "description": "Purdue Stack is the premier software engineering club at Purdue University, dedicated to hands-on full-stack development and real-world applications. Our mission is to bridge the gap between classroom learning and industry experience by working on impactful projects for campus, businesses, and startups. We host technical workshops, collaborate with industry leaders, and provide networking opportunities, while structured project teams give members practical experience and room to grow as developers and leaders.",
+    "links": [
+      { "type": "website", "href": "https://www.purduestack.org/", "label": "purduestack.org" },
+      { "type": "instagram", "href": "https://www.instagram.com/purduestack/", "label": "@purduestack" },
+      { "type": "email", "href": "mailto:purduestack@gmail.com", "label": "purduestack@gmail.com" }
+    ]
+  },
+  {
+    "name": "The Data Mine",
+    "logo": "/initiatives/Club Hub/club_logos/datamine.jpg",
+    "description": "The Data Mine is an interdisciplinary living-learning community that brings together students from every major to work with corporate partners, faculty, and mentors on real data science challenges. Operating under the mission of \"Data Science for ALL,\" it requires no prior computational experience — only enthusiasm for rigorous learning — and serves over 1,700 students alongside 60+ company partners. The Data Mine Ambassadors are the student representatives who share that experience with prospective and incoming students.",
+    "links": [
+      { "type": "website", "href": "https://datamine.purdue.edu/", "label": "datamine.purdue.edu" },
+      { "type": "instagram", "href": "https://www.instagram.com/purduedatamine/", "label": "@purduedatamine" },
+      { "type": "instagram", "href": "https://www.instagram.com/purduedatamineambassadors/", "label": "@purduedatamineambassadors" },
+      { "type": "email", "href": "mailto:datamine@purdue.edu", "label": "datamine@purdue.edu" }
+    ]
+  },
+  {
+    "name": "Undergraduate Student Board (USB)",
+    "logo": "/initiatives/Club Hub/club_logos/usb.webp",
+    "description": "The Computer Science Undergraduate Student Board exists to promote a supportive and engaged community within Purdue's Computer Science Department, and to use its relationship with faculty, the Corporate Partners Program, and administration to advocate for the student body. USB reduces the communication gap between students and faculty by representing student concerns, and runs initiatives like the Club Hub, the CS Club Fair, mentorship, panels, and the Student Wiki. USB is an application-based club — follow our Instagram for application announcements.",
+    "links": [
+      { "type": "website", "href": "https://purdueusb.com/", "label": "purdueusb.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/purdueusb/", "label": "@purdueusb" },
+      { "type": "email", "href": "mailto:usb@cs.purdue.edu", "label": "usb@cs.purdue.edu" }
+    ]
+  },
+  {
+    "name": "Women in Cybersecurity (WiCyS)",
+    "logo": "/initiatives/Club Hub/club_logos/wicys.png",
+    "description": "The mission of the Women in Cybersecurity student chapter is to build a community within Purdue University that promotes women's education, participation, and leadership in the field of cybersecurity. WiCyS is a global community of engagement, encouragement, and support, bringing together women from academia, research, and industry to share knowledge, experience, networking, and mentoring. Undergraduates and graduate students are all welcome to join.",
+    "links": [
+      { "type": "website", "href": "https://wicyspurdue.wixsite.com/home", "label": "wicyspurdue.wixsite.com" },
+      { "type": "instagram", "href": "https://www.instagram.com/wicyspurdue/", "label": "@wicyspurdue" },
+      { "type": "email", "href": "mailto:wicys@purdue.edu", "label": "wicys@purdue.edu" }
     ]
   }
 ]
-
-

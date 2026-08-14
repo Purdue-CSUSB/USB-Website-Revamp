@@ -1,0 +1,26 @@
+# Secrets - never commit these
+.env
+.env.*
+!.env.example
+*.session
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Build output
+dist/
+.vercel/
+
+# Generated board photo derivatives are build artifacts of the originals in
+# "frontend/public/Board Member Photos"; regenerate with `npm run optimize:photos`.
+frontend/public/board-photos/.build-cache.json
+
+# Editors / OS
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store

@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/webp" href="/Logos & Icons/usb logos/USB_Icon_Black_Gold_Big.webp" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--
+      The board grid cannot request a single photo until this manifest lands, so
+      start it during HTML parse instead of after the JS bundle boots. Homepage
+      fetches it with credentials:'omit' to match this preload.
+    -->
+    <link rel="preload" as="fetch" crossorigin="anonymous" href="/Board Member Photos/board-members.json" />
     <title>Purdue USB</title>
   </head>
   <body>

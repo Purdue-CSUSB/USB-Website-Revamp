@@ -33,6 +33,8 @@ export default function ClubHub() {
         return encodeURI(`${getBasePath()}/initiatives/Club Hub/instagram.webp`);
       case 'linkedin':
         return encodeURI(`${getBasePath()}/initiatives/Club Hub/linkedin.webp`);
+      case 'website':
+        return encodeURI(`${getBasePath()}/initiatives/Club Hub/website.svg`);
       case 'email':
       default:
         return encodeURI(`${getBasePath()}/initiatives/Club Hub/email.png`);
@@ -135,7 +137,7 @@ export default function ClubHub() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ 
                   duration: 0.5, 
-                  delay: 0.3 + (idx * 0.08), 
+                  delay: 0.3 + (Math.min(idx, 8) * 0.08),
                   ease: [0.25, 0.1, 0.25, 1],
                   scale: { duration: 0.25, ease: [0.25, 0.1, 0.25, 1] },
                   boxShadow: { duration: 0.25, ease: [0.25, 0.1, 0.25, 1] }

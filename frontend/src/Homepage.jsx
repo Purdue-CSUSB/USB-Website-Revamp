@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Navbar from './Components/Navbar.jsx';
 import Footer from './Components/Footer.jsx';
+import BoardPhoto from './Components/BoardPhoto.jsx';
 import { BookOpen, Compass, ChevronLeft, ChevronRight, Send, ChevronDown, ChevronUp, Heart, MessageCircle, Bookmark, MoreHorizontal } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link, useNavigate} from 'react-router-dom';
 import useEmblaCarousel from 'embla-carousel-react';
+import { fetchInstagramPosts, readCachedPosts } from './lib/instagramPosts.js';
 
 // Get the base path for assets
 const getBasePath = () => {
@@ -12,48 +14,24 @@ const getBasePath = () => {
 };
 
 export default function Homepage() {
-  const [instagramPosts, setInstagramPosts] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Seeded from localStorage during the initial render, so a returning visitor
+  // never sees the skeleton at all.
+  const [cachedPosts] = useState(readCachedPosts);
+  const [instagramPosts, setInstagramPosts] = useState(() => cachedPosts || []);
+  const [loading, setLoading] = useState(() => !cachedPosts);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const fetchInstagramPosts = async () => {
-      setLoading(true);
-      const profileUrl = 'https://www.instagram.com/purdueusb/';
-      const cacheKey = `ig:posts:${profileUrl}`;
-      try {
-        const raw = localStorage.getItem(cacheKey);
-        if (raw) {
-          const obj = JSON.parse(raw);
-          if (obj && Array.isArray(obj.value) && obj.value.length > 0 && obj.expiresAt && Date.now() < obj.expiresAt) {
-            setInstagramPosts(obj.value);
-            setLoading(false);
-            return;
-          }
-        }
-      } catch {}
-      try {
-        const apiRes = await fetch(`${getBasePath()}/Instagram Posts/insta_posts.json`, { cache: 'no-store' });
-        if (!apiRes.ok) throw new Error(`HTTP ${apiRes.status}`);
-        const posts = await apiRes.json();
-        const firstSixImages = Array.isArray(posts) ? posts.filter(p => !!p?.imageUrl).slice(0, 6) : [];
-        console.log('Instagram posts loaded:', firstSixImages.length, firstSixImages);
-        if (firstSixImages.length > 0) {
-          setInstagramPosts(firstSixImages);
-          try { localStorage.setItem(cacheKey, JSON.stringify({ value: firstSixImages, expiresAt: Date.now() + 10 * 60 * 1000 })); } catch {}
-          setLoading(false);
-          return;
-        }
-        throw new Error('API returned no posts');
-      } catch (scrapeErr) {
-        console.warn('Instagram scrape failed.', scrapeErr);
-        setInstagramPosts([]);
-        setLoading(false);
-      }
-    };
-
-    fetchInstagramPosts();
+    const controller = new AbortController();
+    fetchInstagramPosts({ limit: 6, signal: controller.signal })
+      .then(({ posts }) => {
+        if (posts.length) setInstagramPosts(posts);
+      })
+      .catch((err) => {
+        if (err?.name !== 'AbortError') console.warn('[instagram] load failed', err);
+      })
+      .finally(() => setLoading(false));
+    return () => controller.abort();
   }, []);
 
   const formatTimeAgo = (timestamp) => {
@@ -70,32 +48,8 @@ export default function Homepage() {
     }
   };
 
-  const getImageUrl = (post) => {
-    const raw = post?.imageUrl || post?.media_url || post?.thumbnail_url;
-    if (!raw) return null;
-    let url = raw.trim();
-    
-    // Handle external URLs (Instagram API)
-    if (url.startsWith('//')) url = 'https:' + url;
-    if (url.startsWith('http:')) url = url.replace(/^http:/i, 'https:');
-    if (/^https?:/i.test(url)) return url;
-    
-    // Strip /USB-Website-Revamp/ from the beginning if present
-    if (url.startsWith('/USB-Website-Revamp/')) {
-      url = url.substring('/USB-Website-Revamp'.length);
-    }
-    
-    // Handle local paths - if it already starts with /, use as is
-    if (url.startsWith('/')) {
-      console.log('Instagram image URL:', url);
-      return url;
-    }
-    
-    // For other paths, add the base path
-    const fullUrl = `${getBasePath()}/${url}`;
-    console.log('Instagram image URL (other):', fullUrl);
-    return fullUrl;
-  };
+  // URL shapes are normalised in lib/instagramPosts.js, so the view just reads it.
+  const getImageUrl = (post) => post?.imageUrl || null;
 
   const decodeEntities = (str) => {
     if (!str) return '';
@@ -112,35 +66,17 @@ export default function Homepage() {
     return t.replace(/\r\n/g, '\n').trim();
   };
 
-  // Only preload the first visible Instagram post (critical above-the-fold image)
-  useEffect(() => {
-    if (!instagramPosts || instagramPosts.length === 0) return;
-    // Only preload first post that's immediately visible
-    const firstPost = instagramPosts[0];
-    if (firstPost) {
-      const url = getImageUrl(firstPost);
-      if (url) {
-        const link = document.createElement('link');
-        link.rel = 'preload';
-        link.as = 'image';
-        link.href = url;
-        link.fetchPriority = 'high';
-        document.head.appendChild(link);
-        return () => {
-          try { document.head.removeChild(link); } catch {}
-        };
-      }
-    }
-  }, [instagramPosts]);
-
   const [boardMembers, setBoardMembers] = useState([]);
   const [alumniMembers, setAlumniMembers] = useState([]);
+  const [photoFallback, setPhotoFallback] = useState(null);
   const [showAlumni, setShowAlumni] = useState(false);
 
   useEffect(() => {
     const loadBoard = async () => {
       try {
-        const res = await fetch(`${getBasePath()}/Board Member Photos/board-members.json`);
+        // credentials:'omit' matches the <link rel="preload" as="fetch" crossorigin>
+        // in index.html, so the browser reuses that response instead of refetching.
+        const res = await fetch(`${getBasePath()}/Board Member Photos/board-members.json`, { credentials: 'omit' });
         const data = await res.json();
         const members = Array.isArray(data?.members) ? data.members : [];
         const alumni = Array.isArray(data?.alumni) ? data.alumni : [];
@@ -150,6 +86,7 @@ export default function Homepage() {
         }));
         setBoardMembers(normalize(members));
         setAlumniMembers(normalize(alumni));
+        setPhotoFallback(data?.fallback || null);
       } catch (e) {
         console.error('Failed to load board-members.json', e);
       }
@@ -157,27 +94,10 @@ export default function Homepage() {
     loadBoard();
   }, []);
 
-  // Only preload the first 3-4 visible board member photos (critical above-the-fold images)
-  useEffect(() => {
-    if (!boardMembers || boardMembers.length === 0) return;
-    const head = document.head;
-    // Only preload first 3 visible board members to reduce edge requests
-    const criticalMembers = boardMembers.slice(0, 3);
-    const links = criticalMembers.map((m) => {
-      const href = `${getBasePath()}/Board Member Photos/${m.photo}`;
-      const l = document.createElement('link');
-      l.rel = 'preload';
-      l.as = 'image';
-      l.href = href;
-      l.fetchPriority = 'high';
-      head.appendChild(l);
-      return l;
-    });
-    return () => { links.forEach((l) => { try { document.head.removeChild(l); } catch {} }); };
-  }, [boardMembers]);
-
-  // Don't preload alumni photos - they're below the fold and only shown on toggle
-  // They will be lazy loaded when the user clicks to show alumni
+  // Board photos need no JS preloading: they are 20-70KB responsive AVIF/WebP
+  // crops (see scripts/optimize-board-photos.mjs) and the first row is marked
+  // eager + fetchPriority=high, so the browser starts them as soon as the grid
+  // renders. Alumni stay lazy behind the toggle.
 
   const [initiatives, setInitiatives] = useState([]);
   useEffect(() => {
@@ -609,14 +529,14 @@ export default function Homepage() {
                               ) : getImageUrl(post) ? (
                                   <img
                                       src={getImageUrl(post)}
-                                      alt="Instagram post"
-                                      className="w-full h-full object-contain opacity-0"
+                                      alt={post?.eventTitle ? `Instagram post: ${post.eventTitle}` : 'Instagram post'}
+                                      className="w-full h-full object-contain"
                                       loading={index === 0 ? "eager" : "lazy"}
                                       decoding="async"
-                                      fetchpriority={index === 0 ? "high" : "auto"}
-                                      onLoad={(e) => { e.currentTarget.style.opacity = '1'; }}
-                                      onError={(e) => { e.currentTarget.style.opacity = '1'; e.currentTarget.src = `${getBasePath()}/Logos & Icons/social media logos/instagram.svg`; }}
-                                      style={{ transition: 'opacity 60ms linear' }}
+                                      fetchPriority={index === 0 ? "high" : "auto"}
+                                      width={post?.width || undefined}
+                                      height={post?.height || undefined}
+                                      onError={(e) => { e.currentTarget.src = `${getBasePath()}/Logos & Icons/social media logos/instagram.svg`; }}
                                   />
                               ) : (
                                   <div className="text-center">
@@ -728,22 +648,25 @@ export default function Homepage() {
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
               {boardMembers.map((m, idx) => {
-                const photoSrc = encodeURI(`${getBasePath()}/Board Member Photos/${m.photo}`);
+                // The old stagger (0.2 + idx * 0.05) held the 30th avatar at
+                // opacity 0 until 1.7s, which read as "the photos are slow" even
+                // once they had downloaded. Cap it so the whole grid is up in
+                // well under half a second.
+                const delay = Math.min(0.04 + idx * 0.012, 0.28);
                 const card = (
-                    <motion.div 
-                      key={`${m.name}-${idx}`}
-                      initial={{ opacity: 0, scale: 0.9 }}
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.94 }}
                       animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: 0.2 + (idx * 0.05) }}
+                      transition={{ duration: 0.28, delay }}
                       className="group flex flex-col items-center text-center"
                     >
-                      <motion.div 
+                      <motion.div
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.2 }}
-                        className="relative w-44 h-44 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg" 
+                        className="relative w-44 h-44 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-lg"
                         style={{ willChange: 'transform' }}
                       >
-                        <img src={photoSrc} alt={m.name} className="w-full h-full object-cover will-change-auto" loading={idx < 3 ? "eager" : "lazy"} decoding="async" fetchpriority={idx < 3 ? "high" : "auto"} width="512" height="512" onError={(e) => { e.currentTarget.src = encodeURI(`${getBasePath()}/Board Member Photos/png/None.png`); }} />
+                        <BoardPhoto member={m} fallback={photoFallback} priority={idx < 8} />
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out bg-black/30 px-4 text-center" style={{ willChange: 'opacity' }}>
                           <div className="space-y-1">
                             <p className="font-montserrat font-bold text-white text-lg leading-snug">{m.name}</p>
@@ -755,19 +678,16 @@ export default function Homepage() {
                     </motion.div>
                 );
                 return m.site ? (
-                    <motion.a 
+                    <a
                       key={`${m.name}-${idx}`}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: 0.2 + (idx * 0.05) }}
-                      href={m.site} 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
+                      href={m.site}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="focus:outline-none"
                     >
                       {card}
-                    </motion.a>
-                ) : card;
+                    </a>
+                ) : <React.Fragment key={`${m.name}-${idx}`}>{card}</React.Fragment>;
               })}
             </div>
 
@@ -815,22 +735,20 @@ export default function Homepage() {
                     className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8"
                   >
                     {alumniMembers.map((m, idx) => {
-                      const photoSrc = encodeURI(`${getBasePath()}/Board Member Photos/${m.photo}`);
                       const card = (
-                          <motion.div 
-                            key={`${m.name}-${idx}`}
-                            initial={{ opacity: 0, scale: 0.9 }}
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0.94 }}
                             animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: idx * 0.03 }}
+                            transition={{ duration: 0.28, delay: Math.min(idx * 0.008, 0.28) }}
                             className="group flex flex-col items-center text-center"
                           >
-                            <motion.div 
+                            <motion.div
                               whileHover={{ scale: 1.05 }}
                               transition={{ duration: 0.15 }}
-                              className="relative w-44 h-44 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-md" 
+                              className="relative w-44 h-44 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full overflow-hidden shadow-md"
                               style={{ willChange: 'transform' }}
                             >
-                              <img src={photoSrc} alt={m.name} className="w-full h-full object-cover will-change-auto" loading="lazy" decoding="async" width="512" height="512" onError={(e) => { e.currentTarget.src = encodeURI(`${getBasePath()}/Board Member Photos/png/None.png`); }} />
+                              <BoardPhoto member={m} fallback={photoFallback} />
                               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-75 ease-out bg-black/30 px-4 text-center" style={{ willChange: 'opacity' }}>
                                 <div className="space-y-1">
                                   <p className="font-montserrat font-bold text-white text-lg leading-snug">{m.name}</p>
@@ -842,19 +760,16 @@ export default function Homepage() {
                           </motion.div>
                       );
                       return m.site ? (
-                          <motion.a 
+                          <a
                             key={`${m.name}-${idx}`}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5, delay: idx * 0.03 }}
-                            href={m.site} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
+                            href={m.site}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="focus:outline-none"
                           >
                             {card}
-                          </motion.a>
-                      ) : card;
+                          </a>
+                      ) : <React.Fragment key={`${m.name}-${idx}`}>{card}</React.Fragment>;
                     })}
                   </motion.div>
               )}
