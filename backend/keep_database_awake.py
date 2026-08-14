@@ -25,9 +25,35 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import sys
 import time
+from pathlib import Path
 from urllib.request import Request, urlopen
+
+
+def _load_dotenv() -> None:
+    """
+    Read SITE_URL (and anything else) out of the repo-root .env for local runs.
+
+    Parsed by hand rather than with python-dotenv so this script keeps needing
+    nothing outside the standard library - that is what lets the workflow skip a
+    pip install entirely. Real environment variables win, so the Action's
+    vars.SITE_URL is never shadowed by a stale local file.
+    """
+    env_file = Path(__file__).resolve().parents[1] / ".env"
+    if not env_file.is_file():
+        return
+    for line in env_file.read_text(encoding="utf-8").splitlines():
+        match = re.match(r"\s*([A-Z0-9_]+)\s*=\s*(.*)", line)
+        if not match:
+            continue
+        key, value = match.group(1), match.group(2).strip().strip("\"'")
+        if value and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_dotenv()
 
 ENDPOINT = "/api/instagram/posts"
 ATTEMPTS = 5
