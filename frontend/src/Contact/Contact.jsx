@@ -37,7 +37,7 @@ export default function Contact() {
             style={{ color: '#333333FF' }}
           >
             You can also send us an email at{' '}
-            <a href="mailto:usb@purdue.edu" className="underline text-blue-700 hover:text-blue-800">usb@purdue.edu</a>
+            <a href="mailto:usb@cs.purdue.edu" className="underline text-blue-700 hover:text-blue-800">usb@cs.purdue.edu</a>
           </motion.p>
           <motion.p 
             initial={{ opacity: 0, y: -20 }}
