@@ -113,7 +113,11 @@ export default function StudentWikiList() {
   const toRegex = (term) => {
     const esc = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const pattern = esc.replace(/\\\*/g, '.*');
-    return new RegExp(`${pattern}`, 'i');
+    try {
+      return new RegExp(`${pattern}`, 'i');
+    } catch {
+      return null;
+    }
   };
 
   const distance1 = (a, b) => {
@@ -149,7 +153,7 @@ export default function StudentWikiList() {
     for (const h of haystacks) {
       const val = normalize(h);
       if (!val) continue;
-      if (rex.test(h)) return true;
+      if (rex && rex.test(h)) return true;
 
       if (termCompact && compact(h).includes(termCompact)) return true;
       if (tok.fuzzy) {
@@ -244,6 +248,7 @@ export default function StudentWikiList() {
       tokenize(query).forEach((t) => {
         if (t.term === '*' || !t.term) return;
         const rex = toRegex(t.term);
+        if (!rex) return;
         const inTitle = rex.test(fieldVal(p, i, 'title'));
         const inDesc = rex.test(fieldVal(p, i, 'description'));
         const inContent = rex.test(fieldVal(p, i, 'content'));
@@ -349,7 +354,7 @@ export default function StudentWikiList() {
                   <input
                     type="text"
                     value={query}
-                    onChange={(e) => setQuery(e.target.value)}
+                    onChange={(e) => setQuery(e.target.value.slice(0, 200))}
                     placeholder="Search wiki..."
                     className="flex-1 outline-none font-raleway text-sm"
                     style={{ color: '#333333FF', backgroundColor: '#FFFFFF' }}
