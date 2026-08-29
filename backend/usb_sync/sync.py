@@ -64,6 +64,10 @@ def run(config: Config) -> int:
             username=config.ig_username,
             password=config.ig_password,
             session_cache=store,
+            session_blob=config.ig_session,
+            allow_password_login=config.ig_allow_password_login,
+            totp_secret=config.ig_totp_secret,
+            proxy=config.ig_proxy,
         )
         if not posts:
             log.error("No posts scraped from @%s; leaving the database untouched", config.ig_profile)

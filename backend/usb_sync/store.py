@@ -59,9 +59,23 @@ class Store:
 
     def load_session(self, username: str) -> Optional[bytes]:
         doc = self.meta.find_one({"_id": SESSION_ID})
-        # A changed IG_USERNAME must not silently reuse the old account's session.
-        if not doc or doc.get("username") != username or not doc.get("data"):
+        if not doc or not doc.get("data"):
+            log.info("Mongo: no Instagram session stored")
             return None
+        # A changed IG_USERNAME must not silently reuse the old account's session,
+        # but Instagram handles are case-insensitive and secrets routinely pick up
+        # stray whitespace, so compare on the normalised handle rather than the
+        # raw bytes - a mismatch here silently forces a password login, which is
+        # the one thing that cannot succeed from CI.
+        stored = (doc.get("username") or "").strip().lstrip("@").lower()
+        wanted = (username or "").strip().lstrip("@").lower()
+        if stored != wanted:
+            log.warning(
+                "Mongo: stored Instagram session belongs to @%s, not @%s; ignoring it",
+                stored or "(unknown)", wanted,
+            )
+            return None
+        log.info("Mongo: loaded the Instagram session saved at %s", doc.get("savedAt"))
         return bytes(doc["data"])
 
     def save_session(self, username: str, blob: bytes) -> None:

@@ -43,5 +43,14 @@ jobs:
           GROQ_MODEL: ${{ vars.GROQ_MODEL || 'qwen/qwen3.6-27b' }}
           IG_PROFILE: ${{ vars.IG_PROFILE || 'purdueusb' }}
           IG_USERNAME: ${{ secrets.IG_USERNAME }}
+          # Only ever used by the seeding script run locally - the job below
+          # refuses password logins, because Instagram checkpoints them from
+          # runner IPs. Kept so a maintainer can flip IG_ALLOW_PASSWORD_LOGIN on
+          # for a one-off debug run without editing this file.
           IG_PASSWORD: ${{ secrets.IG_PASSWORD }}
+          # Bootstrap session minted by `python backend/seed_ig_session.py --print`.
+          # MongoDB holds the live copy; this is the fallback when that goes stale.
+          IG_SESSION: ${{ secrets.IG_SESSION }}
+          # Optional: a residential proxy keeps the session's apparent IP stable.
+          IG_PROXY: ${{ secrets.IG_PROXY }}
         run: python backend/run_sync.py ${{ inputs.dry_run && '--dry-run' || '' }}

@@ -75,6 +75,23 @@ class ConfigError(RuntimeError):
     pass
 
 
+def _password_login_allowed() -> bool:
+    """
+    Whether this environment may fall back to a username/password login.
+
+    Instagram issues a `challenge_required` checkpoint for password logins that
+    arrive from datacenter IPs, and every GitHub-hosted runner is one. The
+    checkpoint can only be cleared by a human on a trusted device, so attempting
+    the login in CI cannot succeed - it can only burn a login attempt and make
+    the account look more suspicious. CI therefore runs session-only by default;
+    a developer on a residential connection still gets the fallback.
+    """
+    override = os.getenv("IG_ALLOW_PASSWORD_LOGIN", "").strip().lower()
+    if override:
+        return override in {"1", "true", "yes", "on"}
+    return not os.getenv("GITHUB_ACTIONS")
+
+
 def _require(name: str) -> str:
     value = os.getenv(name, "").strip()
     if not value:
@@ -90,6 +107,10 @@ class Config:
     ig_profile: str
     ig_username: str
     ig_password: str
+    ig_session: str
+    ig_totp_secret: str
+    ig_proxy: str
+    ig_allow_password_login: bool
 
     groq_api_key: str
     groq_model: str
@@ -104,7 +125,11 @@ class Config:
             mongodb_db=os.getenv("MONGODB_DB", "").strip() or "purdue_usb",
             ig_profile=os.getenv("IG_PROFILE", "").strip().lstrip("@") or "purdueusb",
             ig_username=os.getenv("IG_USERNAME", "").strip(),
-            ig_password=os.getenv("IG_PASSWORD", ""),
+            ig_password=os.getenv("IG_PASSWORD", "").strip(),
+            ig_session=os.getenv("IG_SESSION", "").strip(),
+            ig_totp_secret=os.getenv("IG_TOTP_SECRET", "").strip(),
+            ig_proxy=os.getenv("IG_PROXY", "").strip(),
+            ig_allow_password_login=_password_login_allowed(),
             groq_api_key=_require("GROQ_API_KEY"),
             groq_model=os.getenv("GROQ_MODEL", "").strip() or DEFAULT_GROQ_MODEL,
             dry_run=dry_run,

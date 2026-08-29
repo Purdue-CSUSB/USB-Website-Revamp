@@ -53,64 +53,162 @@ class ScrapedPost:
         )
 
 
-def _build_client() -> Client:
+def _build_client(proxy: str = "") -> Client:
     client = Client()
     # Space requests out a little; the private API is stricter about bursts.
     client.delay_range = [1, 3]
+    if proxy:
+        client.set_proxy(proxy)
+        log.info("Instagram: routing requests through the configured proxy")
     return client
 
 
-def _authenticate(client: Client, username: str, password: str, session_cache=None) -> bool:
-    """
-    Authenticate, preferring a cached session over a fresh login.
+def _decode_session_blob(blob: str) -> Optional[dict]:
+    """Read the base64 settings blob handed in through IG_SESSION."""
+    try:
+        return json.loads(base64.b64decode(blob).decode("utf-8"))
+    except Exception as exc:
+        log.warning("Instagram: IG_SESSION is not a valid base64 settings blob (%s)", exc)
+        return None
 
-    Instagram treats repeated logins as suspicious, and an unattended nightly job
-    would otherwise log in from scratch every single day. Reusing stored settings
-    (device identifiers plus cookies) turns that into roughly one login per
-    session lifetime, and keeps the device fingerprint stable - a changing device
-    is itself a signal Instagram acts on.
-    """
-    if not username or not password:
-        log.error("Instagram: IG_USERNAME and IG_PASSWORD are both required")
-        return False
 
-    cached = None
+def _cached_settings(username: str, session_cache, session_blob: str) -> List[tuple[dict, str]]:
+    """
+    Every stored session worth trying, best first.
+
+    MongoDB is the live copy - it is rewritten after each successful run, so it
+    tracks the cookies and claims Instagram rotates. IG_SESSION is the bootstrap:
+    a session minted on a trusted device, mirrored into a repository secret. Both
+    are returned because the live copy is the one that goes stale, and falling
+    back to the secret is the difference between a self-healing run and a
+    password login that CI cannot complete.
+    """
+    candidates: List[tuple[dict, str]] = []
     if session_cache is not None:
         try:
-            blob = session_cache.load_session(username)
-            if blob:
-                cached = json.loads(blob.decode("utf-8"))
+            raw = session_cache.load_session(username)
+            if raw:
+                candidates.append((json.loads(raw.decode("utf-8")), "database"))
         except Exception as exc:
             log.warning("Instagram: could not read the cached session (%s)", exc)
 
-    if cached:
-        try:
-            client.set_settings(cached)
-            client.login(username, password)
-            client.get_timeline_feed()  # cheap call that fails on a dead session
-            log.info("Instagram: reusing cached session for %s", username)
+    if session_blob:
+        settings = _decode_session_blob(session_blob)
+        if settings:
+            candidates.append((settings, "IG_SESSION"))
+
+    return candidates
+
+
+def _persist_settings(client: Client, username: str, session_cache) -> None:
+    """
+    Write the current settings back after every successful authentication.
+
+    Instagram hands back a new `mid` and `rur` cookie as the session is used,
+    and there is no expiry to refresh ahead of - a session dies from a security
+    event, not from age. Saving only after a fresh login, as this used to, meant
+    a session that Instagram had quietly re-keyed was never written back, and
+    the next run fell through to the password login that CI can never complete.
+    """
+    if session_cache is None:
+        return
+    try:
+        session_cache.save_session(username, json.dumps(client.get_settings()).encode("utf-8"))
+    except Exception as exc:
+        log.warning("Instagram: could not cache the session (%s)", exc)
+
+
+def _session_is_live(client: Client) -> bool:
+    """
+    Check a restored session with a single authenticated request.
+
+    Deliberately not `client.login()`: instagrapi's login() silently escalates a
+    rejected session into a full password login, which is exactly the request
+    Instagram checkpoints from a datacenter IP. Validating has to be a plain API
+    call so the caller decides whether a password login is even permitted.
+    """
+    if not client.user_id:
+        log.warning("Instagram: the stored settings carry no session id")
+        return False
+    try:
+        client.account_info()
+        return True
+    except Exception as exc:
+        log.warning("Instagram: the stored session was rejected (%s)", exc)
+        return False
+
+
+def _authenticate(
+    client: Client,
+    username: str,
+    password: str,
+    session_cache=None,
+    *,
+    session_blob: str = "",
+    allow_password_login: bool = True,
+    totp_secret: str = "",
+) -> bool:
+    """
+    Authenticate from a stored session, falling back to a password login only
+    where that can actually succeed.
+
+    Instagram treats repeated logins as suspicious, and answers a password login
+    from a datacenter IP with a `challenge_required` checkpoint that only a human
+    on a trusted device can clear. An unattended job therefore cannot log in - it
+    can only reuse a session someone minted interactively. Reusing stored
+    settings also keeps the device fingerprint stable, which is itself a signal
+    Instagram acts on.
+    """
+    if not username:
+        log.error("Instagram: IG_USERNAME is required")
+        return False
+
+    candidates = _cached_settings(username, session_cache, session_blob)
+    if not candidates:
+        log.warning("Instagram: no stored session found for @%s", username)
+    for settings, source in candidates:
+        client.set_settings(settings)
+        if _session_is_live(client):
+            log.info("Instagram: reusing the cached session (%s) for @%s", source, username)
+            # Promotes a working IG_SESSION into the database copy as a side
+            # effect, so the secret is only ever needed once.
+            _persist_settings(client, username, session_cache)
             return True
+        log.warning("Instagram: the %s session is not usable", source)
+
+    if not allow_password_login:
+        log.error(
+            "Instagram: no usable session and password logins are disabled here. "
+            "Instagram challenges password logins from CI runners, so mint a new "
+            "session on a trusted machine with `python backend/seed_ig_session.py` "
+            "and re-run this job."
+        )
+        # The stored session stays put. It may still work from a residential IP,
+        # and deleting it would strand the seed script's device fingerprint too.
+        return False
+
+    if not password:
+        log.error("Instagram: IG_PASSWORD is required to log in without a stored session")
+        return False
+
+    verification_code = ""
+    if totp_secret:
+        try:
+            verification_code = client.totp_generate_code(totp_secret)
         except Exception as exc:
-            log.info("Instagram: cached session unusable (%s); logging in fresh", exc)
-            client.set_settings({})
-            try:
-                session_cache.clear_session()
-            except Exception:
-                pass
+            log.warning("Instagram: could not derive a TOTP code (%s)", exc)
 
     try:
-        client.login(username, password)
+        # relogin keeps the device identifiers from the rejected session; a brand
+        # new device on a known account is more suspicious than a stale cookie.
+        client.login(username, password, relogin=bool(candidates), verification_code=verification_code)
         log.info("Instagram: logged in as %s", username)
     except Exception as exc:
         log.error("Instagram: login failed for @%s (%s)", username, exc)
         return False
 
-    if session_cache is not None:
-        try:
-            session_cache.save_session(username, json.dumps(client.get_settings()).encode("utf-8"))
-            log.info("Instagram: cached the session for reuse on the next run")
-        except Exception as exc:
-            log.warning("Instagram: could not cache the session (%s)", exc)
+    _persist_settings(client, username, session_cache)
+    log.info("Instagram: cached the session for reuse on the next run")
     return True
 
 
@@ -149,13 +247,26 @@ def fetch_recent_posts(
     password: str = "",
     session_cache=None,
     overscan: int = 2,
+    *,
+    session_blob: str = "",
+    allow_password_login: bool = True,
+    totp_secret: str = "",
+    proxy: str = "",
 ) -> List[ScrapedPost]:
-    client = _build_client()
-    if not _authenticate(client, username, password, session_cache):
+    client = _build_client(proxy)
+    if not _authenticate(
+        client,
+        username,
+        password,
+        session_cache,
+        session_blob=session_blob,
+        allow_password_login=allow_password_login,
+        totp_secret=totp_secret,
+    ):
         raise RuntimeError(
-            "Could not authenticate with Instagram. The private API requires a login; "
-            "check IG_USERNAME / IG_PASSWORD and that the account has no 2FA or "
-            "pending security challenge."
+            "Could not authenticate with Instagram. The private API needs a session "
+            "minted on a trusted device: run `python backend/seed_ig_session.py` "
+            "locally, then re-run this job."
         )
 
     user_id = client.user_id_from_username(profile)
