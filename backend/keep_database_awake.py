@@ -107,6 +107,13 @@ def run_keep_alive() -> str:
             "SITE_URL = https://purdueusb.com"
         )
 
+    # "purdueusb.com" is the obvious way to write a domain, and is how the
+    # repository variable was actually set - but urlopen rejects a schemeless URL
+    # outright with "unknown url type", which failed this job silently every night.
+    # Assume https rather than making the whole keepalive hinge on the spelling.
+    if "://" not in base_url:
+        base_url = f"https://{base_url}"
+
     url = f"{base_url}{ENDPOINT}"
     print(f"GET {url}")
 
