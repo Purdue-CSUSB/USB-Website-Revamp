@@ -38,7 +38,7 @@ jobs:
       - name: Sync Instagram posts to MongoDB
         env:
           MONGODB_URI: ${{ secrets.MONGODB_URI }}
-          MONGODB_DB: ${{ vars.MONGODB_DB || 'purdue_usb' }}
+          MONGODB_DB: ${{ vars.MONGODB_DB || 'InstagramPosts' }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL || 'qwen/qwen3.6-27b' }}
           IG_PROFILE: ${{ vars.IG_PROFILE || 'purdueusb' }}

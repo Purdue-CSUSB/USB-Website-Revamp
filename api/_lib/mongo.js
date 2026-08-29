@@ -30,7 +30,7 @@ const META_COLLECTION = 'instagram_meta';
 
 export async function getCollections() {
   const client = await clientPromise();
-  const db = client.db(process.env.MONGODB_DB || 'purdue_usb');
+  const db = client.db(process.env.MONGODB_DB || 'InstagramPosts');
   return {
     posts: db.collection(POSTS_COLLECTION),
     meta: db.collection(META_COLLECTION),

@@ -122,7 +122,7 @@ class Config:
     def from_env(cls, dry_run: bool = False, allow_heuristic: bool = False) -> "Config":
         return cls(
             mongodb_uri=_require("MONGODB_URI"),
-            mongodb_db=os.getenv("MONGODB_DB", "").strip() or "purdue_usb",
+            mongodb_db=os.getenv("MONGODB_DB", "").strip() or "InstagramPosts",
             ig_profile=os.getenv("IG_PROFILE", "").strip().lstrip("@") or "purdueusb",
             ig_username=os.getenv("IG_USERNAME", "").strip(),
             ig_password=os.getenv("IG_PASSWORD", "").strip(),
