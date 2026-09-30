@@ -71,16 +71,6 @@
       "blurColor": "#676c5d"
     },
     {
-      "name": "Sravya Nagalakunta",
-      "title": "",
-      "class": "Senior",
-      "site": "",
-      "photo": "webp/Sravya-Nagalakunta.webp",
-      "srcBase": "/board-photos/Sravya-Nagalakunta.001234a5",
-      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQABAABABsJQBOgBX5NAAA/tUQ4sHlYt7XF93xrIVFb6W0fjBIv1rerfx1o1eg6WuVamAA",
-      "blurColor": "#728692"
-    },
-    {
       "name": "Netra Joshi",
       "title": "",
       "class": "Senior",
@@ -301,6 +291,16 @@
       "srcBase": "/board-photos/Pranav-Konda.2d263afd",
       "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAADwAQCdASoQABAABABsJYwCdAEMviF8OtAA1IYZEaurqPOdByZhDmUS7w6wAA==",
       "blurColor": "#867e78"
+    },
+    {
+      "name": "Sravya Nagalakunta",
+      "title": "",
+      "class": "2026",
+      "site": "",
+      "photo": "webp/Sravya-Nagalakunta.webp",
+      "srcBase": "/board-photos/Sravya-Nagalakunta.001234a5",
+      "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACQAQCdASoQABAABABsJQBOgBX5NAAA/tUQ4sHlYt7XF93xrIVFb6W0fjBIv1rerfx1o1eg6WuVamAA",
+      "blurColor": "#728692"
     },
     {
       "name": "Daniel Tian",
