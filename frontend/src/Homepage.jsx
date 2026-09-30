@@ -200,8 +200,8 @@ export default function Homepage() {
                 <motion.img
                   whileHover={{ scale: 1.02 }}
                   transition={{ duration: 0.15 }}
-                    src={`${getBasePath()}/USB Group photo/usb_group_2024.webp`}
-                    alt="USB Group Photo 2024"
+                    src={`${getBasePath()}/USB Group photo/usb_group_2026.webp`}
+                    alt="USB Group Photo 2026"
                     className="w-full max-w-3xl rounded-lg shadow-2xl"
                 />
               </motion.div>
