@@ -643,7 +643,7 @@ export default function Homepage() {
               className="text-center mt-3 mb-10 font-raleway" 
               style={{ color: '#333333FF' }}
             >
-              2025 – 2026 Members
+              2026 – 2027 Members
             </motion.p>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
